@@ -38,6 +38,7 @@ add_subdirectory(3rdParty/Cal3D)
 add_subdirectory(3rdParty/solid3)
 add_subdirectory(3rdParty/Bass)
 add_subdirectory(3rdParty/Particles)
+add_subdirectory(3rdParty/lua)
 
 # ----------------------------------------------------
 # GalaxyScraper project
