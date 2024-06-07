@@ -1,7 +1,9 @@
 #ifndef DIRECTX_H
 #define DIRECTX_H
 
-//#define D3DX_FOUND
+#if __has_include(<d3dx9.h>)
+#define D3DX9_SUPPORTED
+#endif
 
 #include <d3d9.h>
 #include <d3d9types.h> // For D3DFORMAT types
