@@ -164,7 +164,7 @@ IMesh * MeshFactory::readMesh(const char *filename)
 		//Read Faces
 		for (int i=0; i<3; ++i) {
 			//Read number of faces
-			if (!myFile.read ((char *)&(min[i]), 4)) {
+			if (!myFile.read((char*)((&min.x) + i), 4)) {
 				return NULL;
 			}
 		}
@@ -173,7 +173,7 @@ IMesh * MeshFactory::readMesh(const char *filename)
 		//Read Faces
 		for (int i=0; i<3; ++i) {
 			//Read number of faces
-			if (!myFile.read ((char *)&(max[i]), 4)) {
+			if (!myFile.read((char*)((&max.x) + i), 4)) {
 				return NULL;
 			}
 		}

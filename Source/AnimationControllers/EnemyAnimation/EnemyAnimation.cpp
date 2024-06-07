@@ -542,6 +542,30 @@ void EnemyAnimation::collisionDetected( AnimatedObject &object, const D3DXVECTOR
 	additionalMovementInOut=D3DXVECTOR3(0.0f, 0.0f, 0.0f);
 }
 
+void EnemyAnimation::collisionDetected(AnimatedObject& object, const D3DXVECTOR3& normal)
+{
+	const D3DXMATRIX& previousTransformMatrix = object.getPreviousTransformMatrix();
+	D3DXVECTOR3	previousPosition(previousTransformMatrix(3, 0), previousTransformMatrix(3, 1), previousTransformMatrix(3, 2));
+
+	D3DXVECTOR3 positionVector = object.getPosition() - previousPosition;
+	//Global::normalizeVector3(positionVector, positionVector);
+	float positionNormalDot = D3DXVec3Dot(&positionVector, &normal);
+
+	// If previous and current position are differents
+	// and position vector and normal dot product is less than 0,
+	// then correct position
+	if (Global::distanceSqrt(object.getPosition(), previousPosition) > 0.001f &&
+		positionNormalDot < 0.0f)
+	{
+		float e = 0.0f;
+
+		D3DXVECTOR3 movement = (1.0f + e) * positionNormalDot * normal;
+		// Obtain new position
+		D3DXVECTOR3 newPosition = previousPosition + (positionVector - movement);
+		correctPosition(object, newPosition);
+	}
+}
+
 void EnemyAnimation::correctPosition( AnimatedObject &object, const D3DXVECTOR3 &newPosition ) 
 {
 	// Get planet center

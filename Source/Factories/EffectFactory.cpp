@@ -55,7 +55,8 @@ HRESULT EffectFactory::loadEffect(const std::string &filename, Effect &effect) {
 	if( effect )
 		effect->Release( ), effect=NULL;
 
-	HRESULT hr;
+	HRESULT hr = D3D_OK;
+#ifdef D3DX9_SUPPORTED
 	LPD3DXBUFFER errorBuffer = NULL;
 	hr = D3DXCreateEffectFromFile( 
 		Global::device
@@ -84,6 +85,7 @@ HRESULT EffectFactory::loadEffect(const std::string &filename, Effect &effect) {
 
 	if( errorBuffer )
 		errorBuffer->Release( ), errorBuffer=NULL;
+#endif
 
 	return hr;
 }

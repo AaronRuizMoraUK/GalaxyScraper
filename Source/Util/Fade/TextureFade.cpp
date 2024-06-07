@@ -49,7 +49,7 @@ void TextureFade::render( float alpha ) {
 	// Set the color and alpha value
 	handleParam = shader->GetParameterByName( NULL, "color_alpha" );
 	if( handleParam ) {
-		D3DXVECTOR4 colorAlpha( D3DXVECTOR3(0,0,0), alpha);
+		D3DXVECTOR4 colorAlpha( 0.0f, 0.0f, 0.0f, alpha);
 		shader->SetVector( handleParam, &colorAlpha);
 	}
 

@@ -83,7 +83,7 @@ public:
 		return particle->getSize();
 	}
 
-	Particles::iterator Particles::killParticle(Particles::iterator &particleIterator)
+	Particles::iterator killParticle(Particles::iterator &particleIterator)
 	{
 		Particle *particle =(*particleIterator);
 

@@ -38,13 +38,13 @@ void BoilerCollisionManager::detectCollisionsPlayerFireballs() {
 	while( it != fireballVector.end() ) {
 		const CollisionableObject *object = *it;
 
-		D3DXVECTOR3 point;
+		DT_Vector3 point;
 		DT_Bool existCollision = DT_GetCommonPoint( Player::getPlayer()->getCollisionObject(), object->getCollisionObject(), point );
 
 		if( existCollision ) {
 			/*
 			char msg[ 128 ];
-			sprintf_s(msg, sizeof(msg), "Collision Player-Fireball: (%f,%f,%f) \n", point.x, point.y, point.z);
+			sprintf_s(msg, sizeof(msg), "Collision Player-Fireball: (%f,%f,%f) \n", point[0], point[1], point[2]);
 			OutputDebugString(msg);
 
 			Global::printCollisionableObjectPosition( object );
@@ -103,22 +103,21 @@ void BoilerCollisionManager::detectCollisionsPlayerSolids() {
 	while( itColl != collisionableObject.end() ) {
 		const CollisionableObject *object = *itColl;
 
-		D3DXVECTOR3 point1;
-		D3DXVECTOR3 point2;
+		DT_Vector3 point1;
+		DT_Vector3 point2;
 		DT_Bool existCollision = DT_GetPenDepth( Player::getPlayer()->getCollisionObject(), object->getCollisionObject(), point1, point2 );
 
 		if( existCollision ) {
 			//static int proof = 0;
 			//char msg[ 128 ];
-			//sprintf_s(msg, sizeof(msg), "Collision Player-Solid %d: (%f,%f,%f) (%f,%f,%f)\n",++proof, point1.x, point1.y, point1.z, point2.x, point2.y, point2.z);
+			//sprintf_s(msg, sizeof(msg), "Collision Player-Solid %d: (%f,%f,%f) (%f,%f,%f)\n",++proof, point1[0], point1[1], point1[2], point2[0], point2[1], point2[2]);
 			//OutputDebugString(msg);
 
 			//Global::printCollisionableObjectPosition( object );
 			//Global::printCollisionableObjectPosition( Player::getPlayer() );
 
 			// Insert collision to player-solid vector
-			PlayerSolidCollision playerSolidCollision(point1, point2);
-			playerSolidCollisionVector.push_back(playerSolidCollision);
+			playerSolidCollisionVector.emplace_back(D3DXVECTOR3(point1), D3DXVECTOR3(point2));
 		}
 
 		++itColl;

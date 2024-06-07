@@ -70,7 +70,8 @@ public:
 	void hitRecieved(AnimatedObject &object, const D3DXVECTOR3 &newFront);
 	bool isPlayerKicking() const;
 
-	void collisionDetected( AnimatedObject &object, const D3DXVECTOR3 &normal, D3DXVECTOR3 &additionalMovementInOut=D3DXVECTOR3(0.0f,0.0f,0.0f) );
+	void collisionDetected( AnimatedObject &object, const D3DXVECTOR3 &normal, D3DXVECTOR3 &additionalMovementInOut);
+	void collisionDetected(AnimatedObject& object, const D3DXVECTOR3& normal);
 	void solidCollisionDetected( AnimatedObject &object, const D3DXVECTOR3 &normal );
 	void fireballCollisionDetected( AnimatedObject &object );
 

@@ -188,7 +188,8 @@ IPlayerController * Player::controllerFactory(const std::string &controller) {
 	else if(controller=="sphere_player") {
 		// Obtain Player reference direction to obtain currentAngle
 		D3DXVECTOR3 referenceDirection;
-		D3DXVec3Cross(&referenceDirection, &(D3DXVECTOR3(0,1,0)), &localUp);
+		const D3DXVECTOR3 up(0, 1, 0);
+		D3DXVec3Cross(&referenceDirection, &up, &localUp);
 		Global::normalizeVector3(referenceDirection, referenceDirection);
 
 		float cosAngle = D3DXVec3Dot(&referenceDirection, &localFront);

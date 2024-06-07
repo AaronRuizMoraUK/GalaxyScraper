@@ -64,14 +64,15 @@ void CollisionableObject::setAngles(float yaw, float pitch) {
 
 void CollisionableObject::setCollisionPosition() {
 	if( collisionObjectHandle!=NULL ) {
-		D3DXVECTOR3 collisionPosition = position + collisionShapeHandle->collisionFixY*localUp;
-		DT_SetPosition(collisionObjectHandle, collisionPosition);
+		const D3DXVECTOR3 collisionPosition = position + collisionShapeHandle->collisionFixY*localUp;
+		const DT_Vector3 pos = { collisionPosition.x, collisionPosition.y, collisionPosition.z };
+		DT_SetPosition(collisionObjectHandle, pos);
 	}
 }
 
 void CollisionableObject::setCollisionTransformMatrix() {
 	if( collisionObjectHandle!=NULL ) {
-		DT_SetMatrixf(collisionObjectHandle, transformMatrix);
+		DT_SetMatrixf(collisionObjectHandle, static_cast<float*>(&transformMatrix.m[0][0]));
 		setCollisionPosition();
 	}
 }

@@ -67,12 +67,8 @@ IMesh * QuadFactory::createQuadMesh(float radiusSideX, float radiusSideY, unsign
 
 			// Update min and max point
 			D3DXVECTOR3 vertex(v[iy].x, v[iy].y, v[iy].z);
-			for(int i=0; i<3; ++i) {
-				if(vertex[i]<minPoint[i])
-					minPoint[i]=vertex[i];
-				else if(vertex[i]>maxPoint[i])
-					maxPoint[i]=vertex[i];
-			}
+			minPoint = D3DXVECTOR3::Min(minPoint, vertex);
+			maxPoint = D3DXVECTOR3::Max(maxPoint, vertex);
 		}
 	}
 

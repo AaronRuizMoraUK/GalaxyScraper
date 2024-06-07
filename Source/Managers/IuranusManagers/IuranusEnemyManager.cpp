@@ -252,8 +252,9 @@ void IuranusEnemyManager::createEnemy(const D3DXVECTOR3 &createWhere, const std:
 	Global::normalizeVector3(localUp, localUp);
 
 	D3DXVECTOR3 localLeft;
-	assert( localUp != D3DXVECTOR3(0,1,0) );
-	D3DXVec3Cross(&localLeft, &localUp, &D3DXVECTOR3(0,1,0));
+	const D3DXVECTOR3 up(0, 1, 0);
+	assert( localUp != up);
+	D3DXVec3Cross(&localLeft, &localUp, &up);
 	Global::normalizeVector3(localLeft, localLeft);
 
 	D3DXVECTOR3 localFront;

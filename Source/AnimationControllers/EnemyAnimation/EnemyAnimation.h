@@ -76,7 +76,8 @@ public:
 
 	void fallDown( AnimatedObject &object, float deltaTime );
 
-	void collisionDetected( AnimatedObject &object, const D3DXVECTOR3 &normal, D3DXVECTOR3 &additionalMovementInOut=D3DXVECTOR3(0.0f,0.0f,0.0f) );
+	void collisionDetected( AnimatedObject &object, const D3DXVECTOR3 &normal, D3DXVECTOR3 &additionalMovementInOut);
+	void collisionDetected(AnimatedObject& object, const D3DXVECTOR3& normal);
 
 private:
 	void follow( AnimatedObject &object, const D3DXVECTOR3 &aim, float speed, float deltaTime=(1.0f/60.0f) );

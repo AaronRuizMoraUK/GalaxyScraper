@@ -108,10 +108,14 @@ void Camera::update(float deltaTime) {
 */
 void Camera::activate() const {
 	// Set View Matrix to the Device
-	Global::device->SetTransform( D3DTS_VIEW, &matView );
+	D3DMATRIX view;
+	memcpy(view.m, matView.m, sizeof(view.m));
+	Global::device->SetTransform( D3DTS_VIEW, &view );
 
 	// Set Projection Matrix to the Device
-	Global::device->SetTransform( D3DTS_PROJECTION, &matProj );
+	D3DMATRIX proj;
+	memcpy(proj.m, matView.m, sizeof(proj.m));
+	Global::device->SetTransform( D3DTS_PROJECTION, &proj);
 }
 
 void Camera::loadDummyCameraController() {
@@ -219,7 +223,8 @@ void Camera::calculateUpVector() {
 	D3DXVECTOR3 cameraPlayerDirection = playerPosition - position;
 	Global::normalizeVector3(cameraPlayerDirection, cameraPlayerDirection);
 	D3DXVECTOR3 leftVector;
-	D3DXVec3Cross(&leftVector, &(D3DXVECTOR3(0,1,0)), &cameraPlayerDirection);
+	const D3DXVECTOR3 up(0, 1, 0);
+	D3DXVec3Cross(&leftVector, &up, &cameraPlayerDirection);
 	Global::normalizeVector3(leftVector, leftVector);
 	D3DXVec3Cross(&upVector, &cameraPlayerDirection, &leftVector);
 }

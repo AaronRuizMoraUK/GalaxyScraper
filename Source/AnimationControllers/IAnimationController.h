@@ -30,9 +30,10 @@ public:
 	
 	virtual const std::string & getControllerType () const = 0;
 
-	virtual void collisionDetected( AnimatedObject &object,
-									const D3DXVECTOR3 &normal,
-									D3DXVECTOR3 &additionalMovementInOut=D3DXVECTOR3(0.0f,0.0f,0.0f) )
+	virtual void collisionDetected( AnimatedObject &object, const D3DXVECTOR3 &normal, D3DXVECTOR3 &additionalMovementInOut )
+	{
+	};
+	virtual void collisionDetected(AnimatedObject& object, const D3DXVECTOR3& normal)
 	{
 	};
 	virtual void solidCollisionDetected( AnimatedObject &object, const D3DXVECTOR3 &normal ) {};

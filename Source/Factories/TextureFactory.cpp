@@ -23,6 +23,7 @@ Texture TextureFactory::createTexture(const std::string &filename) {
 		std::string pathFilename = pathToShader + filename;
 
 		Texture texture = NULL;
+#ifdef D3DX9_SUPPORTED
 		/*
 		// Use D3DX to create a texture from a file based image
 		if( FAILED( D3DXCreateTextureFromFile( Global::device,
@@ -51,6 +52,7 @@ Texture TextureFactory::createTexture(const std::string &filename) {
 
 			return NULL;
 		}
+#endif
 
 		texturesMap[filename]=texture;
 		return texture;

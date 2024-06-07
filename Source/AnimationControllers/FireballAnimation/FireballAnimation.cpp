@@ -43,7 +43,8 @@ void FireballAnimation::move(AnimatedObject &object, float deltaTime)
 	isFalling = (y < 0.0f);
 	D3DXVECTOR3 newPos; 
 
-	D3DXVec3TransformCoord( &newPos, &D3DXVECTOR3(x, y, 0), &(transformMatrix) );
+	const D3DXVECTOR3 pos(x, y, 0);
+	D3DXVec3TransformCoord( &newPos, &pos, &(transformMatrix) );
 
 	object.setPosition(newPos);
 }

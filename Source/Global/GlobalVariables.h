@@ -24,7 +24,9 @@ namespace Global {
 	//-----------------------------------------------------------------------------
 	extern DeviceCreator	deviceCreator;	// Used to create the Device
 	extern Device			device;			// Our rendering device
+#ifdef D3DX9_SUPPORTED
 	extern LPD3DXFONT		font;			// For printing
+#endif
 
 	//-----------------------------------------------------------------------------
 	// Global variables
