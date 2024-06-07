@@ -3,7 +3,7 @@
 
 #include <vector>
 #include "Logic/LogicVolume/LogicVolume.h"
-#include "Expat/XMLParser.h"
+#include "XMLParser/XMLParser.h"
 #include "Util/MapComparers/MapComparers.h"
 
 /**

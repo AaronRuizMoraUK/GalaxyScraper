@@ -3,7 +3,7 @@
 
 #include <map>
 #include "Object/CollisionableObject/AnimatedObject/IntelligentObject/IntelligentObject.h"
-#include "Expat/XMLParser.h"
+#include "XMLParser/XMLParser.h"
 
 /**
 * Manager of Iuranus animated objects.

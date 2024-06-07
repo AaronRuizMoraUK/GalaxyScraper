@@ -4,7 +4,7 @@
 #include <map>
 #include "Object/CollisionableObject/AnimatedObject/AnimatedObject.h"
 #include "AnimationControllers/KeyFramed/RigidAnimationResource.h"
-#include "Expat/XMLParser.h"
+#include "XMLParser/XMLParser.h"
 
 /**
 * Manager of Iuranus animated objects.

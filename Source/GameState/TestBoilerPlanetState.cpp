@@ -343,7 +343,7 @@ void TestBoilerPlanetState::onLoad( ) {
 	player->setPosition( planetPosition+D3DXVECTOR3(0.0f,0.0f,45.0f) );
 
 	if( Game::configOptions.quality == "high" )
-		Global::enabledRenderTexture = true;
+		Global::enabledRenderTexture = RenderToSurfaceSupported;
 	else
 		Global::enabledRenderTexture = false;
 

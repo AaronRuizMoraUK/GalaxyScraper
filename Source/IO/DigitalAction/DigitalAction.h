@@ -3,7 +3,7 @@
 
 #include <Windows.h>
 #include <vector>
-#include "Expat/XMLParser.h"
+#include "XMLParser/XMLParser.h"
 #include <sstream>
 
 enum InputDevices {KEYBOARD, /*MOUSE,*/ GAMEPAD, XBOX360GAMEPAD};

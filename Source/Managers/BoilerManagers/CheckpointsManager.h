@@ -4,7 +4,7 @@
 #include <Windows.h>
 #include <map>
 #include "Directx/Directx.h"
-#include "Expat/XMLParser.h"
+#include "XMLParser/XMLParser.h"
 
 /**
 * Manager of boiler checkpoints.

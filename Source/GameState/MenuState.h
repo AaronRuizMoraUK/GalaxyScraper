@@ -6,7 +6,7 @@
 #include "Object/CollisionableObject/AnimatedObject/AnimatedObject.h"
 #include "Object/Object.h"
 #include "AnimationControllers/KeyFramed/RigidAnimationResource.h"
-#include "Expat/XMLParser.h"
+#include "XMLParser/XMLParser.h"
 
 /**
 * Menu game state

@@ -7,7 +7,7 @@
 #include "Util/StringRender/AlphabetRender.h"
 #include "Util/StringRender/XBOXButtonsRender.h"
 #include "Util/StringRender/PadButtonsRender.h"
-#include "Expat/XMLParser.h"
+#include "XMLParser/XMLParser.h"
 #include "Util/MapComparers/MapComparers.h"
 #include "Util/Fade/Fade.h"
 #include <set>

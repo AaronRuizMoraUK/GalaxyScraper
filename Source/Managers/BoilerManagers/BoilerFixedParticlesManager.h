@@ -3,7 +3,7 @@
 
 #include <list>
 #include "Particles/OwnParticles/ParticleEmitter.h"
-#include "Expat/XMLParser.h"
+#include "XMLParser/XMLParser.h"
 
 class AnimatedObject;
 

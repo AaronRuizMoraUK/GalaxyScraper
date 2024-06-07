@@ -21,7 +21,7 @@
 //- ACORDARSE DE QUITAR EL BOLEANO DIE EN EL UPDATE DE BOILERSTAE
 //- ACORDARSE DE QUITAR LOS isPushed
 
-#include "Game.h"
+#include "Game/Game.h"
 
 /**
 * The application's entry point

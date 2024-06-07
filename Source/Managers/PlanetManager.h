@@ -4,7 +4,7 @@
 #include <map>
 #include "Object/Planet/Planet.h"
 #include "Util/MapComparers/MapComparers.h"
-#include "Expat/XMLParser.h"
+#include "XMLParser/XMLParser.h"
 
 /**
 * Manager of planets.

@@ -5,7 +5,7 @@
 #include "Object/Object.h"
 #include "Mesh/IMesh.h"
 #include "Util/MapComparers/MapComparers.h"
-#include "Expat/XMLParser.h"
+#include "XMLParser/XMLParser.h"
 
 //#define ATMPH_QUAD_SCALE 1.25f
 //#define ATMPH_QUAD_VERTEX_PER_AXIS 3

@@ -2,7 +2,7 @@
 #define IURANUS_PLANET_LOGIC_H
 
 #include "Logic/PlanetLogic/IPlanetLogic.h"
-#include "Expat/XMLParser.h"
+#include "XMLParser/XMLParser.h"
 
 /**
 * Iuranus planet logic. This makes the gameplay of

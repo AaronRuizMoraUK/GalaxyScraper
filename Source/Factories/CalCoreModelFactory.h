@@ -5,7 +5,7 @@
 #include <map>
 #include <string>
 #include "cal3d/cal3d.h"
-#include "Expat/XMLParser.h"
+#include "XMLParser/XMLParser.h"
 #include "Util/MapComparers/MapComparers.h"
 
 /**

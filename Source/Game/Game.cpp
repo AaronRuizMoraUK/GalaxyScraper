@@ -93,7 +93,7 @@ void Game::onStartElement (const std::string &elem, MKeyValue &atts) {
 				configOptions.quality = "high";
 		}
 		if( configOptions.quality == "high" )
-			Global::enabledRenderTexture = true;
+			Global::enabledRenderTexture = RenderToSurfaceSupported;
 		else
 			Global::enabledRenderTexture = false;
 
@@ -340,7 +340,7 @@ LRESULT WINAPI MsgProc( HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam )
 				Global::showStatistic = !Global::showStatistic;
 
 			// ENABLE/DISABLE RENDER TEXTURE
-			if(chCharCode=='g' || chCharCode=='G')
+			if(RenderToSurfaceSupported && (chCharCode=='g' || chCharCode=='G'))
 				Global::enabledRenderTexture = !Global::enabledRenderTexture;
 
 			// TAKE SCREENSHOT

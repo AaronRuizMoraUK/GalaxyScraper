@@ -3,7 +3,7 @@
 
 #include "IGameState.h"
 #include "AnimationControllers/KeyFramed/RigidAnimationResource.h"
-#include "Expat/XMLParser.h"
+#include "XMLParser/XMLParser.h"
 
 /**
 * Test ROA state

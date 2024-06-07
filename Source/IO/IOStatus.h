@@ -6,7 +6,7 @@
 #include "IO/DigitalAction/DigitalAction.h"
 #include "IO/AnalogAction/AnalogAction.h"
 #include "Util/Timeout/Timeout.h"
-#include "Expat/XMLParser.h"
+#include "XMLParser/XMLParser.h"
 #include <sstream>
 
 

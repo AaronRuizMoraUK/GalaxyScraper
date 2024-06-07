@@ -4,7 +4,7 @@
 #include <Windows.h>
 #include <map>
 #include "Object/CollisionableObject/AnimatedObject/AnimatedObject.h"
-#include "Expat/XMLParser.h"
+#include "XMLParser/XMLParser.h"
 #include "AnimationControllers/KeyFramed/RigidAnimationResource.h"
 
 /**

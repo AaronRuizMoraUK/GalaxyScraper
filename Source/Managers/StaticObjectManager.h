@@ -3,7 +3,7 @@
 
 #include <vector>
 #include "Object/CollisionableObject/CollisionableObject.h"
-#include "Expat/XMLParser.h"
+#include "XMLParser/XMLParser.h"
 
 /**
 * Manager of static objects.

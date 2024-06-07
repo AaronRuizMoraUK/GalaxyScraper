@@ -3,7 +3,7 @@
 
 #include "Logic/PlanetLogic/IPlanetLogic.h"
 #include "Logic/PlanetLogic/BoilerPlanetLogic/BoilerZoneLogic.h"
-#include "Expat/XMLParser.h"
+#include "XMLParser/XMLParser.h"
 
 /**
 * Boiler planet logic. This makes the gameplay of

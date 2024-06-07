@@ -4,7 +4,7 @@
 #include "Object/CollisionableObject/AnimatedObject/AnimatedObject.h"
 #include "AIControllers/AISlots/Slot.h"
 #include "PlayerControllers/IPlayerController.h"
-#include "Expat/XMLParser.h"
+#include "XMLParser/XMLParser.h"
 #include "Util/SpatialPartitioner/PolarAnglesPartitioner.h"
 
 /**

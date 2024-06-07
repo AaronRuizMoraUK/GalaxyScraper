@@ -4,7 +4,7 @@
 #include <Windows.h>
 #include <map>
 #include "Object/CollisionableObject/AnimatedObject/IntelligentObject/IntelligentObject.h"
-#include "Expat/XMLParser.h"
+#include "XMLParser/XMLParser.h"
 
 // Don't render neither reloadShader needed, 'cause it's printed via particles only.
 

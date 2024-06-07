@@ -2,7 +2,7 @@
 #define IURANUS_FIXED_PARTICLES_MANAGER_H
 
 #include <list>
-#include "Expat/XMLParser.h"
+#include "XMLParser/XMLParser.h"
 #include "Particles/OwnParticles/ParticleEmitter.h"
 
 class AnimatedObject;

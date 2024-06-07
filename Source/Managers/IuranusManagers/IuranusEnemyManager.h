@@ -5,7 +5,7 @@
 #include "Object/CollisionableObject/AnimatedObject/IntelligentObject/IntelligentObject.h"
 #include "AnimationControllers/EnemyAnimation/EnemyAnimation.h"
 #include "Util/MapComparers/MapComparers.h"
-#include "Expat/XMLParser.h"
+#include "XMLParser/XMLParser.h"
 
 typedef std::list<AnimatedObject *> Foolisheds;
 typedef std::list<IntelligentObject *> EnemiesEaten;

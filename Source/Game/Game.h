@@ -2,7 +2,7 @@
 #define GAME_H
 
 #include <Windows.h>
-#include "Expat/XMLParser.h"
+#include "XMLParser/XMLParser.h"
 #include "GameState/OptionsState.h"
 
 /**

@@ -3,7 +3,7 @@
 
 #include <map>
 #include "Object/Object.h"
-#include "Expat/XMLParser.h"
+#include "XMLParser/XMLParser.h"
 
 /**
 * Manager of static 2D objects.

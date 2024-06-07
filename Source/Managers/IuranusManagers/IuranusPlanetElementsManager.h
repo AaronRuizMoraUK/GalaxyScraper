@@ -5,7 +5,7 @@
 #include "Object/CollisionableObject/AnimatedObject/IntelligentObject/IntelligentObject.h"
 #include "AIControllers/AISlots/Slot.h"
 #include "Util/MapComparers/MapComparers.h"
-#include "Expat/XMLParser.h"
+#include "XMLParser/XMLParser.h"
 
 // TODO
 //#define MOUTH_RADIUS 3.2f

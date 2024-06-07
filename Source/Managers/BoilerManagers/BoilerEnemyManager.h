@@ -3,7 +3,7 @@
 
 #include <Windows.h>
 #include <map>
-#include "Expat/XMLParser.h"
+#include "XMLParser/XMLParser.h"
 #include "Object/CollisionableObject/AnimatedObject/IntelligentObject/IntelligentObject.h"
 #include "AIControllers/BoilerBehaviour/BoilerBehaviour.h"
 
