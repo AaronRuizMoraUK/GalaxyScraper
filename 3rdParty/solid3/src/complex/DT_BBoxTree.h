@@ -29,8 +29,8 @@
 
 #include "DT_Convex.h"
 #include "DT_CBox.h"
-//#include "DT_Complex.h"
 
+ DT_CBox computeCBox(MT_Scalar margin, const MT_Transform& xform);
 
 class DT_BBoxTree {
 public:

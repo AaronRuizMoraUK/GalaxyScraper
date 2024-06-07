@@ -104,8 +104,6 @@ public:
 	DT_BBoxTree::NodeType  m_type;
 };
 
-DT_CBox computeCBox(MT_Scalar margin, const MT_Transform& xform);
-
 #endif
 
 
