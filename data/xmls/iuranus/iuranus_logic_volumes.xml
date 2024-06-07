@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<volumes>
+  <!-- The center of these volumes must be with the planet in the center of the world  -->
+  
+  
+  <volume type="sphere" name="mouth" check_for_player="1" center="0 11.2 0" radius="3"/>
+  <volume type="sphere" name="ass" check_for_player="1" center="0 -15.2 0" radius="1.3"/>
+  <volume type="sphere" name="expel_mouth" check_for_player="0" center="0 12 0" radius="7.5"/>
+  <volume type="sphere" name="expel_ass" check_for_player="0" center="0 -13.5 0" radius="4"/>
+  <volume type="sphere" name="mouth_for_enemies" check_for_player="0" center="0 11.2 0" radius="3.15"/>
+  <volume type="sphere" name="focus_ass" check_for_player="1" center="0 -15.5 0" radius="9"/>
+  
+  <volume type="sphere" name="birth_point_1" check_for_player="0" center="-10.168 1.616 10.64" radius="0.5"/>
+  <volume type="sphere" name="birth_point_2" check_for_player="0" center="-10.083 -3.337 -10.64" radius="0.5"/>
+  <volume type="sphere" name="birth_point_3" check_for_player="0" center="5.696 8.738 -10.649" radius="0.5"/>
+  <volume type="sphere" name="birth_point_4" check_for_player="0" center="10.187 -4.366 -10.313" radius="0.5"/>
+  <volume type="sphere" name="birth_point_5" check_for_player="0" center="8.615 -8.764 8.607" radius="0.5"/>
+  <volume type="sphere" name="birth_point_6" check_for_player="0" center="12.394 5.2 5.796" radius="0.5"/>
+  <volume type="sphere" name="birth_point_7" check_for_player="0" center="1.68 -4.25 14" radius="0.5"/>
+
+  <volume type="sphere" name = "bush_1" check_for_player="1" center = "2.63766 12.3228 -7.99386" radius = "1" />
+  <volume type="sphere" name = "bush_2" check_for_player="1" center = "-0.104676 12.3258 -8.81742" radius = "1" />
+  <volume type="sphere" name = "bush_3" check_for_player="1" center = "-2.39171 13.1619 -6.69897" radius = "1" />
+  <volume type="sphere" name = "bush_4" check_for_player="1" center = "-6.43623 12.703 -4.59583" radius = "1" />
+  <volume type="sphere" name = "bush_5" check_for_player="1" center = "-6.65421 13.1977 -0.953329" radius = "1" />
+  <volume type="sphere" name = "bush_6" check_for_player="1" center = "-6.08262 13.7368 3.01301" radius = "1" />
+  <volume type="sphere" name = "bush_7" check_for_player="1" center = "-3.3124 13.3208 5.97632" radius = "1" />
+  <volume type="sphere" name = "bush_8" check_for_player="1" center = "2.34295 13.3025 7.26161" radius = "1" />
+  <volume type="sphere" name = "bush_9" check_for_player="1" center = "6.03316 13.3927 3.53241" radius = "1" />
+  <volume type="sphere" name = "bush_10" check_for_player="1" center = "5.83648 13.8545 0.0540794" radius = "1" />
+  <volume type="sphere" name = "bush_11" check_for_player="1" center = "6.66178 12.8884 -4.48702" radius = "1" />
+  <volume type="sphere" name = "bush_12" check_for_player="1" center = "6.93992 13.3057 -1.98352" radius = "1" />
+  <volume type="sphere" name = "bush_13" check_for_player="1" center = "6.96873 12.6255 2.34906" radius = "1" />
+  <volume type="sphere" name = "bush_14" check_for_player="1" center = "7.68957 12.631 0.222924" radius = "1" />
+  <volume type="sphere" name = "bush_15" check_for_player="1" center = "6.03872 12.6237 5.10306" radius = "1" />
+  <volume type="sphere" name = "bush_16" check_for_player="1" center = "5.43386 11.06 8.6404" radius = "1" />
+  <volume type="sphere" name = "bush_17" check_for_player="1" center = "2.89939 12.0007 9.27578" radius = "1" />
+  <volume type="sphere" name = "bush_18" check_for_player="1" center = "0.108704 12.486 8.32726" radius = "1" />
+  <volume type="sphere" name = "bush_19" check_for_player="1" center = "-3.78217 11.7102 8.9479" radius = "1" />
+  <volume type="sphere" name = "bush_20" check_for_player="1" center = "-2.06914 12.6168 7.65454" radius = "1" />
+  <volume type="sphere" name = "bush_21" check_for_player="1" center = "-5.57863 12.8039 6.32741" radius = "1" />
+  <volume type="sphere" name = "bush_22" check_for_player="1" center = "-6.39943 13.3973 1.57778" radius = "1" />
+  <volume type="sphere" name = "bush_23" check_for_player="1" center = "-7.89522 12.5496 2.33299" radius = "1" />
+  <volume type="sphere" name = "bush_24" check_for_player="1" center = "-8.57304 12.1509 -2.41574" radius = "1" />
+  <volume type="sphere" name = "bush_25" check_for_player="1" center = "-4.70647 12.4115 -6.89746" radius = "1" />
+  <volume type="sphere" name = "bush_26" check_for_player="1" center = "-3.11055 11.204 -9.74518" radius = "1" />
+  <volume type="sphere" name = "bush_27" check_for_player="1" center = "3.98991 13.0631 -5.94543" radius = "1" />
+  <volume type="sphere" name = "bush_28" check_for_player="1" center = "6.18798 11.9878 -6.81511" radius = "1" />
+  <volume type="sphere" name = "bush_29" check_for_player="1" center = "3.72598 12.4177 -7.39146" radius = "1" />
+  <volume type="sphere" name = "bush_30" check_for_player="1" center = "1.14145 13.293 -6.88811" radius = "1" />
+  <volume type="sphere" name = "bush_31" check_for_player="1" center = "-2.21233 12.3116 -8.33503" radius = "1" />
+  <volume type="sphere" name = "bush_32" check_for_player="1" center = "-6.26718 11.6925 -6.44698" radius = "1" />
+  <volume type="sphere" name = "bush_33" check_for_player="1" center = "-8.4516 11.5528 -4.68729" radius = "1" />
+  <volume type="sphere" name = "bush_34" check_for_player="1" center = "-8.73508 12.2559 -0.305353" radius = "1" />
+  <volume type="sphere" name = "bush_35" check_for_player="1" center = "-8.98132 11.3397 4.3032" radius = "1" />
+  <volume type="sphere" name = "bush_36" check_for_player="1" center = "-7.4974 12.5498 4.74839" radius = "1" />
+  <volume type="sphere" name = "bush_37" check_for_player="1" center = "-1.08585 12.0815 8.79547" radius = "1" />
+  <volume type="sphere" name = "bush_38" check_for_player="1" center = "4.70483 12.704 7.45798" radius = "1" />
+  <volume type="sphere" name = "bush_39" check_for_player="1" center = "8.64975 11.2294 3.19144" radius = "1" />
+  <volume type="sphere" name = "bush_40" check_for_player="1" center = "8.70017 11.8227 -3.18965" radius = "1" />
+  <volume type="sphere" name = "bush_41" check_for_player="1" center = "5.15388 -14.2267 -3.83378" radius = "1" />
+  <volume type="sphere" name = "bush_42" check_for_player="1" center = "3.37362 -14.2956 -6.79395" radius = "1" />
+  <volume type="sphere" name = "bush_43" check_for_player="1" center = "0.327011 -13.7651 -7.57718" radius = "1" />
+  <volume type="sphere" name = "bush_44" check_for_player="1" center = "-3.34394 -13.0586 -7.89596" radius = "1" />
+  <volume type="sphere" name = "bush_45" check_for_player="1" center = "-5.84685 -13.5088 -4.00742" radius = "1" />
+  <volume type="sphere" name = "bush_46" check_for_player="1" center = "-7.46295 -13.7279 -0.0490741" radius = "1" />
+  <volume type="sphere" name = "bush_47" check_for_player="1" center = "-5.49758 -14.2681 3.07018" radius = "1" />
+  <volume type="sphere" name = "bush_48" check_for_player="1" center = "-2.435 -14.9697 3.67434" radius = "1" />
+  <volume type="sphere" name = "bush_49" check_for_player="1" center = "2.39062 -14.3892 5.36979" radius = "1" />
+  <volume type="sphere" name = "bush_50" check_for_player="1" center = "7.45179 -13.7284 2.18052" radius = "1" />
+  <volume type="sphere" name = "bush_51" check_for_player="1" center = "6.10443 -14.5614 -0.346491" radius = "1" />
+  <volume type="sphere" name = "bush_52" check_for_player="1" center = "5.21642 -14.0609 4.92389" radius = "1" />
+  <volume type="sphere" name = "bush_53" check_for_player="1" center = "-0.244771 -14.0324 6.35397" radius = "1" />
+  <volume type="sphere" name = "bush_54" check_for_player="1" center = "-7.89517 -13.1003 -2.06246" radius = "1" />
+  <volume type="sphere" name = "bush_55" check_for_player="1" center = "-6.28134 -12.4623 -7.10651" radius = "1" />
+  <volume type="sphere" name = "bush_56" check_for_player="1" center = "-3.35731 -13.509 6.95529" radius = "1" />
+  <volume type="sphere" name = "bush_57" check_for_player="1" center = "7.55772 -12.9112 -2.81862" radius = "1" />
+  <volume type="sphere" name = "bush_58" check_for_player="1" center = "2.6541 -12.7652 -9.25918" radius = "1" />
+  <volume type="sphere" name = "bush_59" check_for_player="1" center = "5.70022 -10.8951 -9.95276" radius = "1" />
+  <volume type="sphere" name = "bush_60" check_for_player="1" center = "8.55293 -7.73826 -10.261" radius = "1" />
+  <volume type="sphere" name = "bush_61" check_for_player="1" center = "7.5897 -3.83534 -13.126" radius = "1" />
+  <volume type="sphere" name = "bush_62" check_for_player="1" center = "12.3264 -0.503675 -9.37785" radius = "1" />
+  <volume type="sphere" name = "bush_63" check_for_player="1" center = "10.0338 3.81199 -10.427" radius = "1" />
+  <volume type="sphere" name = "bush_64" check_for_player="1" center = "6.91279 7.48552 -10.8419" radius = "1" />
+  <volume type="sphere" name = "bush_65" check_for_player="1" center = "6.31025 10.2443 -8.54519" radius = "1" />
+  <volume type="sphere" name = "bush_66" check_for_player="1" center = "6.86403 -12.8938 -6.67232" radius = "1" />
+  <volume type="sphere" name = "bush_67" check_for_player="1" center = "11.5097 -4.43774 -9.42425" radius = "1" />
+</volumes>

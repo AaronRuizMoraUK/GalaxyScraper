@@ -1,0 +1,7 @@
+--print_debug("open door part")
+save_camera()
+load_camera_dummy()
+position_camera_to_look_boiler_door()
+create_timer("after_door_part_opened", 3.0)
+boiler_door_next_animation()
+create_timer("restore_camera", 3.0)

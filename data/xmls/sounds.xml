@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<sounds>
+
+   <!-- MENU -->
+
+  <ambient name="menu_background" file="menu_background.mp3"/>							
+  <sample name="option_movement" file="menu_movement.wav"/>								
+  <sample name="option_fixed" file="menu_fixed.wav"/>									
+  <sample name="option_selected" file="menu_option_selected.wav"/>						
+
+  <!-- IURANUS -->
+  
+  <!-- ambient sounds -->
+  <ambient name="normal" file="iuranus.mp3"/>  											
+  <ambient name="stress" file="countdown.mp3"/>											
+  <ambient name="lose" file="gameover.mp3"/> 											
+  
+  <!-- player sounds -->
+  <sample name="player_kicking" file="player_kicking.wav"/>								
+  <sample name="player_hit_received_1" file="player_hit_received_1.wav"/>				
+  <sample name="player_hit_received_2" file="player_hit_received_2.wav"/>				
+  <sample name="player_walking_over_bush" file="player_walking_over_bush.wav"/>			
+  <sample name="player_jumping_1" file="player_jumping_1.wav"/>							
+  <sample name="player_jumping_2" file="player_jumping_2.wav"/>							
+  <sample name="player_expeled_by_ass_1" file="player_expeled_by_ass_1.wav"/>			
+  <sample name="player_expeled_by_ass_2" file="player_expeled_by_ass_2.wav"/>			
+  <sample name="player_expeled_by_ass_3" file="player_expeled_by_ass_3.wav"/>			
+  <sample name="player_expeled_by_ass_on_win" file="player_expeled_by_ass_on_win.wav"/>	
+  <sample name="player_being_swallowed" file="player_being_swallowed.wav"/>				
+
+  <!-- enemies sounds -->
+  <sample name="enemy_attacking_1" file="enemy_attack_1.wav"/>								
+  <sample name="enemy_attacking_2" file="enemy_attack_2.wav"/>							
+  <sample name="enemy_attacking_3" file="enemy_attack_3.wav"/>							
+  <sample name="enemy_attacking_4" file="enemy_attack_4.wav"/>							
+  <sample name="enemy_hit_received_1" file="enemy_hit_recieved_1.wav"/>					
+  <sample name="enemy_hit_received_2" file="enemy_hit_recieved_2.wav"/>					
+  <sample name="enemy_hit_received_3" file="enemy_hit_recieved_3.wav"/>
+  <sample name="enemy_foolished_1" file="enemy_foolished_1.wav"/>						
+  <sample name="enemy_foolished_2" file="enemy_foolished_2.wav"/>						
+  <sample name="enemy_foolished_3" file="enemy_foolished_3.wav"/>						
+  <sample name="enemy_foolished_4" file="enemy_foolished_4.wav"/>						
+  <sample name="enemy_running_away_1" file="enemy_running_away_1.wav"/>					
+  <sample name="enemy_running_away_2" file="enemy_running_away_2.wav"/>					
+  <sample name="enemy_running_away_3" file="enemy_running_away_3.wav"/>					
+  <sample name="enemy_running_away_from_mouth" file="enemy_running_away_all.wav"/>		
+  
+  <!-- mouth sounds -->
+  <sample name="mouth_eat_enemy" file="eat_enemy.wav"/>								
+  <sample name="mouth_eat_player" file="eat_player.wav"/>							
+  <sample name="mouth_swallow" file="mouth_swallow.wav"/>								
+  
+  <!-- ass sounds -->
+  <sample name="ass_little_fart" file="little_fart.wav"/>								
+  <sample name="ass_mid_fart_checkpoint_1" file="middle_fart.wav"/>						
+  <sample name="ass_mid_fart_checkpoint_2" file="middle_fart.wav"/>						
+  <sample name="ass_mid_fart_checkpoint_3" file="middle_fart.wav"/>						
+  <sample name="ass_strong_fart" file="strong_fart.wav"/>								
+
+  <!-- planet timeout beep sound -->
+  <sample name="timeout_beep" file="beep.wav"/>										
+  
+  <!-- TRANSITION -->
+  <ambient name="transition" file="approach.mp3"/>
+  <sample name="player_flying" file="player_flying.wav"/>				
+  
+  
+  <!-- BOILER -->
+  <ambient name="boiler" file="boiler.mp3"/>
+  
+  <sample name="magma" file="lava_with_bubbles.wav"/>						
+  <sample name="lever_metal_kick" file="lever_hit.wav"/>					
+  <sample name="lever_open" file="lever_open.wav"/>							
+  <sample name="open_door_short" file="open_door_short.wav"/>				
+  <sample name="open_door_long" file="open_door_long.wav"/>					
+  <sample name="open_door_short_earthquake" file="short_earthquake.wav"/> 	
+  <sample name="open_door_long_earthquake" file="long_earthquake.wav"/> 	
+  <sample name="platform_flame_thrower" file="flame.wav"/> 				
+  <sample name="fireball_thrown" file="fireball_thrown.wav"/>	
+  <sample name="player_clothes_burned" file="player_clothes_burning.wav"/>
+  <sample name="player_boiler_arrival" file="player_boiler_arrival.wav"/>
+  
+  <sample name="after_player_burned_1" file="player_burned_1.wav"/>			
+  <sample name="after_player_burned_2" file="player_burned_2.wav"/>			
+  
+  <sample name="cannon_open" file="cannon_open.wav"/>
+  <sample name="cannon_shot" file="cannon_shot.wav"/>
+  <sample name="boiler_explosion" file="boiler_explosion.wav"/>
+  <sample name="start_boss_sequence" file="start_boss_sequence.wav"/>
+  
+  <!-- OTHERS -->
+  <ambient name="to_be_continued" file="to_be_continued.mp3"/>
+
+</sounds>

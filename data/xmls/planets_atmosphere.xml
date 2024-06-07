@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<planet_atmospheres>
+  <planet_atmosphere planet_name="iuranus">
+    <material name="atmosphere_iuranus.dds" shader="shader.fx" technique="quad_tech"/>
+    <quad atmph_quad_scale="1.25" atmph_quad_vertex_per_axis="3"/>
+  </planet_atmosphere>
+  <planet_atmosphere planet_name="terror">
+    <material name="atmosphere_terror.dds" shader="shader.fx" technique="quad_tech"/>
+    <quad atmph_quad_scale="1.25" atmph_quad_vertex_per_axis="3"/>
+  </planet_atmosphere>
+  <planet_atmosphere planet_name="futbol">
+    <material name="atmosphere_boiler.dds" shader="shader.fx" technique="quad_tech"/>
+    <quad atmph_quad_scale="1.25" atmph_quad_vertex_per_axis="3"/>
+  </planet_atmosphere>
+  <planet_atmosphere planet_name="fongus">
+    <material name="atmosphere_fongus.dds" shader="shader.fx" technique="quad_tech"/>
+    <quad atmph_quad_scale="1.25" atmph_quad_vertex_per_axis="3"/>
+  </planet_atmosphere>
+  <planet_atmosphere planet_name="papaworu">
+    <material name="atmosphere_papaworu.dds" shader="shader.fx" technique="quad_tech"/>
+    <quad atmph_quad_scale="1.25" atmph_quad_vertex_per_axis="3"/>
+  </planet_atmosphere>
+  <planet_atmosphere planet_name="boiler">
+    <material name="atmosphere_boiler.dds" shader="shader.fx" technique="quad_tech"/>
+    <quad atmph_quad_scale="1.15" atmph_quad_vertex_per_axis="3"/>
+  </planet_atmosphere>
+</planet_atmospheres>

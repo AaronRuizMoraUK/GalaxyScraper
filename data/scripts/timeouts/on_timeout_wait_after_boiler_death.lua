@@ -1,0 +1,2 @@
+take_player_control_out_but_anim(false)
+set_fallen_condition(false)

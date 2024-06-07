@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<animated_objects>
+  <animated_object name="bush_1">
+    <localization transform="0.253179 -0.476314 -0.842036 0.959159 0.0100907 0.282687 -0.126151 -0.879217 0.459416 2.63766 12.3228 -7.99386"/>
+    <mesh type="cal3d" name="bush" graph="bush_graph" initial_cycle="idle" initial_action=""/>
+    <material name="bush.dds" shader="shader.fx" technique="skinning_tech"/>
+    <animation_controller name="bush_animation"/>
+  </animated_object>
+  <animated_object name="bush_2">
+    <localization transform="0.248348 -0.598277 -0.761832 0.966879 0.200921 0.157405 0.0588966 -0.77569 0.62836 -0.104676 12.3258 -8.81742"/>
+    <mesh type="cal3d" name="bush" graph="bush_graph" initial_cycle="idle" initial_action=""/>
+    <material name="bush.dds" shader="shader.fx" technique="skinning_tech"/>
+    <animation_controller name="bush_animation"/>
+  </animated_object>
+  <animated_object name="bush_3">
+    <localization transform="-0.952112 -0.2113 -0.220986 0.275568 -0.279927 -0.919621 0.132456 -0.936479 0.32475 -2.39171 13.1619 -6.69897"/>
+    <mesh type="cal3d" name="bush" graph="bush_graph" initial_cycle="idle" initial_action=""/>
+    <material name="bush.dds" shader="shader.fx" technique="skinning_tech"/>
+    <animation_controller name="bush_animation"/>
+  </animated_object>
+  <animated_object name="bush_4">
+    <localization transform="-0.685395 -0.52434 -0.505273 0.596396 -0.00610352 -0.802667 0.417787 -0.851487 0.316898 -6.43623 12.703 -4.59583"/>
+    <mesh type="cal3d" name="bush" graph="bush_graph" initial_cycle="idle" initial_action=""/>
+    <material name="bush.dds" shader="shader.fx" technique="skinning_tech"/>
+    <animation_controller name="bush_animation"/>
+  </animated_object>
+  <animated_object name="bush_5">
+    <localization transform="-0.903117 -0.388684 -0.182495 0.175551 0.0536442 -0.983008 0.391869 -0.919808 0.0197871 -6.65421 13.1977 -0.953329"/>
+    <mesh type="cal3d" name="bush" graph="bush_graph" initial_cycle="idle" initial_action=""/>
+    <material name="bush.dds" shader="shader.fx" technique="skinning_tech"/>
+    <animation_controller name="bush_animation"/>
+  </animated_object>
+  <animated_object name="bush_6">
+    <localization transform="-0.924506 -0.338726 -0.174795 0.111615 0.197902 -0.973846 0.36446 -0.919837 -0.145155 -6.08262 13.7368 3.01301"/>
+    <mesh type="cal3d" name="bush" graph="bush_graph" initial_cycle="idle" initial_action=""/>
+    <material name="bush.dds" shader="shader.fx" technique="skinning_tech"/>
+    <animation_controller name="bush_animation"/>
+  </animated_object>
+  <animated_object name="bush_7">
+    <localization transform="-0.987981 -0.104048 -0.114309 0.0683207 0.369412 -0.926751 0.138654 -0.923422 -0.357863 -3.3124 13.3208 5.97632"/>
+    <mesh type="cal3d" name="bush" graph="bush_graph" initial_cycle="idle" initial_action=""/>
+    <material name="bush.dds" shader="shader.fx" technique="skinning_tech"/>
+    <animation_controller name="bush_animation"/>
+  </animated_object>
+  <animated_object name="bush_8">
+    <localization transform="-0.979958 0.171046 -0.102109 0.129062 0.154696 -0.979496 -0.151743 -0.973043 -0.173671 2.34295 13.3025 7.26161"/>
+    <mesh type="cal3d" name="bush" graph="bush_graph" initial_cycle="idle" initial_action=""/>
+    <material name="bush.dds" shader="shader.fx" technique="skinning_tech"/>
+    <animation_controller name="bush_animation"/>
+  </animated_object>
+  <animated_object name="bush_9">
+    <localization transform="-0.683942 0.72525 0.0789672 0.301563 0.379617 -0.874615 -0.664292 -0.574372 -0.478344 6.03316 13.3927 3.53241"/>
+    <mesh type="cal3d" name="bush" graph="bush_graph" initial_cycle="idle" initial_action=""/>
+    <material name="bush.dds" shader="shader.fx" technique="skinning_tech"/>
+    <animation_controller name="bush_animation"/>
+  </animated_object>
+  <animated_object name="bush_10">
+    <localization transform="-0.829903 0.555628 -0.0503932 -0.0847732 -0.214863 -0.972958 -0.55143 -0.803188 0.225418 5.83648 13.8545 0.0540794"/>
+    <mesh type="cal3d" name="bush" graph="bush_graph" initial_cycle="idle" initial_action=""/>
+    <material name="bush.dds" shader="shader.fx" technique="skinning_tech"/>
+    <animation_controller name="bush_animation"/>
+  </animated_object>
+  <animated_object name="bush_11">
+    <localization transform="-0.829903 0.555628 -0.0503932 -0.0847732 -0.214863 -0.972958 -0.55143 -0.803188 0.225418 6.66178 12.8884 -4.48702"/>
+    <mesh type="cal3d" name="bush" graph="bush_graph" initial_cycle="idle" initial_action=""/>
+    <material name="bush.dds" shader="shader.fx" technique="skinning_tech"/>
+    <animation_controller name="bush_animation"/>
+  </animated_object>
+  <animated_object name="bush_12">
+    <localization transform="-0.800664 0.597262 0.0470666 0.0450395 0.138344 -0.98936 -0.597418 -0.790025 -0.137667 6.93992 13.3057 -1.98352"/>
+    <mesh type="cal3d" name="bush" graph="bush_graph" initial_cycle="idle" initial_action=""/>
+    <material name="bush.dds" shader="shader.fx" technique="skinning_tech"/>
+    <animation_controller name="bush_animation"/>
+  </animated_object>
+  <animated_object name="bush_13">
+    <localization transform="0.0561115 0.130068 -0.989916 0.752167 -0.657519 -0.043758 -0.65658 -0.742127 -0.134727 6.96873 12.6255 2.34906"/>
+    <mesh type="cal3d" name="bush" graph="bush_graph" initial_cycle="idle" initial_action=""/>
+    <material name="bush.dds" shader="shader.fx" technique="skinning_tech"/>
+    <animation_controller name="bush_animation"/>
+  </animated_object>
+  <animated_object name="bush_14">
+    <localization transform="0.0561115 0.130068 -0.989916 0.706432 -0.705817 -0.0526964 -0.705553 -0.696351 -0.131488 7.68957 12.631 0.222924"/>
+    <mesh type="cal3d" name="bush" graph="bush_graph" initial_cycle="idle" initial_action=""/>
+    <material name="bush.dds" shader="shader.fx" technique="skinning_tech"/>
+    <animation_controller name="bush_animation"/>
+  </animated_object>
+  <animated_object name="bush_15">
+    <localization transform="-0.015591 -0.144043 0.989449 -0.741728 0.665272 0.0851621 -0.67052 -0.732574 -0.117213 6.03872 12.6237 5.10306"/>
+    <mesh type="cal3d" name="bush" graph="bush_graph" initial_cycle="idle" initial_action=""/>
+    <material name="bush.dds" shader="shader.fx" technique="skinning_tech"/>
+    <animation_controller name="bush_animation"/>
+  </animated_object>
+  <animated_object name="bush_16">
+    <localization transform="-0.919001 0.17123 0.35513 -0.101655 0.767393 -0.633067 -0.380925 -0.61789 -0.687829 5.43386 11.06 8.6404"/>
+    <mesh type="cal3d" name="bush" graph="bush_graph" initial_cycle="idle" initial_action=""/>
+    <material name="bush.dds" shader="shader.fx" technique="skinning_tech"/>
+    <animation_controller name="bush_animation"/>
+  </animated_object>
+  <animated_object name="bush_17">
+    <localization transform="-0.763058 0.645434 -0.0340036 0.466638 0.513749 -0.719938 -0.447203 -0.565222 -0.693205 2.89939 12.0007 9.27578"/>
+    <mesh type="cal3d" name="bush" graph="bush_graph" initial_cycle="idle" initial_action=""/>
+    <material name="bush.dds" shader="shader.fx" technique="skinning_tech"/>
+    <animation_controller name="bush_animation"/>
+  </animated_object>
+  <animated_object name="bush_18">
+    <localization transform="-0.322192 0.656929 -0.681643 0.942914 0.286805 -0.16928 0.0842942 -0.697272 -0.711833 0.108704 12.486 8.32726"/>
+    <mesh type="cal3d" name="bush" graph="bush_graph" initial_cycle="idle" initial_action=""/>
+    <material name="bush.dds" shader="shader.fx" technique="skinning_tech"/>
+    <animation_controller name="bush_animation"/>
+  </animated_object>
+  <animated_object name="bush_19">
+    <localization transform="-0.234412 0.57235 -0.785791 0.970096 0.190082 -0.150942 0.0629733 -0.797675 -0.599791 -3.78217 11.7102 8.9479"/>
+    <mesh type="cal3d" name="bush" graph="bush_graph" initial_cycle="idle" initial_action=""/>
+    <material name="bush.dds" shader="shader.fx" technique="skinning_tech"/>
+    <animation_controller name="bush_animation"/>
+  </animated_object>
+  <animated_object name="bush_20">
+    <localization transform="-0.234412 0.57235 -0.785791 0.970096 0.190082 -0.150942 0.0629733 -0.797675 -0.599791 -2.06914 12.6168 7.65454"/>
+    <mesh type="cal3d" name="bush" graph="bush_graph" initial_cycle="idle" initial_action=""/>
+    <material name="bush.dds" shader="shader.fx" technique="skinning_tech"/>
+    <animation_controller name="bush_animation"/>
+  </animated_object>
+  <animated_object name="bush_21">
+    <localization transform="0.95587 0.187962 0.225793 -0.0484452 -0.657191 0.752166 0.289768 -0.729912 -0.619083 -5.57863 12.8039 6.32741"/>
+    <mesh type="cal3d" name="bush" graph="bush_graph" initial_cycle="idle" initial_action=""/>
+    <material name="bush.dds" shader="shader.fx" technique="skinning_tech"/>
+    <animation_controller name="bush_animation"/>
+  </animated_object>
+  <animated_object name="bush_22">
+    <localization transform="-0.211355 -0.211609 0.954228 -0.791361 -0.535943 -0.294131 0.573652 -0.817305 -0.0541852 -6.39943 13.3973 1.57778"/>
+    <mesh type="cal3d" name="bush" graph="bush_graph" initial_cycle="idle" initial_action=""/>
+    <material name="bush.dds" shader="shader.fx" technique="skinning_tech"/>
+    <animation_controller name="bush_animation"/>
+  </animated_object>
+  <animated_object name="bush_23">
+    <localization transform="-0.645896 -0.57198 0.505625 -0.386107 -0.326613 -0.862697 0.658589 -0.752438 -0.00988759 -7.89522 12.5496 2.33299"/>
+    <mesh type="cal3d" name="bush" graph="bush_graph" initial_cycle="idle" initial_action=""/>
+    <material name="bush.dds" shader="shader.fx" technique="skinning_tech"/>
+    <animation_controller name="bush_animation"/>
+  </animated_object>
+  <animated_object name="bush_24">
+    <localization transform="-0.643205 -0.556064 -0.526385 0.332674 0.416238 -0.846211 0.689649 -0.719402 -0.0827382 -8.57304 12.1509 -2.41574"/>
+    <mesh type="cal3d" name="bush" graph="bush_graph" initial_cycle="idle" initial_action=""/>
+    <material name="bush.dds" shader="shader.fx" technique="skinning_tech"/>
+    <animation_controller name="bush_animation"/>
+  </animated_object>
+  <animated_object name="bush_25">
+    <localization transform="-0.708073 -0.618284 -0.341112 0.554562 -0.187849 -0.810663 0.437142 -0.763176 0.475888 -4.70647 12.4115 -6.89746"/>
+    <mesh type="cal3d" name="bush" graph="bush_graph" initial_cycle="idle" initial_action=""/>
+    <material name="bush.dds" shader="shader.fx" technique="skinning_tech"/>
+    <animation_controller name="bush_animation"/>
+  </animated_object>
+  <animated_object name="bush_26">
+    <localization transform="-0.469293 -0.596313 -0.651287 0.865177 -0.162889 -0.474274 0.176728 -0.786052 0.592359 -3.11055 11.204 -9.74518"/>
+    <mesh type="cal3d" name="bush" graph="bush_graph" initial_cycle="idle" initial_action=""/>
+    <material name="bush.dds" shader="shader.fx" technique="skinning_tech"/>
+    <animation_controller name="bush_animation"/>
+  </animated_object>
+  <animated_object name="bush_27">
+    <localization transform="0.22892 -0.485915 -0.843494 0.960171 -0.0298956 0.277808 -0.160208 -0.873495 0.459718 3.98991 13.0631 -5.94543"/>
+    <mesh type="cal3d" name="bush" graph="bush_graph" initial_cycle="idle" initial_action=""/>
+    <material name="bush.dds" shader="shader.fx" technique="skinning_tech"/>
+    <animation_controller name="bush_animation"/>
+  </animated_object>
+  <animated_object name="bush_28">
+    <localization transform="0.748168 -0.619534 -0.237532 0.522873 0.330124 0.785889 -0.40847 -0.712177 0.570926 6.18798 11.9878 -6.81511"/>
+    <mesh type="cal3d" name="bush" graph="bush_graph" initial_cycle="idle" initial_action=""/>
+    <material name="bush.dds" shader="shader.fx" technique="skinning_tech"/>
+    <animation_controller name="bush_animation"/>
+  </animated_object>
+  <animated_object name="bush_29">
+    <localization transform="0.635468 -0.505808 -0.583385 0.751033 0.229512 0.619091 -0.179247 -0.831554 0.525727 3.72598 12.4177 -7.39146"/>
+    <mesh type="cal3d" name="bush" graph="bush_graph" initial_cycle="idle" initial_action=""/>
+    <material name="bush.dds" shader="shader.fx" technique="skinning_tech"/>
+    <animation_controller name="bush_animation"/>
+  </animated_object>
+  <animated_object name="bush_30">
+    <localization transform="0.647406 -0.520101 -0.5571 0.744841 0.276889 0.607079 -0.161488 -0.807977 0.566652 1.14145 13.293 -6.88811"/>
+    <mesh type="cal3d" name="bush" graph="bush_graph" initial_cycle="idle" initial_action=""/>
+    <material name="bush.dds" shader="shader.fx" technique="skinning_tech"/>
+    <animation_controller name="bush_animation"/>
+  </animated_object>
+  <animated_object name="bush_31">
+    <localization transform="0.923688 0.379749 0.0509155 -0.273752 0.561131 0.781148 0.26807 -0.735475 0.622266 -2.21233 12.3116 -8.33503"/>
+    <mesh type="cal3d" name="bush" graph="bush_graph" initial_cycle="idle" initial_action=""/>
+    <material name="bush.dds" shader="shader.fx" technique="skinning_tech"/>
+    <animation_controller name="bush_animation"/>
+  </animated_object>
+  <animated_object name="bush_32">
+    <localization transform="0.815585 0.53731 -0.214754 -0.190219 0.599474 0.777463 0.546478 -0.593237 0.591128 -6.26718 11.6925 -6.44698"/>
+    <mesh type="cal3d" name="bush" graph="bush_graph" initial_cycle="idle" initial_action=""/>
+    <material name="bush.dds" shader="shader.fx" technique="skinning_tech"/>
+    <animation_controller name="bush_animation"/>
+  </animated_object>
+  <animated_object name="bush_33">
+    <localization transform="0.530267 0.749172 0.396936 -0.563545 -0.0383357 0.825195 0.63343 -0.661265 0.401864 -8.4516 11.5528 -4.68729"/>
+    <mesh type="cal3d" name="bush" graph="bush_graph" initial_cycle="idle" initial_action=""/>
+    <material name="bush.dds" shader="shader.fx" technique="skinning_tech"/>
+    <animation_controller name="bush_animation"/>
+  </animated_object>
+  <animated_object name="bush_34">
+    <localization transform="0.395189 0.494995 0.773825 -0.638519 -0.457588 0.618795 0.660393 -0.738643 0.13523 -8.73508 12.2559 -0.305353"/>
+    <mesh type="cal3d" name="bush" graph="bush_graph" initial_cycle="idle" initial_action=""/>
+    <material name="bush.dds" shader="shader.fx" technique="skinning_tech"/>
+    <animation_controller name="bush_animation"/>
+  </animated_object>
+  <animated_object name="bush_35">
+    <localization transform="0.604743 0.324697 0.727226 -0.378381 -0.686344 0.621096 0.700795 -0.650772 -0.292203 -8.98132 11.3397 4.3032"/>
+    <mesh type="cal3d" name="bush" graph="bush_graph" initial_cycle="idle" initial_action=""/>
+    <material name="bush.dds" shader="shader.fx" technique="skinning_tech"/>
+    <animation_controller name="bush_animation"/>
+  </animated_object>
+  <animated_object name="bush_36">
+    <localization transform="0.185889 0.562053 -0.805941 0.711095 0.489097 0.505103 0.678078 -0.666994 -0.308755 -7.4974 12.5498 4.74839"/>
+    <mesh type="cal3d" name="bush" graph="bush_graph" initial_cycle="idle" initial_action=""/>
+    <material name="bush.dds" shader="shader.fx" technique="skinning_tech"/>
+    <animation_controller name="bush_animation"/>
+  </animated_object>
+  <animated_object name="bush_37">
+    <localization transform="0.161201 0.696814 -0.698902 0.973178 0.0055416 0.229987 0.164131 -0.71723 -0.677231 -1.08585 12.0815 8.79547"/>
+    <mesh type="cal3d" name="bush" graph="bush_graph" initial_cycle="idle" initial_action=""/>
+    <material name="bush.dds" shader="shader.fx" technique="skinning_tech"/>
+    <animation_controller name="bush_animation"/>
+  </animated_object>
+  <animated_object name="bush_38">
+    <localization transform="-0.550059 0.761009 -0.343947 0.642921 0.123026 -0.755988 -0.532999 -0.636969 -0.55694 4.70483 12.704 7.45798"/>
+    <mesh type="cal3d" name="bush" graph="bush_graph" initial_cycle="idle" initial_action=""/>
+    <material name="bush.dds" shader="shader.fx" technique="skinning_tech"/>
+    <animation_controller name="bush_animation"/>
+  </animated_object>
+  <animated_object name="bush_39">
+    <localization transform="-0.784984 0.563574 -0.257262 0.296541 -0.0227832 -0.954748 -0.543933 -0.825751 -0.149238 8.64975 11.2294 3.19144"/>
+    <mesh type="cal3d" name="bush" graph="bush_graph" initial_cycle="idle" initial_action=""/>
+    <material name="bush.dds" shader="shader.fx" technique="skinning_tech"/>
+    <animation_controller name="bush_animation"/>
+  </animated_object>
+  <animated_object name="bush_40">
+    <localization transform="-0.385044 0.173575 -0.906429 0.55119 -0.7445 -0.376708 -0.740223 -0.644664 0.190992 8.70017 11.8227 -3.18965"/>
+    <mesh type="cal3d" name="bush" graph="bush_graph" initial_cycle="idle" initial_action=""/>
+    <material name="bush.dds" shader="shader.fx" technique="skinning_tech"/>
+    <animation_controller name="bush_animation"/>
+  </animated_object>
+  <animated_object name="bush_41">
+    <localization transform="0.598393 0.35634 -0.717599 -0.727816 -0.132704 -0.67281 -0.334977 0.924885 0.17994 5.15388 -14.2267 -3.83378"/>
+    <mesh type="cal3d" name="bush" graph="bush_graph" initial_cycle="idle" initial_action=""/>
+    <material name="bush.dds" shader="shader.fx" technique="skinning_tech"/>
+    <animation_controller name="bush_animation"/>
+  </animated_object>
+  <animated_object name="bush_42">
+    <localization transform="-0.471372 -0.109677 -0.875089 -0.793679 -0.379896 0.475133 -0.384554 0.918504 0.0920239 3.37362 -14.2956 -6.79395"/>
+    <mesh type="cal3d" name="bush" graph="bush_graph" initial_cycle="idle" initial_action=""/>
+    <material name="bush.dds" shader="shader.fx" technique="skinning_tech"/>
+    <animation_controller name="bush_animation"/>
+  </animated_object>
+  <animated_object name="bush_43">
+    <localization transform="-0.647374 0.497283 -0.577595 -0.753051 -0.30044 0.585363 0.117558 0.813908 0.568976 0.327011 -13.7651 -7.57718"/>
+    <mesh type="cal3d" name="bush" graph="bush_graph" initial_cycle="idle" initial_action=""/>
+    <material name="bush.dds" shader="shader.fx" technique="skinning_tech"/>
+    <animation_controller name="bush_animation"/>
+  </animated_object>
+  <animated_object name="bush_44">
+    <localization transform="-0.647374 0.497283 -0.577595 -0.753051 -0.30044 0.585363 0.117558 0.813908 0.568976 -3.34394 -13.0586 -7.89596"/>
+    <mesh type="cal3d" name="bush" graph="bush_graph" initial_cycle="idle" initial_action=""/>
+    <material name="bush.dds" shader="shader.fx" technique="skinning_tech"/>
+    <animation_controller name="bush_animation"/>
+  </animated_object>
+  <animated_object name="bush_45">
+    <localization transform="-0.425557 0.444862 -0.788035 -0.861752 0.0665639 0.502943 0.276195 0.893122 0.355034 -5.84685 -13.5088 -4.00742"/>
+    <mesh type="cal3d" name="bush" graph="bush_graph" initial_cycle="idle" initial_action=""/>
+    <material name="bush.dds" shader="shader.fx" technique="skinning_tech"/>
+    <animation_controller name="bush_animation"/>
+  </animated_object>
+  <animated_object name="bush_46">
+    <localization transform="-0.217607 0.0726841 0.973326 0.794905 -0.565465 0.219944 0.566369 0.821563 0.0652722 -7.46295 -13.7279 -0.0490741"/>
+    <mesh type="cal3d" name="bush" graph="bush_graph" initial_cycle="idle" initial_action=""/>
+    <material name="bush.dds" shader="shader.fx" technique="skinning_tech"/>
+    <animation_controller name="bush_animation"/>
+  </animated_object>
+  <animated_object name="bush_47">
+    <localization transform="0.456877 0.214711 0.863228 0.823894 -0.467997 -0.319653 0.335355 0.85725 -0.390716 -5.49758 -14.2681 3.07018"/>
+    <mesh type="cal3d" name="bush" graph="bush_graph" initial_cycle="idle" initial_action=""/>
+    <material name="bush.dds" shader="shader.fx" technique="skinning_tech"/>
+    <animation_controller name="bush_animation"/>
+  </animated_object>
+  <animated_object name="bush_48">
+    <localization transform="-0.428057 0.442086 0.788243 0.883534 0.0212561 0.467884 0.19009 0.896721 -0.399697 -2.435 -14.9697 3.67434"/>
+    <mesh type="cal3d" name="bush" graph="bush_graph" initial_cycle="idle" initial_action=""/>
+    <material name="bush.dds" shader="shader.fx" technique="skinning_tech"/>
+    <animation_controller name="bush_animation"/>
+  </animated_object>
+  <animated_object name="bush_49">
+    <localization transform="0.889216 0.273024 0.367087 0.434296 -0.251537 -0.864937 -0.143812 0.92854 -0.342244 2.39062 -14.3892 5.36979"/>
+    <mesh type="cal3d" name="bush" graph="bush_graph" initial_cycle="idle" initial_action=""/>
+    <material name="bush.dds" shader="shader.fx" technique="skinning_tech"/>
+    <animation_controller name="bush_animation"/>
+  </animated_object>
+  <animated_object name="bush_50">
+    <localization transform="0.239444 -0.396646 -0.886193 -0.720487 -0.684419 0.111664 -0.650818 0.611754 -0.449659 7.45179 -13.7284 2.18052"/>
+    <mesh type="cal3d" name="bush" graph="bush_graph" initial_cycle="idle" initial_action=""/>
+    <material name="bush.dds" shader="shader.fx" technique="skinning_tech"/>
+    <animation_controller name="bush_animation"/>
+  </animated_object>
+  <animated_object name="bush_51">
+    <localization transform="-0.865338 -0.431698 0.254611 0.388924 -0.257979 0.884412 -0.316115 0.86434 0.391137 6.10443 -14.5614 -0.346491"/>
+    <mesh type="cal3d" name="bush" graph="bush_graph" initial_cycle="idle" initial_action=""/>
+    <material name="bush.dds" shader="shader.fx" technique="skinning_tech"/>
+    <animation_controller name="bush_animation"/>
+  </animated_object>
+  <animated_object name="bush_52">
+    <localization transform="0.962278 0.226916 -0.150104 -0.0621945 -0.353635 -0.933314 -0.264866 0.907442 -0.326182 5.21642 -14.0609 4.92389"/>
+    <mesh type="cal3d" name="bush" graph="bush_graph" initial_cycle="idle" initial_action=""/>
+    <material name="bush.dds" shader="shader.fx" technique="skinning_tech"/>
+    <animation_controller name="bush_animation"/>
+  </animated_object>
+  <animated_object name="bush_53">
+    <localization transform="0.993248 -0.0631315 -0.0973251 -0.114978 -0.424202 -0.898239 0.0154217 0.903364 -0.428596 -0.244771 -14.0324 6.35397"/>
+    <mesh type="cal3d" name="bush" graph="bush_graph" initial_cycle="idle" initial_action=""/>
+    <material name="bush.dds" shader="shader.fx" technique="skinning_tech"/>
+    <animation_controller name="bush_animation"/>
+  </animated_object>
+  <animated_object name="bush_54">
+    <localization transform="-0.057365 -0.329798 0.942307 0.905021 -0.415655 -0.0903798 0.421482 0.847623 0.322318 -7.89517 -13.1003 -2.06246"/>
+    <mesh type="cal3d" name="bush" graph="bush_graph" initial_cycle="idle" initial_action=""/>
+    <material name="bush.dds" shader="shader.fx" technique="skinning_tech"/>
+    <animation_controller name="bush_animation"/>
+  </animated_object>
+  <animated_object name="bush_55">
+    <localization transform="0.849761 -0.330138 0.410993 0.46523 0.102982 -0.879179 0.247925 0.938298 0.2411 -6.28134 -12.4623 -7.10651"/>
+    <mesh type="cal3d" name="bush" graph="bush_graph" initial_cycle="idle" initial_action=""/>
+    <material name="bush.dds" shader="shader.fx" technique="skinning_tech"/>
+    <animation_controller name="bush_animation"/>
+  </animated_object>
+  <animated_object name="bush_56">
+    <localization transform="-0.428057 0.442086 0.788243 0.883534 0.0212561 0.467884 0.19009 0.896721 -0.399697 -3.35731 -13.509 6.95529"/>
+    <mesh type="cal3d" name="bush" graph="bush_graph" initial_cycle="idle" initial_action=""/>
+    <material name="bush.dds" shader="shader.fx" technique="skinning_tech"/>
+    <animation_controller name="bush_animation"/>
+  </animated_object>
+  <animated_object name="bush_57">
+    <localization transform="0.123011 -0.351139 0.928208 0.796042 0.593428 0.118997 -0.592609 0.724254 0.352519 7.55772 -12.9112 -2.81862"/>
+    <mesh type="cal3d" name="bush" graph="bush_graph" initial_cycle="idle" initial_action=""/>
+    <material name="bush.dds" shader="shader.fx" technique="skinning_tech"/>
+    <animation_controller name="bush_animation"/>
+  </animated_object>
+  <animated_object name="bush_58">
+    <localization transform="-0.0760367 0.780285 -0.620785 -0.995844 -0.0281218 0.0866284 0.0501373 0.624792 0.77918 2.6541 -12.7652 -9.25918"/>
+    <mesh type="cal3d" name="bush" graph="bush_graph" initial_cycle="idle" initial_action=""/>
+    <material name="bush.dds" shader="shader.fx" technique="skinning_tech"/>
+    <animation_controller name="bush_animation"/>
+  </animated_object>
+  <animated_object name="bush_59">
+    <localization transform="-0.838788 0.00491376 -0.544436 -0.190504 -0.939399 0.285023 -0.510042 0.342791 0.788893 5.70022 -10.8951 -9.95276"/>
+    <mesh type="cal3d" name="bush" graph="bush_graph" initial_cycle="idle" initial_action=""/>
+    <material name="bush.dds" shader="shader.fx" technique="skinning_tech"/>
+    <animation_controller name="bush_animation"/>
+  </animated_object>
+  <animated_object name="bush_60">
+    <localization transform="0.707231 0.705793 0.0409983 -0.48485 0.526409 -0.698437 -0.514534 0.474078 0.714497 8.55293 -7.73826 -10.261"/>
+    <mesh type="cal3d" name="bush" graph="bush_graph" initial_cycle="idle" initial_action=""/>
+    <material name="bush.dds" shader="shader.fx" technique="skinning_tech"/>
+    <animation_controller name="bush_animation"/>
+  </animated_object>
+  <animated_object name="bush_61">
+    <localization transform="-0.777702 0.12094 -0.61689 -0.125911 -0.991402 -0.0356285 -0.615894 0.0499649 0.786243 7.5897 -3.83534 -13.126"/>
+    <mesh type="cal3d" name="bush" graph="bush_graph" initial_cycle="idle" initial_action=""/>
+    <material name="bush.dds" shader="shader.fx" technique="skinning_tech"/>
+    <animation_controller name="bush_animation"/>
+  </animated_object>
+  <animated_object name="bush_62">
+    <localization transform="-0.182806 -0.623956 -0.759777 0.590226 -0.687691 0.422745 -0.786267 -0.37116 0.493989 12.3264 -0.503675 -9.37785"/>
+    <mesh type="cal3d" name="bush" graph="bush_graph" initial_cycle="idle" initial_action=""/>
+    <material name="bush.dds" shader="shader.fx" technique="skinning_tech"/>
+    <animation_controller name="bush_animation"/>
+  </animated_object>
+  <animated_object name="bush_63">
+    <localization transform="-0.588537 0.328607 -0.738676 0.173984 -0.840784 -0.512652 -0.789528 -0.430232 0.43766 10.0338 3.81199 -10.427"/>
+    <mesh type="cal3d" name="bush" graph="bush_graph" initial_cycle="idle" initial_action=""/>
+    <material name="bush.dds" shader="shader.fx" technique="skinning_tech"/>
+    <animation_controller name="bush_animation"/>
+  </animated_object>
+  <animated_object name="bush_64">
+    <localization transform="0.020242 -0.731084 -0.681987 0.933961 -0.229606 0.273857 -0.356801 -0.642493 0.678156 6.91279 7.48552 -10.8419"/>
+    <mesh type="cal3d" name="bush" graph="bush_graph" initial_cycle="idle" initial_action=""/>
+    <material name="bush.dds" shader="shader.fx" technique="skinning_tech"/>
+    <animation_controller name="bush_animation"/>
+  </animated_object>
+  <animated_object name="bush_65">
+    <localization transform="-0.630813 0.741715 0.227889 -0.644075 -0.336738 -0.686859 -0.432715 -0.580057 0.690139 6.31025 10.2443 -8.54519"/>
+    <mesh type="cal3d" name="bush" graph="bush_graph" initial_cycle="idle" initial_action=""/>
+    <material name="bush.dds" shader="shader.fx" technique="skinning_tech"/>
+    <animation_controller name="bush_animation"/>
+  </animated_object>
+  <animated_object name="bush_66">
+    <localization transform="-0.524529 -0.34421 -0.77871 -0.693774 -0.357359 0.625278 -0.493506 0.868225 -0.0513589 6.86403 -12.8938 -6.67232"/>
+    <mesh type="cal3d" name="bush" graph="bush_graph" initial_cycle="idle" initial_action=""/>
+    <material name="bush.dds" shader="shader.fx" technique="skinning_tech"/>
+    <animation_controller name="bush_animation"/>
+  </animated_object>
+  <animated_object name="bush_67">
+    <localization transform="-0.416972 -0.907991 -0.0410727 0.447597 -0.244457 0.860173 -0.79107 0.340284 0.508346 11.5097 -4.43774 -9.42425"/>
+    <mesh type="cal3d" name="bush" graph="bush_graph" initial_cycle="idle" initial_action=""/>
+    <material name="bush.dds" shader="shader.fx" technique="skinning_tech"/>
+    <animation_controller name="bush_animation"/>
+  </animated_object>
+</animated_objects>

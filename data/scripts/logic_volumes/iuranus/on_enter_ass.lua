@@ -1,0 +1,6 @@
+player_inside_ass(true)
+take_player_control_out_but_anim(true)
+create_timer("force_return_player_control", 4.0)
+deep_player_into_ass(true)
+create_timer("expel_player_from_ass", 0.25)
+expel_player_from_ass()

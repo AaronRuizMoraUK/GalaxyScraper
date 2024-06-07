@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<levers>
+  <lever lever_id="1" >
+    <localization transform="-0.737452 -0.673113 0.055538 0.644039 -0.676062 0.357987 -0.203418 0.299767 0.932073 20.1359 -21.5213 10.9084" />
+    <mesh name="lever.mesh" name_base="lever_base.mesh" />
+    <material texture="lever.dds" shader="shader.fx" technique="normal_tech" />
+  </lever>
+  <lever lever_id="2" >
+    <localization transform="-0.180805 -0.380074 0.907113 -0.933394 0.356996 -0.0364645 -0.309976 -0.853286 -0.419306 -30.6186 9.11877 0.859258" />
+    <mesh name="lever.mesh" name_base="lever_base.mesh" />
+    <material texture="lever.dds" shader="shader.fx" technique="normal_tech" />
+  </lever>
+  <lever lever_id="3" >
+    <localization transform="0.710467 -0.48391 -0.510948 0.493237 0.860288 -0.128925 0.501951 -0.160422 0.849888 16.5939 26.2294 -3.39252" />
+    <mesh name="lever.mesh" name_base="lever_base.mesh" />
+    <material texture="lever.dds" shader="shader.fx" technique="normal_tech" />
+  </lever>
+</levers>

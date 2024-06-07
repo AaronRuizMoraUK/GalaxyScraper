@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<static_objects>
+  <static_object>
+    <localization transform="1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0"/>
+    <mesh type="custom" name="sky.mesh"/>
+    <material name="sky.dds" shader="shader.fx" technique="dummy_tech"/>
+  </static_object>
+  <static_object>
+    <localization transform="1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 200.729 30.0 -32.182"/>
+    <mesh type="custom" name="terror_buildings.mesh"/>
+    <material name="terror_buildings.dds" shader="shader.fx" technique="basic_tech"/>
+  </static_object>
+  <static_object>
+    <localization planet="boiler" transform="1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0"/>
+    <mesh type="custom" name="lava.mesh"/>
+    <material name="lava.dds" shader="shader.fx" technique="lava_normal_tech"/>
+  </static_object>
+  <static_object>
+    <localization planet="boiler" transform="1.0 0.0 0.0 0.0 0.0 -1.0 0.0 1.0 0.0 0.0 -1.29973e-006 -29.7344"/>
+    <mesh type="custom" name="boiler_boiler.mesh"/>
+    <material name="boiler.dds" shader="shader.fx" technique="normal_tech"/>
+  </static_object>
+  <static_object>
+    <localization planet="boiler" transform="1.0 0.0 0.0 0.0 0.0 -1.0 0.0 1.0 0.0 0.0 -1.29973e-006 -29.7344"/>
+    <mesh type="custom" name="boiler_boiler_ring.mesh"/>
+    <material name="boiler_ring.dds" shader="shader.fx" technique="normal_tech"/>
+  </static_object>
+  <static_object>
+    <localization planet="boiler" transform="1.0 0.0 0.0 0.0 0.0 -1.0 0.0 1.0 0.0 0.0 -1.29973e-006 -29.7344"/>
+    <mesh type="custom" name="boiler_boiler_doors.mesh"/>
+    <material name="boiler_door.dds" shader="shader.fx" technique="normal_tech"/>
+  </static_object>
+  <static_object>
+    <localization planet="boiler" transform="1.0 0.0 0.0 0.0 0.0 -1.0 0.0 1.0 0.0 0.0 -1.29973e-006 -29.7344"/>
+    <mesh type="custom" name="boiler_boiler_doors_backs.mesh"/>
+    <material name="boiler_door_back.dds" shader="shader.fx" technique="dummy_tech"/>
+  </static_object>
+  <static_object>
+    <localization planet="iuranus" transform="0.955944 -0.238912 0.170564 0.293549 0.777198 -0.55659 0.000413742 0.582138 0.81309 0.101023 8.95574 11.5465"/>
+    <mesh type="custom" name="cartel_mouth.mesh"/>
+    <material name="cartel_mouth.dds" shader="shader.fx" technique="normal_tech"/>
+  </static_object>
+  <static_object>
+    <localization planet="iuranus" transform="-0.525308 0.632915 0.568745 -0.484467 0.327023 -0.811387 -0.699531 -0.701766 0.134838 -10.2341 -10.6586 2.57088"/>
+    <mesh type="custom" name="cartel_ass.mesh"/>
+    <material name="cartel_ass.dds" shader="shader.fx" technique="normal_tech"/>
+  </static_object>
+  <static_object>
+    <localization planet="boiler" transform="-0.260999 -0.964913 -0.0286927 0.964694 -0.259622 -0.0443016 0.0352979 -0.0392423 0.998606 0.947194 -1.69949 30.3338"/>
+    <mesh type="custom" name="boiler_cartel.mesh"/>
+    <material name="cartel_zone1.dds" shader="shader.fx" technique="normal_tech"/>
+  </static_object>
+  <static_object>
+    <localization planet="boiler" transform="-0.387458 0.921883 -0.00296633 -0.905425 -0.381143 -0.186911 -0.173441 -0.0697344 0.982372 -6.97433 -1.89226 29.7657"/>
+    <mesh type="custom" name="boiler_cartel.mesh"/>
+    <material name="cartel_zone2.dds" shader="shader.fx" technique="normal_tech"/>
+  </static_object>
+  <static_object>
+    <localization planet="boiler" transform="0.356528 0.922509 -0.147866 -0.922608 0.322691 -0.211341 -0.147249 0.211771 0.966163 -5.72316 5.70619 29.4852"/>
+    <mesh type="custom" name="boiler_cartel.mesh"/>
+    <material name="cartel_zone3.dds" shader="shader.fx" technique="normal_tech"/>
+  </static_object>
+  <static_object>
+    <localization planet="boiler" transform="1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0"/>
+    <mesh type="custom" name="boiler_fire_platforms.mesh"/>
+    <material name="grille.dds" shader="shader.fx" technique="normal_tech"/>
+  </static_object>
+  <static_object>
+    <localization transform="1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0"/>
+    <mesh type="custom" name="spatial_sphere.mesh"/>
+    <material name="mouth.dds" shader="shader.fx" technique="dummy_tech_wireframe"/>
+  </static_object>
+</static_objects>

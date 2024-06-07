@@ -1,0 +1,1 @@
+enable_camera_vibration()

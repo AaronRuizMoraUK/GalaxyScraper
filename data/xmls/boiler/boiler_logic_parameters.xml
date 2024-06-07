@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<logic fired_retries="5" first_zone_id="1" num_zones="3">
+	<zone_logic 
+		zone_id="1"
+		platform_enter_zone="1"
+		platform_enter_mid="2"
+		platform_exit_mid="3"
+		platform_exit_zone="4"
+		next_zone_id="2"
+	/>
+	<zone_logic 
+		zone_id="2"
+		platform_enter_zone="5"
+		platform_enter_mid="6"
+		platform_exit_mid="7"
+		platform_exit_zone="8"
+		next_zone_id="3"
+	/>
+	<zone_logic 
+		zone_id="3"
+		platform_enter_zone="9"
+		platform_enter_mid="10"
+		platform_exit_mid="11"
+		platform_exit_zone="12"
+		next_zone_id=""
+	/>	
+	<!--
+	<zone_logic
+		zone_id="4"
+		platform_enter_zone="13" 
+		platform_enter_mid="14"	 
+		platform_exit_mid="15"   
+		platform_exit_zone="16"  
+		next_zone_id=""
+	/>	
+	-->
+</logic>

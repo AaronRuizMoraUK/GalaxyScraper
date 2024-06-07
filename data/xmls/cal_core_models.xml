@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<core_models>
+  <core_model name="player" >
+    <skeleton filename="player.csf" />
+    <animations>
+      <!--This animations have to have the same name that "animation_state_graphs" -->
+      <animation name="jog" filename="player_run.caf" />
+      <animation name="walk" filename="player_walk.caf" />
+      <animation name="idle" filename="player_idle.caf" />
+      <animation name="kick" filename="player_kick.caf" />
+      <animation name="shoot" filename="player_kick.caf" />
+      <animation name="hit" filename="player_hit.caf" />
+      <animation name="prepare_jump" filename="player_takeoff.caf" />
+      <animation name="jumping" filename="player_jumping.caf" />
+      <animation name="finish_jump" filename="player_land.caf" />
+      <animation name="thrown" filename="player_thrown.caf" />
+      <animation name="transition" filename="player_transition.caf" />
+      <animation name="burn" filename="player_burned.caf" />
+    </animations>
+    <mesh filename="player.cmf"  />
+  </core_model>
+
+  <core_model name="arachnid" >
+    <skeleton filename="bicho.csf" />
+    <animations>
+      <!--This animations have to have the same name that "animation_state_graphs" -->
+      <animation name="idle" filename="bicho_idle.caf" />
+      <animation name="emerge" filename="bicho_emerge1.caf" />
+      <animation name="together" filename="bicho_together_1.caf" />
+      <animation name = "idle2" filename = "bicho_idle.caf" />
+      <animation name = "walk" filename = "bicho_walk.caf" />
+      <animation name = "fly_upwards" filename = "bicho_walk.caf" />
+      <animation name = "fly_downwards" filename = "bicho_fly.caf" />
+      <animation name = "caught" filename = "bicho_walk.caf" />
+      <animation name = "foolished" filename = "bicho_foolished.caf" />
+      <animation name = "hit" filename = "bicho_hit_received.caf" />
+      <animation name = "attack_failed" filename = "bicho_attack_no_hit.caf" />
+      <animation name = "attack_ok" filename = "bicho_hit.caf" />
+      <animation name = "prepare_attack"  filename = "bicho_prepare.caf"/>
+      <animation name = "scared" filename = "bicho_walk.caf" />
+      <animation name = "enemy_victory" filename="bicho_saltitos_de_alegria.caf" />
+    </animations>
+    <mesh filename="bicho.cmf"  />
+  </core_model>
+
+  <!--
+<core_model name="ass">
+	<skeleton filename="ass.csf" />
+	<animations>
+		<animation name="idle" filename="ass_fart.caf" />
+		<animation name="litte_fart" filename="ass_fart.caf" />
+		<animation name="medium_fart" filename="ass_fart.caf" />
+		<animation name="great_fart" filename="ass_fart.caf" />
+	</animations>
+	<mesh filename="ass.cmf" />
+</core_model>
+-->
+
+  <core_model name="ass">
+    <skeleton filename="ass.csf" />
+    <animations>
+      <animation name="idle" filename="ass_idle.caf" />
+      <animation name="little_fart" filename="ass_fart.caf" />
+      <animation name="medium_fart" filename="ass_fart.caf" />
+      <animation name="great_fart" filename="ass_fart.caf" />
+    </animations>
+    <mesh filename="ass.cmf" />
+  </core_model>
+
+
+  <core_model name="ass_inside">
+    <skeleton filename="ass.csf" />
+    <animations>
+      <animation name="idle" filename="ass_idle.caf" />
+      <animation name="little_fart" filename="ass_fart.caf" />
+      <animation name="medium_fart" filename="ass_fart.caf" />
+      <animation name="great_fart" filename="ass_fart.caf" />
+    </animations>
+    <mesh filename="ass_inside.cmf" />
+  </core_model>
+
+  <core_model name="bush">
+    <skeleton filename="bush.csf" />
+    <animations>
+      <animation name="idle" filename="bush_idle.caf"/>
+      <animation name="moving" filename="bush_moving.caf"/>
+    </animations>
+    <mesh filename="bush.cmf" />
+  </core_model>
+  <core_model name="mouth">
+    <skeleton filename = "mouth.csf" />
+    <animations>
+      <animation name = "idle" filename="mouth_idle.caf" />
+      <animation name = "eat" filename = "mouth_eat.caf" />
+    </animations>
+    <mesh filename = "mouth.cmf" />
+  </core_model>
+
+  <core_model name="land">
+    <skeleton filename = "mouth.csf" />
+    <animations>
+      <animation name = "idle" filename="mouth_idle.caf" />
+      <animation name = "eat" filename = "mouth_eat.caf" />
+    </animations>
+    <mesh filename = "land.cmf" />
+  </core_model>
+
+  <core_model name="tongue">
+    <skeleton filename = "tongue.csf" />
+    <animations>
+      <animation name = "idle" filename="tongue_idle.caf" />
+      <animation name = "moving" filename = "tongue_moving.caf" />
+    </animations>
+    <mesh filename = "tongue.cmf" />
+  </core_model>
+
+  <core_model name="lever">
+    <skeleton filename="player.csf" />
+    <animations>
+      <!--This animations have to have the same name that "animation_state_graphs" -->
+      <animation name="deactivated" filename="player_idle.caf" />
+      <animation name="moving" filename="player_kick.caf" />
+      <animation name="activated" filename="player_idle.caf" />
+    </animations>
+    <mesh filename="player.cmf"  />
+  </core_model>
+
+  <core_model name="boiler">
+    <skeleton filename="boiler.csf" />
+    <animations>
+      <animation name="idle" filename="boiler_idle.caf" />
+      <animation name="shoot" filename="boiler_shoot.caf" />
+    </animations>
+    <mesh filename="boiler.cmf"  />
+  </core_model>
+
+</core_models>

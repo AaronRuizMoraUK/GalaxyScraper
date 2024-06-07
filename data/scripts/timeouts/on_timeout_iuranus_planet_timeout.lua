@@ -1,0 +1,6 @@
+player_lose_timeout(true)
+play_ambient("lose")
+enable_samples(false)
+reset_iuranus_logic_counters()
+anim_iuranus_enemies_victory()
+enable_collisions(false)

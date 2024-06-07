@@ -1,0 +1,1 @@
+update_player_fired_retries_count()

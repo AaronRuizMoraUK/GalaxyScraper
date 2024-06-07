@@ -1,0 +1,6 @@
+change_canon_animation_controller(2)
+shoot_ball(2)
+play_sample("cannon_shot")
+--start_platform_sequence(14)
+kill_boss_zone("boiler", 2)
+create_timer("canon_shot_2", 0.6)

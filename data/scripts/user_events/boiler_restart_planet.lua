@@ -1,0 +1,27 @@
+-- reset stuff
+set_fallen_condition(false)
+enable_player_flicker(false)
+reset_logic()
+reset_checkpoints()
+
+-- init part
+enable_collisions(true)
+player_win(false)
+player_lose(false)
+player_lose_timeout(false)
+enable_samples(true)
+play_ambient("boiler")
+place_player_initial_checkpoint()
+play_sample("platform_flame_thrower")
+delete_timer("flame_thrower_ended")
+create_timer("flame_thrower_ended", 0.93)
+play_sample("magma")
+delete_timer("lava_with_bubbles_ended")
+create_timer("lava_with_bubbles_ended", 3.65)
+take_player_control_out(false)
+init_zone(1)
+init_zone(2)
+init_zone(3)
+
+delete_timer("boiler_planet_timeout")
+create_timer("boiler_planet_timeout", 600)

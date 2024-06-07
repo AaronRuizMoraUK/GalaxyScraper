@@ -1,0 +1,1 @@
+set_camera_distance(20.0)

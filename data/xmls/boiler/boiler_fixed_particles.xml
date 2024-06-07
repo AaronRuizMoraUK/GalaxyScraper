@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<particles>
+<particle type = "lava_bubbles" num_quads="50" animation_type = ""><localization transform="1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 6.54471 -0.606713 27.2176 "/>
+</particle>
+
+<particle type = "lava_bubbles" num_quads="50" animation_type = ""><localization transform="1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 24.9396 -1.09002 12.6818 "/>
+</particle>
+
+<particle type = "lava_bubbles" num_quads="50" animation_type = ""><localization transform="1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 9.555 -24.3499 9.98932 "/>
+</particle>
+
+<particle type = "lava_bubbles" num_quads="50" animation_type = ""><localization transform="1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 4.93821 -24.0638 13.4368 "/>
+</particle>
+
+<particle type = "lava_bubbles" num_quads="50" animation_type = ""><localization transform="1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 7.15364 -13.2264 23.6196 "/>
+</particle>
+
+<particle type = "lava_bubbles" num_quads="50" animation_type = ""><localization transform="1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 4.31372 -6.54142 26.8812 "/>
+</particle>
+
+<particle type = "lava_bubbles" num_quads="50" animation_type = ""><localization transform="1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -9.62311 -3.97727 25.9919 "/>
+</particle>
+
+<particle type = "lava_bubbles" num_quads="50" animation_type = ""><localization transform="1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -15.907 -19.148 12.8188 "/>
+</particle>
+
+<particle type = "lava_bubbles" num_quads="50" animation_type = ""><localization transform="1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -11.5522 -23.5765 9.73115 "/>
+</particle>
+
+<particle type = "lava_bubbles" num_quads="50" animation_type = ""><localization transform="1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -13.6309 -23.7365 5.89742 "/>
+</particle>
+
+<particle type = "lava_bubbles" num_quads="50" animation_type = ""><localization transform="1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -17.1364 -21.5053 5.27906 "/>
+</particle>
+
+<particle type = "lava_bubbles" num_quads="50" animation_type = ""><localization transform="0.212154 -0.134172 -0.967982 0.439061 0.898013 -0.028244 0.87305 -0.419011 0.249426 -19.9414 -19.4023 3.14525 "/>
+</particle>
+
+<particle type = "lava_bubbles" num_quads="50" animation_type = ""><localization transform="-0.0618026 -0.17637 0.982382 0.597433 0.781922 0.177966 -0.799534 0.597906 0.0570445 -23.1262 -14.9942 -4.93455 "/>
+</particle>
+
+<particle type = "lava_bubbles" num_quads="50" animation_type = ""><localization transform="-0.125718 0.211156 -0.969334 0.66133 0.746156 0.0767687 0.739485 -0.631398 -0.233449 -23.7064 -14.5715 3.11104 "/>
+</particle>
+
+<particle type = "lava_bubbles" num_quads="50" animation_type = ""><localization transform="0.309843 -0.586399 0.748421 0.923856 0.371708 -0.0912331 -0.224695 0.719701 0.656919 -26.7289 -8.32128 0.566726 "/>
+</particle>
+
+<particle type = "lava_bubbles" num_quads="50" animation_type = ""><localization transform="1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -26.6501 -4.75357 7.15379 "/>
+</particle>
+
+<particle type = "lava_bubbles" num_quads="50" animation_type = ""><localization transform="1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -24.8959 2.29116 12.6074 "/>
+</particle>
+
+<particle type = "lava_bubbles" num_quads="50" animation_type = ""><localization transform="1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -27.0918 0.243302 7.06945 "/>
+</particle>
+
+<particle type = "lava_bubbles" num_quads="50" animation_type = ""><localization transform="1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -25.2088 8.01905 9.17672 "/>
+</particle>
+
+<particle type = "lava_bubbles" num_quads="50" animation_type = ""><localization transform="1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -21.983 4.79477 16.666 "/>
+</particle>
+
+<particle type = "lava_bubbles" num_quads="50" animation_type = ""><localization transform="1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -18.0143 2.69392 21.2656 "/>
+</particle>
+
+<particle type = "lava_bubbles" num_quads="50" animation_type = ""><localization transform="1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -11.1733 2.02268 25.5943 "/>
+</particle>
+
+<particle type = "lava_bubbles" num_quads="50" animation_type = ""><localization transform="1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -13.2461 6.49784 23.7974 "/>
+</particle>
+
+<particle type = "lava_bubbles" num_quads="50" animation_type = ""><localization transform="0.419256 0.790324 -0.44678 0.554076 -0.612586 -0.563683 -0.719183 -0.0112229 -0.69473 -21.0075 14.5715 11.4173 "/>
+</particle>
+
+<particle type = "lava_bubbles" num_quads="50" animation_type = ""><localization transform="-0.984638 0.0362126 0.170812 -0.0764387 -0.968934 -0.235211 0.156988 -0.244654 0.956817 -17.9815 19.4024 9.17671 "/>
+</particle>
+
+<particle type = "lava_bubbles" num_quads="50" animation_type = ""><localization transform="0.653262 0.126134 0.746551 0.59207 -0.699683 -0.39987 0.471912 0.703231 -0.531757 -19.5202 20.0471 1.03864 "/>
+</particle>
+
+<particle type = "lava_bubbles" num_quads="50" animation_type = ""><localization transform="0.439998 0.140029 -0.887014 -0.00583756 -0.987301 -0.158756 -0.89798 0.0750304 -0.433593 -14.7916 23.1574 5.3799 "/>
+</particle>
+
+<particle type = "lava_bubbles" num_quads="50" animation_type = ""><localization transform="-0.531694 0.103552 0.840582 0.317342 -0.895835 0.311087 0.785236 0.432155 0.443449 -9.17747 26.4002 1.67457 "/>
+</particle>
+
+<particle type = "lava_bubbles" num_quads="50" animation_type = ""><localization transform="1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -5.47876 26.3157 7.83996 "/>
+</particle>
+
+<particle type = "lava_bubbles" num_quads="50" animation_type = ""><localization transform="1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -2.41368 27.3276 5.60149 "/>
+</particle>
+
+<particle type = "lava_bubbles" num_quads="50" animation_type = ""><localization transform="-0.734168 0.196193 -0.650004 -0.12284 -0.979925 -0.157029 -0.667763 -0.0354391 0.74353 -0.000689673 27.9392 1.84371 "/>
+</particle>
+
+<particle type = "lava_bubbles" num_quads="50" animation_type = ""><localization transform="1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 12.5147 24.0277 7.07498 "/>
+</particle>
+
+<particle type = "lava_bubbles" num_quads="50" animation_type = ""><localization transform="1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 15.1155 21.1829 10.3349 "/>
+</particle>
+
+<particle type = "lava_bubbles" num_quads="50" animation_type = ""><localization transform="0.0114596 0.597736 -0.801611 0.0562012 -0.800781 -0.596314 -0.998354 -0.038218 -0.0427701 9.73942 18.1905 18.9275 "/>
+</particle>
+
+<particle type = "lava_bubbles" num_quads="50" animation_type = ""><localization transform="0.499467 -0.182139 0.84697 0.21611 -0.920548 -0.325404 0.838945 0.345568 -0.420422 5.07546 21.8639 16.7394 "/>
+</particle>
+
+<particle type = "lava_bubbles" num_quads="50" animation_type = ""><localization transform="0.0872338 0.520663 -0.849294 0.0431342 -0.853719 -0.518945 -0.995254 0.00863589 -0.0969315 0.23302 18.8049 20.7442 "/>
+</particle>
+
+<particle type = "lava_bubbles" num_quads="50" animation_type = ""><localization transform="0.0872338 -0.534982 0.840348 0.147065 -0.827405 -0.542008 0.985273 0.170867 0.00649933 -2.92786 22.8421 14.4654 "/>
+</particle>
+
+<particle type = "lava_bubbles" num_quads="50" animation_type = ""><localization transform="0.28498 -0.505415 0.814458 0.101688 -0.828956 -0.549993 0.953124 0.239557 -0.184841 -2.92786 22.8421 14.4654 "/>
+</particle>
+
+</particles>

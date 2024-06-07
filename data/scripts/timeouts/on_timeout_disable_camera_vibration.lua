@@ -1,0 +1,1 @@
+disable_camera_vibration()

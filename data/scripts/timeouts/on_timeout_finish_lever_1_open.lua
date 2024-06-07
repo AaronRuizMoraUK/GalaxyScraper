@@ -1,0 +1,3 @@
+take_player_control_out(true)
+mini_boiler_killed_at_zone(1)
+open_next_zone_to(1)

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<xml_data>
+  <data type="xml" path="./data/xmls/"/>
+  <data type="roa" path="./data/roa/"/>
+	<data type="script" path="./data/scripts/"/>
+	<data type="cal" path="./data/cal/"/>
+	<data type="sound" path="./data/sounds/"/>
+	<data type="texture" path="./data/textures/"/>
+	<data type="mesh" path="./data/meshes/"/>
+	<data type="heightmap" path="./data/heightmaps/"/>
+	<data type="shader" path="./data/shaders/"/>
+</xml_data>

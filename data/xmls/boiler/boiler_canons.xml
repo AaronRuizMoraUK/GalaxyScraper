@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<canons>
+  <canon canon_id="1" >
+    <localization transform="4.88762e-007 -1.0 0.0 0.34202 1.26091e-007 -0.939693 0.939693 4.74236e-007 0.34202 14.4986 -0.0885947 -28.5943" />
+    <mesh name="canon.mesh" name_base="canon_base.mesh" />
+    <material texture="canon.dds" shader="shader.fx" technique="normal_tech" />
+  </canon>
+  <canon canon_id="2" >
+    <localization transform="-1.0 -5.6426e-007 0.0 1.36978e-007 -0.34202 -0.939693 5.50617e-007 -0.939693 0.34202 0.165232 -12.9247 -29.2982" />
+    <mesh name="canon.mesh" name_base="canon_base.mesh" />
+    <material texture="canon.dds" shader="shader.fx" technique="normal_tech" />
+  </canon>
+  <canon canon_id="3" >
+    <localization transform="-5.20549e-007 1.0 0.0 -0.422618 -2.59609e-007 -0.906308 -0.906308 -4.53304e-007 0.422618 -13.9946 -0.0733376 -28.7387" />
+    <mesh name="canon.mesh" name_base="canon_base.mesh" />
+    <material texture="canon.dds" shader="shader.fx" technique="normal_tech" />
+  </canon>
+  <canon canon_id="4" >
+    <localization transform="1.0 6.51683e-007 0.0 -3.08583e-007 0.34202 -0.939693 -5.81191e-007 0.939693 0.34202 0.165217 12.3882 -29.4748" />
+    <mesh name="canon.mesh" name_base="canon_base.mesh" />
+    <material texture="canon.dds" shader="shader.fx" technique="normal_tech" />
+  </canon>
+</canons>

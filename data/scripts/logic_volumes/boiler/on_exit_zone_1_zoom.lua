@@ -1,0 +1,1 @@
+reset_boiler_camera_position()

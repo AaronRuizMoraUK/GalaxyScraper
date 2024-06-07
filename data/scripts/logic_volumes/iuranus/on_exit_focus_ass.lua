@@ -1,0 +1,1 @@
+set_camera_params(16.0, 1.8, 12.0)

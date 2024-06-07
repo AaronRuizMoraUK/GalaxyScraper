@@ -1,0 +1,5 @@
+take_player_control_out(true)
+play_sample("mouth_eat_player")
+anim_mouth(1, "eat")
+play_sample("player_being_swallowed")
+create_timer("iuranus_player_death", 0.6)

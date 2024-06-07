@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<enemies>
+  <enemy type="bueno" >
+    <mesh type = "cal3d" name="arachnid" graph="arachnid_graph" initial_cycle="emerge" initial_action="" speed_multiplier = "2.8f"/>
+    <!--    <material texture="arachnid_morado_2.dds" shader="shader.fx" technique="skinning_tech" /> -->
+    <material texture="arachnid_n1.dds" shader="shader.fx" technique="skinning_tech" />
+    <ai_controller type="arachnid_behaviour" 
+      	local_slot="1.0 0.0 1.0"
+		mouth_idle_distance="2.0"
+        mouth_slotable_distance="1.5"
+		ass_idle_distance="5.0"
+        ass_slotable_distance="2.0"
+		attack_distance="1.5"
+		attack_direction="0.5"
+        groupment_distance="3.0"
+		foolished_time="0.4"
+		walk_speed="1"
+		hit_speed="11.2"
+		prepare_attack_time="0.1"
+		attack_speed="5.0"
+		runaway_speed="4.0"
+		vision_distance="3.0"
+        vision_angle="50.0"
+        vision_radius="2.0"
+		max_player_attacants="3"
+		stop_following_player_distance="5.5"/>
+    <animation_controller type="enemy_animation"
+      rotation_speed="11.0" 
+      jump_height="2.8"  />
+  </enemy>
+
+  <enemy type="feo" >
+    <mesh type = "cal3d" name="arachnid"  graph="arachnid_graph" initial_cycle="emerge" initial_action="" speed_multiplier = "2.8f"/>
+    <!--   <material texture="arachnid_azul_2.dds" shader="shader.fx" technique="skinning_tech" /> -->
+    <material texture="arachnid_m1.dds" shader="shader.fx" technique="skinning_tech" />
+    <ai_controller type="arachnid_behaviour" 
+        local_slot="1.0 0.0 1.0"
+		mouth_idle_distance="2.5"
+        mouth_slotable_distance="1.8"
+		ass_idle_distance="4.5"
+        ass_slotable_distance="1.5"
+		attack_distance="2.0"
+		attack_direction="0.5"
+        groupment_distance="2.5"
+		foolished_time="0.6"
+		walk_speed="1.3"
+		hit_speed="10.9"
+		prepare_attack_time="0.2"
+		attack_speed="4.5"
+		runaway_speed="4.5"
+		vision_distance="4.5"
+        vision_angle="30.0"
+        vision_radius="1.75"
+		max_player_attacants="3"
+		stop_following_player_distance="5.0"/>
+    <animation_controller type="enemy_animation" 
+    rotation_speed="9.5" 
+    jump_height="1.5"  />
+  </enemy>
+
+  <enemy type="malo" >
+    <mesh  type = "cal3d" name="arachnid"  graph="arachnid_graph" initial_cycle="emerge" initial_action="" speed_multiplier = "2.8f"/>
+    <!--  <material texture="arachnid_rojo_2.dds" shader="shader.fx" technique="skinning_tech" /> -->
+    <material texture="arachnid_r1.dds" shader="shader.fx" technique="skinning_tech" />
+    <ai_controller type="arachnid_behaviour" 
+      	local_slot="1.0 0.0 1.0"
+    	mouth_idle_distance="3.1"
+        mouth_slotable_distance="2.4"
+		ass_idle_distance="5.0"
+        ass_slotable_distance="2.5"
+		attack_distance="2.2"
+		attack_direction="1.6"
+        groupment_distance="1.8"
+		foolished_time="0.3"
+		walk_speed="1.4"
+		hit_speed="12.1"
+		prepare_attack_time="0.1"
+		attack_speed="3.5"
+		runaway_speed="4.2"
+		vision_distance="2.5"
+        vision_angle="45.0"
+        vision_radius="2.3"
+		max_player_attacants="3"
+		stop_following_player_distance="4.0"/>
+    <animation_controller type="enemy_animation" 
+    rotation_speed="10.5" 
+    jump_height="2.1"  />
+  </enemy>
+</enemies>

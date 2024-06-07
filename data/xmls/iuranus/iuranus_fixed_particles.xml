@@ -1,0 +1,33 @@
+<particles>
+  <particle type = "ass" num_quads="50" animation_type = "">
+    <localization transform="-1 0 0 0 0 1 0 1 0 0.1 -19.1 0.1"/> 
+  </particle>
+  <particle type = "birthPoint" num_quads="50" animation_type = "">
+    <!-- <localization transform="-1 0 0 0 0 1 0 1 0 -10.168 1.616 10.64"/> -->
+    <localization transform="-1 0 0 0 0 1 0 1 0 -10.168 1.616 10.64"/>
+  </particle>
+  <particle type = "birthPoint" num_quads="50" animation_type = "">
+    <!-- <localization transform="-1 0 0 0 0 1 0 1 0 -10.083 -3.337 -10.64"/> -->
+    <localization transform="-1 0 0 0 0 1 0 1 0 -10.083 -3.337 -10.64"/>
+  </particle>
+  <particle type = "birthPoint" num_quads="50" animation_type = "">
+    <!-- <localization transform="-1 0 0 0 0 1 0 1 0 5.696 8.738 -10.649"/> -->
+    <localization transform="-1 0 0 0 0 1 0 1 0 5.696 8.738 -10.649"/>
+  </particle>
+  <particle type = "birthPoint" num_quads="50" animation_type = "">
+   <!--  <localization transform="-1 0 0 0 0 1 0 1 0 10.187 -4.366 -10.313"/> -->
+   <localization transform="-1 0 0 0 0 1 0 1 0 10.187 -4.366 -10.313"/>
+  </particle>
+  <particle type = "birthPoint" num_quads="50" animation_type = "">
+    <!-- <localization transform="-1 0 0 0 0 1 0 1 0 8.615 -8.764 8.607"/> -->
+    <localization transform="-1 0 0 0 0 1 0 1 0 8.615 -8.764 8.607"/>
+  </particle>
+  <particle type = "birthPoint" num_quads="50" animation_type = "">
+    <!-- <localization transform="-1 0 0 0 0 1 0 1 0 12.394 5.2 5.796"/> -->
+    <localization transform="-1 0 0 0 0 1 0 1 0 12.394 5.2 5.796"/>
+  </particle>
+  <particle type = "birthPoint" num_quads="50" animation_type = "">
+    <!-- <localization transform="-1 0 0 0 0 1 0 1 0 1.68 -4.25 14"/> -->
+    <localization transform="-1 0 0 0 0 1 0 1 0 1.68 -4.25 14"/>
+  </particle>
+</particles>  

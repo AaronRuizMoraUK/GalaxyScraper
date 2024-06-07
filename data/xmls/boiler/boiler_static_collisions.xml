@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<static_collisions>
+  <!-- Door's columns collisions -->
+  <static_collision name="box_false" type="box" fix_y="false">
+    <localization transform="0.173648 -0.806707 0.564863 0.984808 0.142244 -0.0996006 0.0 0.573577 0.819152 28.0241 6.43777 -0.0790949" />
+    <mesh name="boiler_static_collision_box.mesh"/>
+    <material texture="tongue.dds" shader="shader.fx" technique="dummy_tech" />
+  </static_collision>
+  <static_collision name="box_false" type="box" fix_y="false">
+    <localization transform="0.492404 -0.798229 0.346941 0.866025 0.409576 -0.286788 0.086824 0.441676 0.892964 26.518 11.8798 -3.25937" />
+    <mesh name="boiler_static_collision_box.mesh"/>
+    <material texture="tongue.dds" shader="shader.fx" technique="dummy_tech" />
+  </static_collision>
+
+  <!-- Canon collisions -->
+  <static_collision name="box_false" type="box" fix_y="false">
+    <localization transform="-0.00917543 -0.996673 0.0809833 0.41233 -0.0775521 -0.907728 0.910988 0.0250631 0.41167 13.0816 0.201564 -25.2846" />
+    <mesh name="boiler_static_collision_box.mesh"/>
+    <material texture="tongue.dds" shader="shader.fx" technique="dummy_tech" />
+  </static_collision>
+  <static_collision name="box_false" type="box" fix_y="false">
+    <localization transform="0.0283349 -0.997868 0.0587862 -0.432853 -0.0652585 -0.899099 0.901019 3.00757e-005 -0.43378 -12.917 0.359397 -26.1761" />
+    <mesh name="boiler_static_collision_box.mesh"/>
+    <material texture="tongue.dds" shader="shader.fx" technique="dummy_tech" />
+  </static_collision>
+  <static_collision name="box_false" type="box" fix_y="false">
+    <localization transform="-0.997868 -0.0231034 0.0610325 -0.0652589 0.352845 -0.933403 2.98477e-005 -0.935397 -0.3536 0.38364 11.5682 -26.897" />
+    <mesh name="boiler_static_collision_box.mesh"/>
+    <material texture="tongue.dds" shader="shader.fx" technique="dummy_tech" />
+  </static_collision>
+  <static_collision name="box_false" type="box" fix_y="false">
+    <localization transform="-0.999939 0.0091755 -0.00619049 0.00185652 -0.41233 -0.911032 -0.0109117 -0.910988 0.412288 0.185301 -11.5738 -25.9363" />
+    <mesh name="boiler_static_collision_box.mesh"/>
+    <material texture="tongue.dds" shader="shader.fx" technique="dummy_tech" />
+  </static_collision>
+  
+  <!--
+  <static_collision name="box_fina_false" type="box" fix_y="false">
+    <localization transform="-0.426975 -0.793351 0.433921 0.871334 -0.489279 -0.0371776 0.0465166 0.0696809 0.173172 13.5681 26.9708 -12.7944" />
+    <mesh name="boiler_static_collision_box_fina.mesh"/>
+    <material texture="tongue.dds" shader="shader.fx" technique="dummy_tech" />
+  </static_collision>
+  -->
+</static_collisions>

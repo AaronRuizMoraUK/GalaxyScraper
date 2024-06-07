@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<player>
+  <localization transform="-1 0 0 0 0 1 0 1 0 0 0 16" />
+  <mesh type="cal3d" name="player" graph="player_graph" initial_cycle="idle" initial_action=""/>
+  <material name="player_skin.dds" shader="shader.fx" technique="skinning_tech" />
+  <animation_controller type="player_animation" />
+  <controller type="sphere_player" />
+  <front_kick_effect angle="120.0" distance="1.4" />
+</player>

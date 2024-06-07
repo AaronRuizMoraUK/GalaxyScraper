@@ -1,0 +1,8 @@
+expel_enemies_around_ass()
+stop_ambient()
+take_player_control_out(true)
+player_win(true)
+anim_ass(1, "great_fart")
+play_sample("player_expeled_by_ass_on_win")
+play_sample("ass_strong_fart")
+enable_samples(false)

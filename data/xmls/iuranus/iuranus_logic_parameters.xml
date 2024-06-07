@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<logic
+	num_birth_points="7"
+	num_enemies_eaten_for_victory="20"
+	total_enemies_in_screen="180"	
+	initial_enemies_in_screen="20"
+	interval_enemies_creation="0.2"
+	check_point_percent_1="0.25"
+	check_point_percent_2="0.50"
+	check_point_percent_3="0.75"
+	fail_victory_check_point_recovery="0.50"
+/>

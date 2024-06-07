@@ -1,0 +1,1 @@
+check_lever_activated(3)

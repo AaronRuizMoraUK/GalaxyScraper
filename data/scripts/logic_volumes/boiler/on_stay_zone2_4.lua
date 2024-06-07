@@ -1,0 +1,1 @@
+check_zone_platform_firing(2, 4)

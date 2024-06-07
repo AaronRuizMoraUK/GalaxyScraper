@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<checkpoints>
+	<check_point id="0" 
+		position="-2.94139 1.41153 29.2105" />
+	<check_point 
+		id="1"
+		position="24.2003 -1.3372 18.1949"	/>
+	<check_point 
+		id="2"
+		position="25.142 -16.7854 9.31922"	/>
+	<check_point 
+		id="3"
+		position="-16.7554 -24.0972 11.525"	/>
+	<check_point 
+		id="4"
+		position="-30.8775 4.75379 4.67225"	/>
+	<check_point 
+		id="5"
+		position="-3.02346 29.1854 9.1488"	/>
+	<check_point 
+		id="6"
+		position="16.7213 29.0405 -0.808945"	/>		
+	<check_point
+		id="7"
+		position="29.0254 8.25216 -8.28682" />						
+</checkpoints>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<volumes>
+  <!-- The center of these volumes must be with the planet in the center of the world  -->
+  
+  <!-- ZONE 1 VOLUMES -->
+  <volume type="sphere" name="zone1_1" check_for_player="1" check_is_inside="1" center="18.1782 -1.15774 24.314" radius="2.5"/>
+  <volume type="sphere" name="zone1_2" check_for_player="1" check_is_inside="1" center="29.1587 -8.13209 5.14932" radius="2.5"/>
+  <volume type="sphere" name="zone1_3" check_for_player="1" check_is_inside="1" center="6.42325 -27.6825 11.2152" radius="2.5"/>
+  <volume type="sphere" name="zone1_4" check_for_player="1" check_is_inside="1" center="8.81399 -10.5109 27.6" radius="2.5"/>
+  
+  <volume type="box" name="mini_boiler_zone1" check_for_player="1" check_is_inside="0" transform="0.306243 -0.157188 -0.938886 0.820267 -0.456936 0.344052 -0.483092 -0.875501 -0.0109974 22.9183 -12.5778 6.25126" length="3.0"  width="8.0" height="15.0" />
+  <volume type="sphere" name="lever_zone1" check_for_player="1" check_is_inside="1" center="18.9923 -22.394 10.8829" radius="2.2"/>
+  
+  <!-- ZONE 2 VOLUMES -->
+  <volume type="sphere" name="zone2_1" check_for_player="1" check_is_inside="1" center="-13.9237 -6.53703 26.5692" radius="2.5"/>
+  <volume type="sphere" name="zone2_2" check_for_player="1" check_is_inside="1" center="-28.4608 -2.9048 11.7351" radius="2.5"/>
+  <volume type="sphere" name="zone2_3" check_for_player="1" check_is_inside="1" center="-26.3271 6.21251 14.5256" radius="2.5"/>
+  <volume type="sphere" name="zone2_4" check_for_player="1" check_is_inside="1" center="-16.4813 1.50656 25.9455" radius="2.5"/>
+  
+  <volume type="box" name="mini_boiler_zone2" check_for_player="1" check_is_inside="0" transform="-0.209663 -0.636105 -0.742571 -0.967852 0.0270964 0.250058 -0.138942 0.771127 -0.621336 -28.2691 2.60823 5.34358" length="3.0"  width="8.0" height="15.0" />
+  <volume type="sphere" name="lever_zone2" check_for_player="1" check_is_inside="1" center="-30.1687 8.31188 1.81203" radius="2.2"/>
+
+  <!-- ZONE 3 VOLUMES -->
+  <volume type="sphere" name="zone3_1" check_for_player="1" check_is_inside="1" center="-17.7796 14.2104 20.1871" radius="2.5"/>
+  <volume type="sphere" name="zone3_2" check_for_player="1" check_is_inside="1" center="5.92651 29.7469 -3.21695" radius="2.5"/>
+  <volume type="sphere" name="zone3_3" check_for_player="1" check_is_inside="1" center="17.6508 25.1095 6.38535" radius="2.5"/>
+  <volume type="sphere" name="zone3_4" check_for_player="1" check_is_inside="1" center="-10.4759 16.4153 23.7798" radius="2.5"/>
+  
+  <volume type="box" name="mini_boiler_zone3" check_for_player="1" check_is_inside="0" transform="0.0926156 -0.137753 -0.986127 0.338274 0.93583 -0.0989571 0.936479 -0.324416 0.133271 10.2709 24.6932 -2.40448" length="3.0"  width="10.0" height="15.0" />
+  <volume type="sphere" name="lever_zone3" check_for_player="1" check_is_inside="1" center="17.09 25.3384 -3.59564" radius="2.2"/>
+  
+  <!-- SEQUENCED FIRE PLATFORMS VOLUMES -->
+  
+  
+  <!-- CHECKPOINT VOLUMES -->
+  <volume type="sphere" name="checkpoint_0" check_for_player="1" check_is_inside="1" center="-2.94139 1.41153 29.2105" radius="6.0"/>
+  <volume type="sphere" name="checkpoint_1" check_for_player="1" check_is_inside="1" center="24.2003 -1.3372 18.1949" radius="2.5"/>
+  <volume type="sphere" name="checkpoint_2" check_for_player="1" check_is_inside="1" center="25.142 -16.7854 9.31922" radius="6.0"/>
+  <volume type="sphere" name="checkpoint_3" check_for_player="1" check_is_inside="1" center="-16.7554 -24.0972 11.525" radius="2.5"/>
+  <volume type="sphere" name="checkpoint_4" check_for_player="1" check_is_inside="1" center="-30.8775 4.75379 4.67225" radius="5.0"/>
+  <volume type="sphere" name="checkpoint_5" check_for_player="1" check_is_inside="1" center="-3.02346 29.1854 9.1488" radius="2.5"/>
+  <volume type="sphere" name="checkpoint_6" check_for_player="1" check_is_inside="1" center="16.7213 29.0405 -0.808945" radius="7.0"/>
+  <volume type="sphere" name="checkpoint_7" check_for_player="1" check_is_inside="1" center="29.0254 8.25216 -8.28682" radius="4.0"/>
+   
+  <!-- CAMERA CONTORL VOLUMES -->
+  <volume type="sphere" name="zone_1_zoom" check_for_player="1" center="20.9507 -20.2086 10.6151" radius="7.8"/>
+  <volume type="sphere" name="zone_2_zoom" check_for_player="1" center="-29.2825 8.21105 1.47152" radius="6.0"/>
+  <volume type="sphere" name="zone_3_zoom" check_for_player="1" center="16.6722 25.5089 -4.30621" radius="7.0"/>
+  <volume type="sphere" name="zone_4_zoom" check_for_player="1" center="0.0 -1.89117 -15.9198" radius="31.0"/> 
+  <volume type="sphere" name="zone_door_zoom" check_for_player="1" center="26.8755 12.0393 3.69596" radius="12.0"/>
+
+  <!-- CANONS -->
+  <volume type="sphere" name="canon_1" check_for_player="1" check_is_inside="1" center="15.2129 -0.206504 -27.3481" radius="2.2"/>
+  <volume type="sphere" name="canon_2" check_for_player="1" check_is_inside="1" center="0.164124 -13.7913 -27.9619" radius="2.2"/>
+  <volume type="sphere" name="canon_3" check_for_player="1" check_is_inside="1" center="-14.196 -0.251687 -27.537" radius="2.2"/>
+  <volume type="sphere" name="canon_4" check_for_player="1" check_is_inside="1" center="-0.338699 12.4815 -28.4437" radius="2.2"/>
+  
+  <!-- FLAME ZONES FIRED CONTROL VOLUMES -->
+  <volume type="sphere" name="flame_101" check_for_player="1" check_is_inside="1" center="10.1294 -0.123334 -27.4407" radius="1.9"/>
+  <volume type="sphere" name="flame_102" check_for_player="1" check_is_inside="1" center="11.8799 -0.123334 -26.8058" radius="1.9"/>
+  <volume type="sphere" name="flame_103" check_for_player="1" check_is_inside="1" center="13.6558 -0.123334 -26.1348" radius="1.9"/>
+  <volume type="sphere" name="flame_104" check_for_player="1" check_is_inside="1" center="15.4073 -0.123334 -25.266" radius="1.9"/>
+  <volume type="sphere" name="flame_105" check_for_player="1" check_is_inside="1" center="16.9927 -0.123334 -24.2519" radius="1.9"/>
+  <volume type="sphere" name="flame_106" check_for_player="1" check_is_inside="1" center="18.576 -0.123334 -23.1254" radius="1.9"/>
+  <volume type="sphere" name="flame_107" check_for_player="1" check_is_inside="1" center="20.0525 -0.123333 -21.9305" radius="1.9"/>
+  <volume type="sphere" name="flame_108" check_for_player="1" check_is_inside="1" center="21.4025 -0.123333 -20.5829" radius="1.9"/>
+  <volume type="sphere" name="flame_109" check_for_player="1" check_is_inside="1" center="22.5843 -0.123333 -19.1607" radius="1.9"/>
+  <volume type="sphere" name="flame_110" check_for_player="1" check_is_inside="1" center="23.6074 -0.123333 -17.7883" radius="1.9"/>
+  <volume type="sphere" name="flame_111" check_for_player="1" check_is_inside="1" center="24.728 -0.123333 -16.1879" radius="1.9"/>
+  
+  <volume type="sphere" name="flame_201" check_for_player="1" check_is_inside="1" center="0.239656 -8.56579 -27.7632" radius="1.9"/>
+  <volume type="sphere" name="flame_202" check_for_player="1" check_is_inside="1" center="0.222583 -10.3481 -27.2241" radius="1.9"/>
+  <volume type="sphere" name="flame_203" check_for_player="1" check_is_inside="1" center="0.205897 -12.1576 -26.6505" radius="1.9"/>
+  <volume type="sphere" name="flame_204" check_for_player="1" check_is_inside="1" center="0.194334 -13.9536 -25.878" radius="1.9"/>
+  <volume type="sphere" name="flame_205" check_for_player="1" check_is_inside="1" center="0.189252 -15.5918 -24.9515" radius="1.9"/>
+  <volume type="sphere" name="flame_206" check_for_player="1" check_is_inside="1" center="0.186862 -17.2339 -23.9127" radius="1.9"/>
+  <volume type="sphere" name="flame_207" check_for_player="1" check_is_inside="1" center="0.188045 -18.7733 -22.7998" radius="1.9"/>
+  <volume type="sphere" name="flame_208" check_for_player="1" check_is_inside="1" center="0.195159 -20.1946 -21.5276" radius="1.9"/>
+  <volume type="sphere" name="flame_209" check_for_player="1" check_is_inside="1" center="0.207118 -21.452 -20.172" radius="1.9"/>
+  <volume type="sphere" name="flame_210" check_for_player="1" check_is_inside="1" center="0.220809 -22.5483 -18.8573" radius="1.9"/>
+  <volume type="sphere" name="flame_211" check_for_player="1" check_is_inside="1" center="0.238101 -23.7543 -17.3205" radius="1.9"/>
+  
+  <volume type="sphere" name="flame_301" check_for_player="1" check_is_inside="1" center="-9.80935 -0.107515 -27.7972" radius="1.9"/>
+  <volume type="sphere" name="flame_302" check_for_player="1" check_is_inside="1" center="-11.5538 -0.104501 -27.1457" radius="1.9"/>
+  <volume type="sphere" name="flame_303" check_for_player="1" check_is_inside="1" center="-13.3232 -0.101081 -26.458" radius="1.9"/>
+  <volume type="sphere" name="flame_304" check_for_player="1" check_is_inside="1" center="-15.0664 -0.0949154 -25.5727" radius="1.9"/>
+  <volume type="sphere" name="flame_305" check_for_player="1" check_is_inside="1" center="-16.6421 -0.0862626 -24.5436" radius="1.9"/>
+  <volume type="sphere" name="flame_306" check_for_player="1" check_is_inside="1" center="-18.2147 -0.076088 -23.4023" radius="1.9"/>
+  <volume type="sphere" name="flame_307" check_for_player="1" check_is_inside="1" center="-19.6799 -0.0646529 -22.1936" radius="1.9"/>
+  <volume type="sphere" name="flame_308" check_for_player="1" check_is_inside="1" center="-21.0171 -0.0507555 -20.8333" radius="1.9"/>
+  <volume type="sphere" name="flame_309" check_for_player="1" check_is_inside="1" center="-22.1854 -0.0353196 -19.4001" radius="1.9"/>
+  <volume type="sphere" name="flame_310" check_for_player="1" check_is_inside="1" center="-23.1955 -0.0200517 -18.0182" radius="1.9"/>
+  <volume type="sphere" name="flame_311" check_for_player="1" check_is_inside="1" center="-24.3009 -0.0020181 -16.4074" radius="1.9"/>
+  
+  <volume type="sphere" name="flame_401" check_for_player="1" check_is_inside="1" center="0.195702 8.7404 -28.6402" radius="1.9"/>
+  <volume type="sphere" name="flame_402" check_for_player="1" check_is_inside="1" center="0.19263 10.5093 -28.0587" radius="1.9"/>
+  <volume type="sphere" name="flame_403" check_for_player="1" check_is_inside="1" center="0.189947 12.3047 -27.4419" radius="1.9"/>
+  <volume type="sphere" name="flame_404" check_for_player="1" check_is_inside="1" center="0.190646 14.0818 -26.6266" radius="1.9"/>
+  <volume type="sphere" name="flame_405" check_for_player="1" check_is_inside="1" center="0.19496 15.6972 -25.6611" radius="1.9"/>
+  <volume type="sphere" name="flame_406" check_for_player="1" check_is_inside="1" center="0.201104 17.314 -24.5832" radius="1.9"/>
+  <volume type="sphere" name="flame_407" check_for_player="1" check_is_inside="1" center="0.209167 18.8658 -23.503" radius="1.9"/>
+  <volume type="sphere" name="flame_408" check_for_player="1" check_is_inside="1" center="0.220661 20.2165 -22.1279" radius="1.9"/>
+  <volume type="sphere" name="flame_409" check_for_player="1" check_is_inside="1" center="0.234642 21.441 -20.7423" radius="1.9"/>
+  <volume type="sphere" name="flame_410" check_for_player="1" check_is_inside="1" center="0.249027 22.5053 -19.4017" radius="1.9"/>
+  <volume type="sphere" name="flame_411" check_for_player="1" check_is_inside="1" center="0.266353 23.674 -17.8362" radius="1.9"/>
+  
+</volumes>

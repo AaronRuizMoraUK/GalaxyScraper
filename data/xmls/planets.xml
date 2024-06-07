@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<planets initial_planet="iuranus">
+  <planet name="iuranus">
+    <localization transform="1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0" radius="15"/>
+    <mesh type="custom" name="iuranus_surface.mesh"/>
+    <material name="iuranus_surface.dds" shader="shader.fx" technique="normal_tech"/>
+    <heightmap name="iuranus_surface_heightmap.bin"/>
+  </planet>
+  <planet name="terror">
+    <localization transform="1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 200.729 30.0 -32.182" radius="18"/>
+    <mesh type="custom" name="terror.mesh"/>
+    <material name="terror_streets.dds" shader="shader.fx" technique="basic_tech"/>
+    <heightmap name="iuranus_surface_heightmap.bin"/>
+  </planet>
+  <planet name="futbol">
+    <localization transform="1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 341.1 20 634.35" radius="35"/>
+    <mesh type="custom" name="futbol.mesh"/>
+    <material name="futbol_pitch.dds" shader="shader.fx" technique="basic_tech"/>
+    <heightmap name="iuranus_surface_heightmap.bin"/>
+  </planet>
+  <planet name="fongus">
+    <localization transform="1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 99.4146 -60.8186 -129.174" radius="8"/>
+    <mesh type="custom" name="fongus.mesh"/>
+    <material name="fong.dds" shader="shader.fx" technique="basic_tech"/>
+    <heightmap name="iuranus_surface_heightmap.bin"/>
+  </planet>
+  <planet name="papaworu">
+    <localization transform="1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -101.311 57.8193 -37.4562" radius="8"/>
+    <mesh type="custom" name="papaworu.mesh"/>
+    <material name="papaworu.dds" shader="shader.fx" technique="basic_tech"/>
+    <heightmap name="iuranus_surface_heightmap.bin"/>
+  </planet>
+  <planet name="boiler">
+    <localization transform="1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -90.0 -118.0 248.0" radius="33"/>
+    <mesh type="custom" name="boiler_surface.mesh"/>
+    <material name="boiler_surface.dds" shader="shader.fx" technique="basic_tech"/>
+    <heightmap name="boiler_surface_heightmap.bin"/>
+  </planet>
+</planets>

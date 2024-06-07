@@ -1,0 +1,8 @@
+set_fallen_condition(true)
+enable_player_flicker(true)
+take_player_control_out_but_anim(true)
+add_burned_particles_to_player()
+delete_timer("wait_after_boiler_death")
+create_timer("wait_after_boiler_death", 0.5)
+delete_timer("disable_flickering")
+create_timer("disable_flickering", 1.0)

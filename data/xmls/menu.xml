@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<menu>
+  <planet>
+    <localization transform="-0.642788 0.0 0.766044 0.0 1.0 0.0 -0.766044 0.0 -0.642788 475.0 28.0 394.0" />
+    <mesh name="menu_planet.mesh" />
+    <material name="menu_planet_2.dds" shader="shader.fx" technique="normal_tech" />
+  </planet>
+
+  <start_action>
+    <localization transform="0.988053 -0.0844591 -0.128911 0.0851698 0.996367 0.0 0.128442 -0.0109793 0.991656 17.3196 -0.196676 0.762617" />
+    <mesh name="start_cartel.mesh" />
+    <material name="start_cartel.dds" shader="shader.fx" technique="normal_tech" />
+  </start_action>
+
+  <options_action>
+    <localization transform="0.0 -1.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 16.3369 -6.95829e-007" />
+    <mesh name="cartel.mesh" />
+    <material name="options_cartel.dds" shader="shader.fx" technique="normal_tech" />
+  </options_action>
+
+  <credits_action>
+    <localization transform="0.99661 0.0 0.0822762 0.0 1.0 0.0 -0.0822762 0.0 0.99661 -16.3452 -1.18087 1.31821" />
+    <mesh name="cartel.mesh" />
+    <material name="credits_cartel.dds" shader="shader.fx" technique="normal_tech" />
+  </credits_action>
+  
+  <exit_action>
+    <localization transform="1.94707e-007 1.0 0.0 -1.0 1.94707e-007 0.0 0.0 0.0 1.0 0.0 -16.1439 7.04443e-007" />
+    <mesh name="cartel.mesh" />
+    <material name="exit_cartel.dds" shader="shader.fx" technique="normal_tech" />
+  </exit_action>
+
+  <sky>
+    <localization transform="1 0 0 0 1 0 0 0 1 0 0 0" />
+    <mesh name="sky.mesh" />
+    <material name="sky.dds" shader="shader.fx" technique="dummy_tech" />
+  </sky>
+
+  <title>
+    <localization transform="1 0 0 0 1 0 0 0 1 0.4 0.6 0" />
+    <material name="title.dds" shader="shader.fx" technique="title_tech" />
+  </title>
+</menu>

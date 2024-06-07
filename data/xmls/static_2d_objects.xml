@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<static_2d_objects>
+  <static_2d_object id="1">
+    <localization planet="boiler" transform="0.313302 0.0 -0.949654 0.0 1.0 0.0 0.949654 0.0 0.313302 3.2409 -0.196996 -33.7299"/>
+    <mesh name="godray.mesh"/>
+    <material name="grille.dds" shader="shader.fx" technique="godray_tech"/>
+  </static_2d_object>
+  <static_2d_object id="2">
+    <localization planet="boiler" transform="-2.98112e-007 -0.313302 -0.949654 1.0 0.0 -3.51265e-007 2.1756e-007 -0.949654 0.313302 -0.00842562 -3.41477 -33.7299"/>
+    <mesh name="godray.mesh"/>
+    <material name="grille.dds" shader="shader.fx" technique="godray_tech"/>
+  </static_2d_object>
+  <static_2d_object id="3">
+    <localization planet="boiler" transform="-0.313302 0.0 -0.949654 0.0 -1.0 0.0 -0.949654 0.0 0.313302 -2.98133 -0.196996 -33.7299"/>
+    <mesh name="godray.mesh"/>
+    <material name="grille.dds" shader="shader.fx" technique="godray_tech"/>
+  </static_2d_object>
+  <static_2d_object id="4">
+    <localization planet="boiler" transform="0.0 0.313302 -0.949654 -1.0 0.0 0.0 -1.42863e-007 0.949654 0.313302 -0.00842537 2.82213 -33.7299"/>
+    <mesh name="godray.mesh"/>
+    <material name="grille.dds" shader="shader.fx" technique="godray_tech"/>
+  </static_2d_object>
+</static_2d_objects>

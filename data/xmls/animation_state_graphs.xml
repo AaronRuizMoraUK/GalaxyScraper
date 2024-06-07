@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<animation_graphs>
+  <animation_states name = "player_graph">
+    <!--This animation_states have to have the same name that "cal_core_models" -->
+    <animation_state cycle = "idle" action = "" />
+    <animation_state cycle = "walk" action = "" />
+    <animation_state cycle = "jog" action = "" />
+    <animation_state cycle = "idle" action = "kick" />
+    <animation_state cycle = "walk" action = "kick" />
+    <animation_state cycle = "jog" action = "kick" />
+    <animation_state cycle = "jumping" action = "" />
+    <animation_state cycle = "" action = "finish_jump" />
+    <animation_state cycle = "" action = "hit" />
+    <animation_state cycle = "" action = "prepare_jump" />
+    <animation_state cycle = "thrown" action = "" />
+    <animation_state cycle = "transition" action = "" />
+    <animation_state cycle = "" action = "burn" />
+
+    <next_animation cycle="idle" action = "kick" next_cycle = "idle"/>
+    <next_animation cycle="walk" action = "kick" next_cycle = "walk"/>
+    <next_animation cycle="jog" action = "kick" next_cycle = "jog"/>
+    <next_animation cycle = "" action = "hit" next_cycle = "idle" />
+    <next_animation cycle = "" action = "prepare_jump" next_cycle = "jumping" />
+    <next_animation cycle = "" action = "finish_jump" next_cycle = "idle" />
+    <next_animation cycle = "" action = "burn" next_cycle = "idle" />
+
+
+    <animation_relation blend_time = "0.1" clear_time = "0.1" source_cycle = "idle" target_cycle = "walk" must_finish = "0" cancel_cycle = "1" cancel_action = "0" />
+    <animation_relation blend_time = "0.1" clear_time = "0.1" source_cycle = "walk" target_cycle = "idle" must_finish = "0" cancel_cycle = "1" cancel_action = "0"/>
+    <animation_relation blend_time = "0.1" clear_time = "0.1" source_cycle = "idle" target_cycle = "jog" must_finish = "0" cancel_cycle = "1" cancel_action = "0"/>
+    <animation_relation blend_time = "0.1" clear_time = "0.1" source_cycle = "jog" target_cycle = "idle" must_finish = "0" cancel_cycle = "1" cancel_action = "0"/>
+    <animation_relation blend_time = "0.1" clear_time = "0.1" source_cycle = "walk" target_cycle = "jog" must_finish = "0" cancel_cycle = "1" cancel_action = "0"/>
+    <animation_relation blend_time = "0.1" clear_time = "0.1" source_cycle = "jog" target_cycle = "walk" must_finish = "0" cancel_cycle = "1" cancel_action = "0"/>
+
+    <animation_relation blend_time = "0.1" clear_time = "0.1" source_cycle = "idle" target_action = "hit" must_finish = "0" cancel_cycle = "1" cancel_action = "0" />
+    <animation_relation blend_time = "0.1" clear_time = "0.1" source_cycle = "walk" target_action = "hit" must_finish = "0" cancel_cycle = "1" cancel_action = "0" />
+    <animation_relation blend_time = "0.1" clear_time = "0.1" source_cycle = "jog" target_action = "hit" must_finish = "0" cancel_cycle = "1" cancel_action = "0" />
+    <animation_relation blend_time = "0.1" clear_time = "0.1" source_action = "hit" target_cycle = "idle" must_finish = "1" cancel_cycle = "1" cancel_action = "0" />
+
+
+    <animation_relation blend_time = "0.1" clear_time = "0.1" source_cycle = "idle" target_cycle = "idle" target_action = "kick" must_finish = "0" cancel_cycle = "0" cancel_action = "0"/>
+    <animation_relation blend_time = "0.1" clear_time = "0.1" source_cycle = "idle" source_action = "kick" target_cycle = "idle" must_finish = "1" cancel_cycle = "0" cancel_action = "0"/>
+
+    <animation_relation blend_time = "0.1" clear_time = "0.1" source_cycle = "walk" target_cycle = "walk" target_action = "kick" must_finish = "0" cancel_cycle = "0" cancel_action = "0"/>
+    <animation_relation blend_time = "0.1" clear_time = "0.1" source_cycle = "walk" source_action = "kick" target_cycle = "walk" must_finish = "1" cancel_cycle = "0" cancel_action = "0"/>
+
+    <animation_relation blend_time = "0.1" clear_time = "0.1" source_cycle = "jog" target_cycle = "jog" target_action = "kick" must_finish = "0" cancel_cycle = "0" cancel_action = "0"/>
+    <animation_relation blend_time = "0.1" clear_time = "0.1" source_cycle = "jog" source_action = "kick" target_cycle = "jog" must_finish = "1" cancel_cycle = "0" cancel_action = "0"/>
+
+    <animation_relation blend_time = "0.1" clear_time = "0.1" source_cycle = "idle" source_action = "kick" target_cycle = "walk" target_action = "kick" must_finish = "0" cancel_cycle = "1" cancel_action = "0" />
+    <animation_relation blend_time = "0.1" clear_time = "0.1" source_cycle = "idle" source_action = "kick" target_cycle = "jog" target_action = "kick" must_finish = "0" cancel_cycle = "1" cancel_action = "0" />
+    <animation_relation blend_time = "0.1" clear_time = "0.1" source_cycle = "walk" source_action = "kick" target_cycle = "idle" target_action = "kick" must_finish = "0" cancel_cycle = "1" cancel_action = "0" />
+    <animation_relation blend_time = "0.1" clear_time = "0.1" source_cycle = "walk" source_action = "kick" target_cycle = "jog" target_action = "kick" must_finish = "0" cancel_cycle = "1" cancel_action = "0" />
+    <animation_relation blend_time = "0.1" clear_time = "0.1" source_cycle = "jog" source_action = "kick" target_cycle = "idle" target_action = "kick" must_finish = "0" cancel_cycle = "1" cancel_action = "0" />
+    <animation_relation blend_time = "0.1" clear_time = "0.1" source_cycle = "jog" source_action = "kick" target_cycle = "walk" target_action = "kick" must_finish = "0" cancel_cycle = "1" cancel_action = "0" />
+
+
+    <animation_relation blend_time = "0.1" clear_time = "0.1" source_cycle = "idle" source_action = "" target_cycle = "" target_action = "prepare_jump" must_finish = "0" cancel_cycle = "1" cancel_action = "0" />
+    <animation_relation blend_time = "0.1" clear_time = "0.1" source_cycle = "walk" source_action = "" target_cycle = "" target_action = "prepare_jump" must_finish = "0" cancel_cycle = "1" cancel_action = "0" />
+    <animation_relation blend_time = "0.1" clear_time = "0.1" source_cycle = "jog" source_action = "" target_cycle = "" target_action = "prepare_jump" must_finish = "0" cancel_cycle = "1" cancel_action = "0" />
+
+    <animation_relation blend_time = "0.1" clear_time = "0.5" source_action = "prepare_jump" target_cycle = "jumping" must_finish = "1" cancel_cycle = "0" cancel_action = "1" />
+
+    <animation_relation blend_time = "0.1" clear_time = "0.1" source_action = "prepare_jump" target_cycle = "idle" must_finish = "1" cancel_cycle = "0" cancel_action = "1" />
+
+    <animation_relation blend_time = "0.1" clear_time = "0.1" source_cycle = "jumping" target_action = "finish_jump" must_finish = "0" cancel_cycle = "1" cancel_action = "1" />
+
+    <animation_relation blend_time = "0.1" clear_time = "0.1" source_cycle = "jumping" target_cycle = "idle" must_finish = "1" cancel_cycle = "1" cancel_action = "0"/>
+
+    <animation_relation blend_time = "0.1" clear_time = "0.1" source_action = "finish_jump" target_cycle = "idle" must_finish = "1" cancel_cycle = "0" cancel_action = "1" />
+
+    <animation_relation blend_time = "0.1" clear_time = "0.1" source_cycle = "idle" source_action = "" target_cycle = "thrown" must_finish = "0" cancel_cycle = "1" cancel_action = "1" />
+
+    <animation_relation blend_time = "0.1" clear_time = "0.1" source_cycle = "walk" source_action = "" target_cycle = "thrown" must_finish = "0" cancel_cycle = "1" cancel_action = "1" />
+
+    <animation_relation blend_time = "0.1" clear_time = "0.1" source_cycle = "jog" source_action = "" target_cycle = "thrown" must_finish = "0" cancel_cycle = "1" cancel_action = "1" />
+
+    <animation_relation blend_time = "0.1" clear_time = "0.5" source_action = "prepare_jump" target_cycle = "thrown" must_finish = "0" cancel_cycle = "1" cancel_action = "1" />
+
+    <animation_relation blend_time = "0.1" clear_time = "0.1" source_cycle = "jumping" target_cycle = "thrown" must_finish = "0" cancel_cycle = "1" cancel_action = "1" />
+
+    <animation_relation blend_time = "0.1" clear_time = "0.1" source_action = "finish_jump" target_cycle = "thrown" must_finish = "0" cancel_cycle = "1" cancel_action = "1" />
+    
+    <animation_relation blend_time = "0.1" clear_time = "0.1" source_cycle = "idle" source_action = "kick" target_cycle = "thrown" must_finish = "0" cancel_cycle = "1" cancel_action = "1" />
+
+    <animation_relation blend_time = "0.1" clear_time = "0.1" source_cycle = "walk" source_action = "kick" target_cycle = "thrown" must_finish = "0" cancel_cycle = "1" cancel_action = "1" />
+
+    <animation_relation blend_time = "0.1" clear_time = "0.1" source_cycle = "jog" source_action = "kick" target_cycle = "thrown" must_finish = "0" cancel_cycle = "1" cancel_action = "1" />
+
+    <animation_relation blend_time = "0.1" clear_time = "0.1" source_cycle = "thrown" target_action = "finish_jump" must_finish = "0" cancel_cycle = "1" cancel_action = "1" />
+
+    <animation_relation blend_time = "0.1" clear_time = "0.1" source_cycle = "idle" target_cycle = "transition" must_finish = "0" cancel_cycle = "1" cancel_action = "1" />
+
+    <animation_relation blend_time = "0.1" clear_time = "0.1" source_cycle = "thrown" target_cycle = "transition" must_finish = "0" cancel_cycle = "1" cancel_action = "1" />
+
+    <animation_relation blend_time = "0.1" clear_time = "0.1" source_cycle = "thrown" target_cycle = "transition" must_finish = "0" cancel_cycle = "1" cancel_action = "1" />
+
+    <animation_relation blend_time = "0.1" clear_time = "0.1" source_cycle = "transition" target_action = "prepare_jump" must_finish = "0" cancel_cycle = "1" cancel_action = "1" />
+
+    <animation_relation blend_time = "0.1" clear_time = "0.1" source_cycle = "transition" target_cycle = "idle" must_finish = "0" cancel_cycle = "1" cancel_action = "1" />
+    
+  <animation_relation blend_time = "0.1" clear_time = "0.1" source_cycle = "idle" target_action = "burn" must_finish = "0" cancel_cycle = "1" cancel_action = "0" />
+
+  
+  <animation_relation blend_time = "0.1" clear_time = "0.1" source_action = "burn" target_cycle = "idle" must_finish = "1" cancel_cycle = "0" cancel_action = "1" />
+
+
+  </animation_states>
+
+  <animation_states name = "arachnid_graph">
+    <!--This animation_states have to have the same name that "cal_core_models" -->
+    <animation_state cycle = "emerge" action = "" />
+    <animation_state cycle = "idle" action = "" />
+    <animation_state cycle = "walk" action = "" />
+    <animation_state cycle = "fly_upwards" action = "" />
+    <animation_state cycle = "fly_downwards" action = "" />
+    <animation_state cycle = "caught" action = "" />
+    <animation_state cycle = "" action = "foolished" />
+    <animation_state cycle = "" action = "attack_failed" />
+    <animation_state cycle = "attack_ok" action = "" />
+    <animation_state cycle = "prepare_attack" action = "" />
+    <animation_state cycle = "scared" action = "" />
+    <animation_state cycle = "together" action = "" />
+    <animation_state cycle = "enemy_victory" action = "" />
+
+    <!-- <next_animation action="emerge" next_cycle = "idle" next_action = ""/> -->
+    <next_animation action="foolished" next_cycle = "scared" />
+    <!-- <next_animation action="prepare_attack" next_cycle = "fly_downwards" /> -->
+    <next_animation action="attack_failed" next_cycle = "idle" />
+    <!--
+<next_animation cycle="attack_ok" next_action = "foolished" />
+-->
+
+    <animation_relation blend_time = "0.5" clear_time = "0.5" source_cycle = "emerge" source_action = "" target_cycle = "idle" target_action = "" must_finish = "0" cancel_cycle = "1" cancel_action = "1" />
+
+    <animation_relation blend_time = "0.5" clear_time = "0.5" source_cycle = "prepare_attack" target_cycle = "fly_downwards"  must_finish = "0" cancel_cycle = "1" cancel_action = "1" />
+    <animation_relation blend_time = "0.5" clear_time = "0.5" source_cycle = "walk" target_cycle = "prepare_attack" must_finish = "0" cancel_cycle = "1" cancel_action = "1" />
+
+    <!-- ENEMY CAN RECEIVE HIT FROM ANY PREVIOUS ANIMATION STATE -->
+    <animation_relation blend_time = "0.5" clear_time = "0.5" source_cycle = "idle" target_cycle = "fly_upwards"  must_finish = "0" cancel_cycle = "1" cancel_action = "1" />
+    <animation_relation blend_time = "0.5" clear_time = "0.5" source_cycle = "walk" target_cycle = "fly_upwards"  must_finish = "0" cancel_cycle = "1" cancel_action = "1" />
+    <animation_relation blend_time = "0.5" clear_time = "0.5" source_cycle = "fly_downwards" target_cycle = "fly_upwards"  must_finish = "0" cancel_cycle = "1" cancel_action = "1" />
+    <animation_relation blend_time = "0.5" clear_time = "0.5" source_action = "foolished" target_cycle = "fly_upwards"  must_finish = "0" cancel_cycle = "1" cancel_action = "1" />
+    <animation_relation blend_time = "0.5" clear_time = "0.5" source_action = "attack_failed" target_cycle = "fly_upwards"  must_finish = "0" cancel_cycle = "1" cancel_action = "1" />
+    <animation_relation blend_time = "0.5" clear_time = "0.5" source_cycle = "prepare_attack" target_cycle = "fly_upwards"  must_finish = "0" cancel_cycle = "1" cancel_action = "1" />
+    <animation_relation blend_time = "0.5" clear_time = "0.5" source_cycle = "scared" target_cycle = "fly_upwards"  must_finish = "0" cancel_cycle = "1" cancel_action = "1" />
+    <animation_relation blend_time = "0.5" clear_time = "0.5" source_cycle = "together" target_cycle = "fly_upwards"  must_finish = "0" cancel_cycle = "1" cancel_action = "1" />
+
+    <animation_relation blend_time = "0.5" clear_time = "0.5" source_cycle = "fly_upwards"  target_action = "foolished"  must_finish = "0" cancel_cycle = "1" cancel_action = "0" />
+    <animation_relation blend_time = "0.5" clear_time = "0.5" source_cycle = "attack_ok" target_action = "foolished"  must_finish = "0" cancel_cycle = "1" cancel_action = "1" />
+    <animation_relation blend_time = "0.5" clear_time = "0.5"  source_action = "attack_failed" target_cycle = "idle"  must_finish = "1" cancel_cycle = "1" cancel_action = "1" />
+
+    <animation_relation blend_time = "0.5" clear_time = "0.5" source_cycle = "fly_downwards" target_action = "attack_failed" must_finish = "0" cancel_cycle = "1" cancel_action = "1" />
+    <animation_relation blend_time = "0.5" clear_time = "0.5" source_cycle = "fly_downwards" target_cycle = "attack_ok" must_finish = "0" cancel_cycle = "1" cancel_action = "1" />
+
+    <animation_relation blend_time = "0.1" clear_time = "0.1" source_action = "foolished"  target_cycle = "scared"  must_finish = "0" cancel_cycle = "1" cancel_action = "0" />
+    <animation_relation blend_time = "0.5" clear_time = "0.5" source_cycle = "idle"  target_cycle = "prepare_attack"  must_finish = "0" cancel_cycle = "1" cancel_action = "0" />
+
+	<animation_relation blend_time = "0.5" clear_time = "0.5" source_cycle = "walk"  target_cycle = "scared"  must_finish = "0" cancel_cycle = "1" cancel_action = "1" />
+    <animation_relation blend_time = "0.5" clear_time = "0.5" source_cycle = "idle"  target_cycle = "scared"  must_finish = "0" cancel_cycle = "1" cancel_action = "1" />
+    
+    <animation_relation blend_time = "0.1" clear_time = "0.1" source_cycle = "scared"  target_cycle = "walk"  must_finish = "0" cancel_cycle = "1" cancel_action = "0" />
+
+    <animation_relation blend_time = "0.5" clear_time = "0.5" source_cycle = "together"  target_cycle = "idle"  must_finish = "0" cancel_cycle = "1" cancel_action = "0" />
+
+    <animation_relation blend_time = "0.5" clear_time = "0.5" source_cycle = "idle"  target_cycle = "walk"  must_finish = "0" cancel_cycle = "1" cancel_action = "0" />
+    <animation_relation blend_time = "0.5" clear_time = "0.5" source_cycle = "walk"  target_cycle = "idle"  must_finish = "0" cancel_cycle = "1" cancel_action = "0" />
+
+    <animation_relation blend_time = "0.5" clear_time = "0.5" source_cycle = "idle"  target_cycle = "enemy_victory"  must_finish = "0" cancel_cycle = "1" cancel_action = "0" />
+    <animation_relation blend_time = "0.5" clear_time = "0.5" source_cycle = "walk"  target_cycle = "enemy_victory"  must_finish = "0" cancel_cycle = "1" cancel_action = "0" />
+    <animation_relation blend_time = "0.5" clear_time = "0.5" source_cycle = "fly_upwards"  target_cycle = "enemy_victory"  must_finish = "0" cancel_cycle = "1" cancel_action = "0" />
+    <animation_relation blend_time = "0.5" clear_time = "0.5" source_cycle = "fly_downwards"  target_cycle = "enemy_victory"  must_finish = "0" cancel_cycle = "1" cancel_action = "0" />
+    <animation_relation blend_time = "0.5" clear_time = "0.5" source_cycle = "caught"  target_cycle = "enemy_victory"  must_finish = "0" cancel_cycle = "1" cancel_action = "0" />
+    <animation_relation blend_time = "0.5" clear_time = "0.5" source_action = "foolished"  target_cycle = "enemy_victory"  must_finish = "0" cancel_cycle = "1" cancel_action = "1" />
+    <animation_relation blend_time = "0.5" clear_time = "0.5" source_action = "attack_failed"  target_cycle = "enemy_victory"  must_finish = "0" cancel_cycle = "1" cancel_action = "1" />
+    <animation_relation blend_time = "0.5" clear_time = "0.5" source_cycle = "attack_ok"  target_cycle = "enemy_victory"  must_finish = "0" cancel_cycle = "1" cancel_action = "0" />
+    <animation_relation blend_time = "0.5" clear_time = "0.5" source_cycle = "prepare_attack"  target_cycle = "enemy_victory"  must_finish = "0" cancel_cycle = "1" cancel_action = "0" />
+    <animation_relation blend_time = "0.5" clear_time = "0.5" source_cycle = "scared"  target_cycle = "enemy_victory"  must_finish = "0" cancel_cycle = "1" cancel_action = "1" />
+    <animation_relation blend_time = "0.5" clear_time = "0.5" source_cycle = "together"  target_cycle = "enemy_victory"  must_finish = "0" cancel_cycle = "1" cancel_action = "0" />
+
+    <animation_relation blend_time = "0.5" clear_time = "0.5" source_cycle = "enemy_victory"  target_cycle = "walk"  must_finish = "0" cancel_cycle = "1" cancel_action = "0" />
+
+  </animation_states>
+
+
+
+  <animation_states name = "ass_graph">
+    <animation_state cycle="idle" action=""/>
+    <animation_state cycle="" action="little_fart"/>
+    <animation_state cycle="" action="medium_fart"/>
+    <animation_state cycle="" action="great_fart"/>
+
+    <next_animation cycle="" action = "little_fart" next_cycle = "idle" next_action = ""/>
+    <next_animation cycle="" action = "medium_fart" next_cycle = "idle" next_action = ""/>
+    <next_animation cycle="" action = "great_fart" next_cycle = "idle" next_action = ""/>
+
+    <animation_relation blend_time="0.2" clear_time="0.2" source_cycle="idle" source_action="" target_cycle="" target_action="little_fart" must_finish="0" cancel_cycle="1" cancel_action="0" />
+    <animation_relation blend_time="0.2" clear_time="0.2" source_cycle="idle" source_action="" target_action="medium_fart" target_cycle="" must_finish="0" cancel_cycle="1" cancel_action="0" />
+    <animation_relation blend_time="0.2" clear_time="0.2" source_cycle="idle" source_action="" target_action="great_fart" target_cycle="" must_finish="0" cancel_cycle="1" cancel_action="0" />
+    <animation_relation blend_time="0.2" clear_time="0.2" source_cycle="" source_action="little_fart" target_action="" target_cycle="idle" must_finish="1" cancel_cycle="0" cancel_action="1" />
+    <animation_relation blend_time="0.2" clear_time="0.2" source_cycle="" source_action="medium_fart" target_action="" target_cycle="idle" must_finish="1" cancel_cycle="0" cancel_action="1" />
+    <animation_relation blend_time="0.2" clear_time="0.2" source_cycle="" source_action="great_fart" target_action="" target_cycle="idle" must_finish="1" cancel_cycle="0" cancel_action="1" />
+  </animation_states>
+
+
+  <animation_states name = "bush_graph">
+    <animation_state cycle="idle" action=""/>
+    <animation_state cycle="" action="moving"/>
+
+    <next_animation cycle="" action = "moving" next_cycle = "idle" next_action = ""/>
+
+    <animation_relation blend_time="0.2" clear_time="0.2" source_cycle="idle" source_action="" target_cycle="" target_action="moving" must_finish="0" cancel_cycle="1" cancel_action="0" />
+    <animation_relation blend_time="0.2" clear_time="0.2" source_cycle="" source_action="moving" target_action="" target_cycle="idle" must_finish="0" cancel_cycle="0" cancel_action="1" />
+  </animation_states>
+
+  <animation_states name = "tongue_graph">
+    <animation_state cycle="idle" action=""/>
+    <animation_state cycle="" action="moving"/>
+
+    <next_animation cycle="" action = "moving" next_cycle = "idle" next_action = ""/>
+
+    <animation_relation blend_time="0.2" clear_time="0.2" source_cycle="idle" source_action="" target_cycle="" target_action="moving" must_finish="0" cancel_cycle="1" cancel_action="0" />
+    <animation_relation blend_time="0.2" clear_time="0.2" source_cycle="" source_action="moving" target_action="" target_cycle="idle" must_finish="0" cancel_cycle="0" cancel_action="1" />
+  </animation_states>
+
+  <animation_states name = "mouth_graph">
+    <animation_state cycle="idle" action="" />
+    <animation_state cycle="" action="eat" />
+    <next_animation action = "eat" next_cycle = "idle"/>
+
+    <animation_relation blend_time = "0.1" clear_time = "0.1" source_cycle = "idle" target_action = "eat" must_finish = "0" cancel_cycle = "1" cancel_action = "0" />
+    <animation_relation blend_time = "0.1" clear_time = "0.1" source_action = "eat" target_cycle = "idle" must_finish = "1" cancel_cycle = "0" cancel_action = "1" />
+
+  </animation_states>
+  
+  <animation_states name = "lever_graph">
+    <animation_state cycle="activated" action="" />
+    <animation_state cycle="deactivated" action="" />
+    <animation_state cycle="" action="moving" />
+    
+    <next_animation action="moving" next_cycle = "activated"/>
+
+    <animation_relation blend_time = "0.1" clear_time = "0.1" source_cycle = "deactivated" target_action = "moving" must_finish = "0" cancel_cycle = "1" cancel_action = "0" />
+    <animation_relation blend_time = "0.1" clear_time = "0.1" source_action = "moving" target_cycle = "activated" must_finish = "1" cancel_cycle = "0" cancel_action = "1" />
+
+  </animation_states> 
+  
+  <animation_states name="boiler_graph">
+    <animation_state cycle="idle" action="" />
+    <animation_state cycle="" action="shoot" />
+    
+    <next_animation action="shoot" next_cycle = "idle"/>
+
+    <animation_relation blend_time = "0.1" clear_time = "0.1" source_cycle = "idle" target_action = "shoot" must_finish = "0" cancel_cycle = "1" cancel_action = "0" />
+    <animation_relation blend_time = "0.1" clear_time = "0.1" source_action = "shoot" target_cycle = "idle" must_finish = "1" cancel_cycle = "0" cancel_action = "1" />
+     
+  </animation_states>
+</animation_graphs>
+

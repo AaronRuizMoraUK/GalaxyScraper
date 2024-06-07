@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<boiler_enemies>
+  <!--
+  <boiler_enemy name="boiler">
+    <localization transform="1.0 0.0 0.0 0.0 0.0 -1.0 0.0 1.0 0.0 0.0 -1.29973e-006 -29.7344" />
+    <mesh type="cal3d" name="boiler_boiler" graph="arachnid_graph" initial_cycle="emerge" initial_action="" />
+    <material texture="boiler.dds" shader="shader.fx" technique="skinning_normal_tech" />
+    <ai_controller type="boiler_behaviour" local_slot="1.0 0.0 1.0"  />
+    <animation_controller type="boiler_animation" rotation_speed="11.0" />
+  </boiler_enemy>
+  -->
+  <boiler_enemy name="boiler">
+  	<localization transform="1.0 0.0 0.0 0.0 0.0 -1.0 0.0 1.0 0.0 0.0 -1.29973e-006 -29.7344" />
+    <mesh type="cal3d" name="boiler" graph="boiler_graph" initial_cycle="idle" initial_action=""/>
+    <material name="boiler.dds" shader="shader.fx" technique="skinning_normal_tech" />
+   	<ai_controller type="boiler_behaviour" next_flame_start_time="16.0f" num_flame_zones="4">
+	  	<flame_zone id="1" boiler_fire_plat_id="13" num_flame_platforms="11" flames_interval="0.25" duration="30.0">
+  			<flame_platform id="101"/>
+  			<flame_platform id="102"/>
+	  		<flame_platform id="103"/>
+	  		<flame_platform id="104"/>
+	  		<flame_platform id="105"/>
+	  		<flame_platform id="106"/>
+	  		<flame_platform id="107"/>
+	  		<flame_platform id="108"/>
+	  		<flame_platform id="109"/>
+	  		<flame_platform id="110"/>
+	  		<flame_platform id="111"/>
+	  	</flame_zone>
+	  	<flame_zone id="2" boiler_fire_plat_id="14" num_flame_platforms="11" flames_interval="0.25" duration="30.0">
+  			<flame_platform id="201"/>
+  			<flame_platform id="202"/>
+	  		<flame_platform id="203"/>
+	  		<flame_platform id="204"/>
+	  		<flame_platform id="205"/>
+	  		<flame_platform id="206"/>
+	  		<flame_platform id="207"/>
+	  		<flame_platform id="208"/>
+	  		<flame_platform id="209"/>
+	  		<flame_platform id="210"/>
+	  		<flame_platform id="211"/>
+	  	</flame_zone>
+	  	<flame_zone id="3" boiler_fire_plat_id="15" num_flame_platforms="11" flames_interval="0.25" duration="30.0">
+  			<flame_platform id="301"/>
+  			<flame_platform id="302"/>
+	  		<flame_platform id="303"/>
+	  		<flame_platform id="304"/>
+	  		<flame_platform id="305"/>
+	  		<flame_platform id="306"/>
+	  		<flame_platform id="307"/>
+	  		<flame_platform id="308"/>
+	  		<flame_platform id="309"/>
+	  		<flame_platform id="310"/>
+	  		<flame_platform id="311"/>
+	  	</flame_zone>
+	  	<flame_zone id="4" boiler_fire_plat_id="16" num_flame_platforms="11" flames_interval="0.25" duration="30.0">
+  			<flame_platform id="401"/>
+  			<flame_platform id="402"/>
+	  		<flame_platform id="403"/>
+	  		<flame_platform id="404"/>
+	  		<flame_platform id="405"/>
+	  		<flame_platform id="406"/>
+	  		<flame_platform id="407"/>
+	  		<flame_platform id="408"/>
+	  		<flame_platform id="409"/>
+	  		<flame_platform id="410"/>
+	  		<flame_platform id="411"/>
+	  	</flame_zone>
+	</ai_controller>
+  <animation_controller type="boiler_animation" />
+  </boiler_enemy>
+</boiler_enemies>

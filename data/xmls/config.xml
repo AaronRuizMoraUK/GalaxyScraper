@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<config>
+<video
+	fullscreen="0"
+	height="600"
+	rate="-1"
+	vsync="0"
+	width="800"
+	/>
+<options
+	music="100"
+	quality="high"
+	sfx="100"
+	/>
+</config>

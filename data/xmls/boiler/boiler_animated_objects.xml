@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<animated_objects>
+  <animated_object name="door">
+    <localization transform="0.258819 -0.79124 0.554032 0.965926 0.212012 -0.148452 0.0 0.573577 0.819152 28.7432 9.38188 -2.49001"/>
+    <mesh type="custom" name="boiler_door.mesh"/>
+    <material name="door.dds" shader="shader.fx" technique="normal_tech"/>
+  </animated_object>
+</animated_objects>

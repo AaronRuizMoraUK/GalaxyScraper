@@ -1,0 +1,5 @@
+check_fart_to_do()
+expel_enemies_around_ass()
+deep_player_into_ass(false)
+enable_camera_vibration(0.5)
+play_player_expel_sample_rand()
