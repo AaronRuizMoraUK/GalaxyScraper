@@ -4,8 +4,6 @@
 #include <cassert>
 #include "Global/GlobalFunctions.h"
 #include "Global/GlobalVariables.h"
-//#include "Strip/NvTriStrip.h"
-//#include "TriStrip/tri_stripper.h"
 
 template<class VertexType, class IndexType>
 CoreMesh<VertexType,IndexType>::CoreMesh(int pNumTotalVertices, int pNumTotalTriangles) 
@@ -112,29 +110,6 @@ void CoreMesh<VertexType,IndexType>::freeSystemMemory( ) {
 
 template<class VertexType, class IndexType>
 void CoreMesh<VertexType,IndexType>::loadToVRAM( ) {
-
-	// Tri Stripper -> Do not strip anything
-	/*triangle_stripper::indices indexVector;
-	for(int i=0; i<3*numTotalTriangles; ++i){
-		indexVector.push_back(systemIndexes[i]);
-	}
-	triangle_stripper::tri_stripper stripper(indexVector);
-	stripper.SetCacheSize(24);
-
-	triangle_stripper::primitive_vector primVector;
-	stripper.Strip(&primVector);
-
-	if(systemIndexes)
-		delete[] systemIndexes, systemIndexes=NULL;
-	triangle_stripper::indices iVec = primVector[0].Indices;
-	numTotalTriangles = ((int)iVec.size())/3;
-	systemIndexes = new IndexType[3*numTotalTriangles];
-	for(int i=0; i<3*numTotalTriangles; ++i) {
-		systemIndexes[i]=(IndexType)iVec[i];
-	}*/
-
-
-
 	// Free vertex and index buffer
 	freeVRAM();
 
@@ -185,99 +160,6 @@ void CoreMesh<VertexType,IndexType>::loadToVRAM( ) {
 	}
 	memcpy( pIndices, systemIndexes, 3*numTotalTriangles*sizeof(IndexType) );
 	indexBuffer->Unlock();
-
-
-
-	// Strip the system memory mesh
-	/*SetCacheSize(CACHESIZE_GEFORCE3);
-	PrimitiveGroup* primGroups = NULL;
-	PrimitiveGroup* primGroups2 = NULL;
-
-	// Generate Strips
-	unsigned short numGroups = 0;
-	bool correct = GenerateStrips(systemIndexes, 3*numTotalTriangles, &primGroups2, &numGroups);
-
-	if(correct) {
-		// Remap indices
-		//RemapIndices(primGroups, numGroups, numTotalVertices, &primGroups2);
-
-		// Update number of triangles (strip triangles is 2 less than indices)
-		numTotalTriangles = primGroups2[0].numIndices - 2;
-		stripVector[0]->numTriangles=numTotalTriangles;
-
-		// Delete and set the new indices
-		if(systemIndexes)
-			delete[] systemIndexes, systemIndexes=NULL;
-		systemIndexes = new IndexType[ primGroups2[0].numIndices ];
-
-		for(unsigned int i=0; i<primGroups2[0].numIndices; ++i)
-			systemIndexes[i] = (primGroups2[0].indices)[i];
-	}
-
-	// Delete information
-	if(primGroups)
-		delete[] primGroups, primGroups=NULL;
-	if(primGroups2)
-		delete[] primGroups2, primGroups2=NULL;
-
-	int numDegeneratedTriangles=0;
-	for(int i=1; i<numTotalTriangles+2; ++i)
-		if( systemIndexes[i] == systemIndexes[i-1] )
-			numDegeneratedTriangles++;
-	char msg[ 128 ];
-	sprintf_s(msg, sizeof(msg), "Number of Degenerated Triangles: %d\n", numDegeneratedTriangles);
-	OutputDebugString(msg);
-
-	// Free vertex and index buffer
-	freeVRAM();
-
-	// Create the vertex buffer.
-	if( FAILED( Global::device->CreateVertexBuffer( numTotalVertices*sizeof(VertexType),
-		D3DUSAGE_WRITEONLY,
-		0, // FVF NOT USED
-		D3DPOOL_DEFAULT, &vertexBuffer, NULL ) ) )
-	{
-		return;
-	}
-
-	// TODO WARNING, if IndexType is short -> D3DFMT_INDEX16
-	// if it is int or long -> D3DFMT_INDEX32
-
-	// Create the index buffer.
-	if( FAILED( Global::device->CreateIndexBuffer( (numTotalTriangles+2)*sizeof(IndexType),
-		D3DUSAGE_WRITEONLY, D3DFMT_INDEX16, D3DPOOL_DEFAULT, 
-		&indexBuffer, NULL ) ) )
-	{
-		return;
-	}
-
-	assert( systemVertices );
-
-	// Fill the vertex buffer.
-	VertexType* pVertices;
-	if( FAILED( vertexBuffer->Lock( 0,		// Fill from start of the buffer
-		numTotalVertices*sizeof(VertexType),// Size of the data to load
-		(void**)&pVertices,					// Returned index data
-		0 ) ) )								// Send default flags to the lock
-	{
-		return;
-	}
-	memcpy( pVertices, systemVertices, numTotalVertices*sizeof(VertexType) );
-	vertexBuffer->Unlock();
-
-	assert( systemIndexes );
-
-	// Fill the index buffer.
-	IndexType* pIndices;
-	if( FAILED( indexBuffer->Lock( 0,			// Fill from start of the buffer
-		(numTotalTriangles+2)*sizeof(IndexType),	// Size of the data to load
-		(void**)&pIndices,						// Returned index data
-		0 ) ) )									// Send default flags to the lock
-	{
-		return;
-	}
-	memcpy( pIndices, systemIndexes, (numTotalTriangles+2)*sizeof(IndexType) );
-	indexBuffer->Unlock();*/
 }
 
 template<class VertexType, class IndexType>
