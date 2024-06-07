@@ -21,12 +21,6 @@
 #define M_PI 3.1415926535897932384626433f
 #endif
 
-#ifdef WIN32
-#include <stdlib.h>
-// This is because their stupid compiler thinks it's smart.
-#define inline __forceinline
-#endif
-
 namespace PAPI
 {
     const float P_SQRT2PI = 2.506628274631000502415765284811045253006f;
