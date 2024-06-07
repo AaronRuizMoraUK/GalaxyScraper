@@ -4,7 +4,7 @@
 #include <map>
 #include <string>
 #include "Util/MapComparers/MapComparers.h"
-#include "Bass/bass.h"
+#include "bass.h"
 #include "XMLParser/XMLParser.h"
 
 #define FADE_TIME 2500
