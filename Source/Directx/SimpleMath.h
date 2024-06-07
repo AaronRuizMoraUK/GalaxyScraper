@@ -614,7 +614,7 @@ namespace DirectX
             static Matrix Transform(const Matrix& M, const Quaternion& rotation) noexcept;
 
             // Constants
-            static const Matrix Identity;
+            //static const Matrix Identity;
         };
 
         // Binary operators
@@ -768,7 +768,7 @@ namespace DirectX
             static float Angle(const Quaternion& q1, const Quaternion& q2) noexcept;
 
             // Constants
-            static const Quaternion Identity;
+            //static const Quaternion Identity;
         };
 
         // Binary operators

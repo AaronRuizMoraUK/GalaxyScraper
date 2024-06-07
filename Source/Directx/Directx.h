@@ -60,7 +60,7 @@ static const float D3DX_PI = 3.14159265359f;
 
 inline void D3DXMatrixIdentity(D3DXMATRIX* matrix)
 {
-    *matrix = D3DXMATRIX::Identity;
+    *matrix = D3DXMATRIX();
 }
 
 inline void D3DXMatrixMultiply(D3DXMATRIX* out, const D3DXMATRIX* lhs, const D3DXMATRIX* rhs)

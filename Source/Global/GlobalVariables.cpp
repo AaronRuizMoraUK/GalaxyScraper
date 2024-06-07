@@ -34,6 +34,7 @@ namespace Global {
 	RenderTexture renderTexture; // Initialized in function initGlobals in Game.cpp
 	Object renderTextureQuad;	 // Initialized in function initGlobals in Game.cpp
 	bool enabledRenderTexture = RenderToSurfaceSupported;
+	bool takeScreenshot = false;
 
 	D3DXVECTOR3 lightPosition(60.0f,85.0f,50.0f);
 	float time = 0.0f;
