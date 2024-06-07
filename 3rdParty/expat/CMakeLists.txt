@@ -9,11 +9,11 @@ file(GLOB_RECURSE EXPAT_SOURCE_FILES
 source_group(TREE "${expat_SOURCE_DIR}" FILES 
     ${EXPAT_SOURCE_FILES})
 
-add_library(expat INTERFACE ${EXPAT_SOURCE_FILES})
+add_library(expat ${EXPAT_SOURCE_FILES})
 
-target_include_directories(expat INTERFACE "${expat_SOURCE_DIR}/Source/lib")
-target_link_directories(expat INTERFACE "${expat_SOURCE_DIR}/Libs")
+target_compile_definitions(expat PRIVATE COMPILED_FROM_DSP)
+target_compile_definitions(expat PUBLIC XML_STATIC)
 
-target_link_libraries(expat INTERFACE libexpat)
+target_include_directories(expat PUBLIC "${expat_SOURCE_DIR}/Source/lib")
 
 set_target_properties(expat PROPERTIES FOLDER ${expat_folder})
