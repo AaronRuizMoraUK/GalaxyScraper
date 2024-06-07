@@ -3,7 +3,7 @@
 #include "Factories/MeshFactory.h"
 #include "Managers/DataLocatorManager.h"
 #include "Managers/PlanetManager.h"
-#include "Source/Game.h"
+#include "Game/Game.h"
 #include <cassert>
 
 Static2DObjectManager * Static2DObjectManager::static2DObjectManager = NULL;

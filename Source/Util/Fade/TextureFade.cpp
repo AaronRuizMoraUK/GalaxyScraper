@@ -2,7 +2,7 @@
 #include "Factories/QuadFactory.h"
 #include "Factories/EffectFactory.h"
 #include "Global/GlobalVariables.h"
-#include "Source/Game.h"
+#include "Game/Game.h"
 
 const std::string TextureFade::shaderName = "fade.fx";
 const std::string TextureFade::techniqueName = "texture_fade_tech";

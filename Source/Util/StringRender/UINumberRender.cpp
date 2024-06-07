@@ -1,7 +1,7 @@
 #include "UINumberRender.h"
 #include "Global/GlobalFunctions.h"
 #include "Global/GlobalVariables.h"
-#include "Source/Game.h"
+#include "Game/Game.h"
 #include <cassert>
 
 const std::string UINumberRender::textureName = "ui_numbers.dds";

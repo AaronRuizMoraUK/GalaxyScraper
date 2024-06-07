@@ -1,7 +1,7 @@
 #include "EffectFactory.h"
 #include "Global/GlobalVariables.h"
 #include "Managers/DataLocatorManager.h"
-#include "Source/Game.h"
+#include "Game/Game.h"
 
 EffectFactory * EffectFactory::effectFactory = NULL;
 

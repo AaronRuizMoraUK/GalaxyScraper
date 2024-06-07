@@ -147,7 +147,7 @@ ShapeHandle * CollisionShapeFactory::createConeShape(const IMesh *mesh, bool fix
 
 /*
 // -- PROVISIONAL COLISIONS --
-#include "Solid/SOLID.h"
+#include "SOLID.h"
 
 DT_ShapeHandle playerCapsuleCollisionHandle = NULL;
 DT_ShapeHandle mouthSphereCollisionHandle = NULL;

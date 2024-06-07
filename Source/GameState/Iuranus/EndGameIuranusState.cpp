@@ -1,7 +1,7 @@
 #include "EndGameIuranusState.h"
 #include "Global/GlobalFunctions.h"
 #include "Global/GlobalVariables.h"
-#include "Source/Game.h"
+#include "Game/Game.h"
 #include "Managers/PlanetManager.h"
 #include "Managers/IuranusManagers/IuranusEnemyManager.h"
 #include "Managers/StaticObjectManager.h"

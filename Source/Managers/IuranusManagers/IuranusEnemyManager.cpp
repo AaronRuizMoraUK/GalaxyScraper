@@ -13,7 +13,7 @@
 #include "Factories/AnimationStateGraphFactory.h"
 #include "Factories/CollisionShapeFactory.h"
 #include "Managers/DataLocatorManager.h"
-#include "Solid/SOLID.h"
+#include "SOLID.h"
 #include <fstream>
 #include <cassert>
 #include "AnimationControllers/EnemyAnimation/StatesDefines.h"

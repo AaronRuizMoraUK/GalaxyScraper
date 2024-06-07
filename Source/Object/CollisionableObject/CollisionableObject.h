@@ -2,7 +2,7 @@
 #define COLLISIONABLE_OBJECT_H
 
 #include "Object/Object.h"
-#include "Solid/SOLID.h"
+#include "SOLID.h"
 #include "Factories/CollisionShapeFactory.h"
 
 /**

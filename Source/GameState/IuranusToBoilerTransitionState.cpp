@@ -2,7 +2,7 @@
 #include "GameState/Boiler/BoilerState.h"
 #include "Global/GlobalFunctions.h"
 #include "Global/GlobalVariables.h"
-#include "Source/Game.h"
+#include "Game/Game.h"
 #include "Object/CollisionableObject/AnimatedObject/Player/Player.h"
 #include "Managers/PlanetAtmosphereManager.h"
 #include "Managers/IuranusManagers/IuranusFixedParticlesManager.h"

@@ -12,7 +12,7 @@
 #include "Object/CollisionableObject/AnimatedObject/Player/Player.h"
 #include "Managers/DataLocatorManager.h"
 #include "Managers/PlanetManager.h"
-#include "Source/Game.h"
+#include "Game/Game.h"
 
 /**
 * Default constructor. Initiates parameters needed.

@@ -19,7 +19,7 @@
 #include "Boiler/EndBoilerToMenuState.h"
 #include "Global/GlobalVariables.h"
 #include "Factories/QuadFactory.h"
-#include "Source/Game.h"
+#include "Game/Game.h"
 #include <cassert>
 
 #include "Logic/PlanetLogic/IuranusPlanetLogic/IuranusPlanetLogic.h"

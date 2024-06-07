@@ -6,7 +6,7 @@
 #include <string>
 #include "Mesh/IMesh.h"
 #include "Util/MapComparers/MapComparers.h"
-#include "Solid/SOLID.h"
+#include "SOLID.h"
 
 // Type of shapes
 typedef enum EnumTypeShape {PLAYER_SHAPE

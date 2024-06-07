@@ -1,7 +1,7 @@
 #include "CreditsState.h"
 #include "MenuState.h"
 #include "Global/GlobalVariables.h"
-#include "Source/Game.h"
+#include "Game/Game.h"
 
 std::string CreditsState::name = "credits_state";
 

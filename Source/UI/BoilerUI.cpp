@@ -2,7 +2,7 @@
 #include "Factories/QuadFactory.h"
 #include "Global/GlobalFunctions.h"
 #include "Global/GlobalVariables.h"
-#include "Source/Game.h"
+#include "Game/Game.h"
 #include "Logic/PlanetLogic/BoilerPlanetLogic/BoilerPlanetLogic.h"
 #include "Managers/LogicManager/LogicTimerManager.h"
 #include "Managers/SoundManager.h"

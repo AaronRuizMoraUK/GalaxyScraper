@@ -5,7 +5,7 @@
 #include "Managers/IuranusManagers/IuranusEnemyManager.h"
 #include "Managers/DataLocatorManager.h"
 #include "Logic/LogicVolume/LogicSphere.h"
-#include "Source/Game.h"
+#include "Game/Game.h"
 
 IuranusPlanetLogic * IuranusPlanetLogic::iuranusPlanetLogic = NULL;
 

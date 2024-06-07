@@ -1,7 +1,7 @@
 #include "OptionsState.h"
 #include "MenuState.h"
 #include "Global/GlobalVariables.h"
-#include "Source/Game.h"
+#include "Game/Game.h"
 #include "Factories/QuadFactory.h"
 #include "Managers/SoundManager.h"
 #include "Managers/DataLocatorManager.h"

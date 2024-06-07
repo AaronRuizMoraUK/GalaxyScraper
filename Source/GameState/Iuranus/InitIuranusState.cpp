@@ -2,7 +2,7 @@
 #include "IuranusState.h"
 #include "Global/GlobalFunctions.h"
 #include "Global/GlobalVariables.h"
-#include "Source/Game.h"
+#include "Game/Game.h"
 #include "GameState/MenuState.h"
 #include "Managers/IuranusManagers/IuranusPlanetElementsManager.h"
 #include "Managers/PlanetManager.h"

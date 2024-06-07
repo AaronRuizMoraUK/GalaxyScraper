@@ -1,7 +1,7 @@
 #include "AlphabetRender.h"
 #include "Global/GlobalFunctions.h"
 #include "Global/GlobalVariables.h"
-#include "Source/Game.h"
+#include "Game/Game.h"
 #include <cassert>
 
 const std::string AlphabetRender::textureName = "alphabet.dds";

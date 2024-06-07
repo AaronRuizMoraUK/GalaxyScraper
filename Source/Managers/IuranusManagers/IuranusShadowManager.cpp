@@ -3,7 +3,7 @@
 #include "Managers/PlanetManager.h"
 #include "Object/CollisionableObject/AnimatedObject/Player/Player.h"
 #include "Object/CollisionableObject/AnimatedObject/IntelligentObject/IntelligentObject.h"
-#include "Source/Game.h"
+#include "Game/Game.h"
 
 IuranusShadowManager * IuranusShadowManager::iuranusShadowManager = NULL;
 
