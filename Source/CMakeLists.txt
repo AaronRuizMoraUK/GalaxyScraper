@@ -15,3 +15,4 @@ target_include_directories(GalaxyScraper PRIVATE "${CMAKE_SOURCE_DIR}/Source")
 # Libraries
 target_link_libraries(GalaxyScraper PRIVATE d3d9.lib)
 target_link_libraries(GalaxyScraper PRIVATE Cal3D)
+target_link_libraries(GalaxyScraper PRIVATE solid3)

@@ -35,6 +35,7 @@ endif()
 # 3rd party libraries
 
 add_subdirectory(3rdParty/Cal3D)
+add_subdirectory(3rdParty/solid3)
 
 # ----------------------------------------------------
 # GalaxyScraper project

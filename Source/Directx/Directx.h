@@ -29,11 +29,15 @@ typedef D3DSURFACE_DESC					SurfaceDescription;
 typedef D3DVERTEXELEMENT9				VertexElement;
 typedef LPDIRECT3DVERTEXDECLARATION9	VertexDeclaration;
 
+DeviceCreator createDeviceCreator();
+
 #ifdef D3DX9_SUPPORTED
+
 static const bool RenderToSurfaceSupported = true;
 typedef LPD3DXRENDERTOSURFACE			RenderToSurface;
 typedef LPD3DXEFFECT					Effect;
-#else
+
+#else // D3DX9_SUPPORTED
 
 static const bool RenderToSurfaceSupported = false;
 typedef void* RenderToSurface;
@@ -92,8 +96,6 @@ public:
     void End() {}
 };
 
-#endif
-
-DeviceCreator createDeviceCreator();
+#endif // D3DX9_SUPPORTED
 
 #endif //DIRECTX_H
