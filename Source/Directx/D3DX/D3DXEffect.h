@@ -13,11 +13,11 @@ class D3DXEffect
 public:
     D3DXEffect() = default;
 
-    void Release() {}
+    void Release() { delete this; }
 
     D3DXHANDLE GetParameterByName(D3DXHANDLE _notUsed, const std::string& name)
     {
-        return -1;
+        return 1;
     }
     HRESULT SetFloat(D3DXHANDLE technique, float value)
     {
@@ -55,7 +55,7 @@ public:
 
     D3DXHANDLE GetTechniqueByName(const std::string& name)
     {
-        return -1;
+        return 1;
     }
     HRESULT SetTechnique(D3DXHANDLE technique)
     {

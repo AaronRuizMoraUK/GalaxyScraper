@@ -86,7 +86,8 @@ HRESULT EffectFactory::loadEffect(const std::string &filename, Effect &effect) {
 	if( errorBuffer )
 		errorBuffer->Release( ), errorBuffer=NULL;
 #else
-	hr = (HRESULT)-1;
+	hr = D3D_OK;
+	effect = new D3DXEffect();
 #endif
 
 	return hr;
