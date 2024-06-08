@@ -484,8 +484,8 @@ bool Game::createWindow( )
 		return false;
 
 	// Check if D3DFMT_X8R8G8B8 BackBufferFormat is supported and get allowed resolutions
-	allowedResolutions.insert( Resolution(800, 600, -1) );
-	allowedResolutions.insert( Resolution(1024, 768, -1) );
+	allowedResolutions.insert( Resolution(800, 600, 60) );
+	allowedResolutions.insert( Resolution(1024, 768, 60) );
 	UINT numberModeCount = Global::deviceCreator->GetAdapterModeCount(D3DADAPTER_DEFAULT, D3DFMT_X8R8G8B8);
 	char msg[ 128 ];
 	for(UINT i=0; i<numberModeCount; ++i) {
@@ -502,12 +502,13 @@ bool Game::createWindow( )
 			OutputDebugString(msg);
 
 			Resolution newResolution(displayMode.Width, displayMode.Height, displayMode.RefreshRate);
-			if( newResolution.width >=800 && newResolution.width <=1920 &&
-				(newResolution.rate == 60 || newResolution.rate == 70 ||
-				newResolution.rate == 75 || newResolution.rate == 85) ) {
-
-					allowedResolutions.insert( newResolution );
-			}
+			allowedResolutions.insert( newResolution );
+			//if( newResolution.width >=800 && newResolution.width <=1920 &&
+			//	(newResolution.rate == 60 || newResolution.rate == 70 ||
+			//	newResolution.rate == 75 || newResolution.rate == 85) ) {
+			//
+			//		allowedResolutions.insert( newResolution );
+			//}
 		}
 	}
 
@@ -515,7 +516,7 @@ bool Game::createWindow( )
 		// If resolution in config.xml is not in allowedResolutions, put 800x600:-1
 		Resolutions::const_iterator res_it = allowedResolutions.find( configOptions.resolution );
 		if( res_it == allowedResolutions.end() ) {
-			configOptions.resolution = Resolution(800, 600, -1);
+			configOptions.resolution = Resolution(800, 600, 60);
 			configOptions.aspectRatio = configOptions.resolution.width / (float)configOptions.resolution.height;
 		}
 	}

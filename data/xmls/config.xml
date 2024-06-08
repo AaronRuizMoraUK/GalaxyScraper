@@ -3,7 +3,7 @@
 <video
 	fullscreen="0"
 	height="720"
-	rate="-1"
+	rate="60"
 	vsync="1"
 	width="1280"
 	/>
