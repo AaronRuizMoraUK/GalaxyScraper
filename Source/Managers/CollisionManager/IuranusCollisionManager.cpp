@@ -41,20 +41,21 @@ void IuranusCollisionManager::detectCollisionsPlayerEnemies() {
 	while( it != adjacentEnemies.end() ) {
 		IntelligentObject * intelligentObject = *it;
 
-		DT_Vector3 point1;
-		DT_Vector3 point2;
+		D3DXVECTOR3 point1;
+		D3DXVECTOR3 point2;
 		DT_Bool existCollision = DT_GetPenDepth( player->getCollisionObject(), intelligentObject->getCollisionObject(), point1, point2 );
 
 		if( existCollision ) {
 			/*
 			static int proof = 0;
 			char msg[ 128 ];
-			sprintf_s(msg, sizeof(msg), "Collision Player-Enemy %d: (%f,%f,%f) (%f,%f,%f)\n",++proof, point1[0], point1[1], point1[2], point2[0], point2[1], point2[2]);
+			sprintf_s(msg, sizeof(msg), "Collision Player-Enemy %d: (%f,%f,%f) (%f,%f,%f)\n",++proof, point1.x, point1.y, point1.z, point2.x, point2.y, point2.z);
 			OutputDebugString(msg);
 			*/
 
 			// Insert collision to player-enemy vector
-			playerEnemyCollisionVector.emplace_back(intelligentObject, D3DXVECTOR3(point1), D3DXVECTOR3(point2));
+			PlayerEnemyCollision playerEnemyCollision(intelligentObject, point1, point2);
+			playerEnemyCollisionVector.push_back(playerEnemyCollision);
 		}
 
 		++it;
@@ -118,8 +119,8 @@ void IuranusCollisionManager::detectCollisionsBetweenEnemies() {
 						continue;
 					}
 
-					DT_Vector3 point1;
-					DT_Vector3 point2;
+					D3DXVECTOR3 point1;
+					D3DXVECTOR3 point2;
 					DT_Bool existCollision = DT_GetPenDepth( (*it1)->getCollisionObject(), (*it2)->getCollisionObject(), point1, point2 );
 
 					if( existCollision ) {
@@ -131,7 +132,8 @@ void IuranusCollisionManager::detectCollisionsBetweenEnemies() {
 						*/
 
 						// Insert collision to beween enemies vector
-						betweenEnemiesCollisionVector.emplace_back(*it1, *it2, D3DXVECTOR3(point1), D3DXVECTOR3(point2));
+						BetweenEnemiesCollision betweenEnemiesCollision(*it1, *it2, point1, point2);
+						betweenEnemiesCollisionVector.push_back(betweenEnemiesCollision);
 					}
 
 					++it2;

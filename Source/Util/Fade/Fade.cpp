@@ -143,7 +143,7 @@ void Fade::render( const D3DXVECTOR3 &color ) const {
 	// Set the color and alpha value
 	handleParam = shader->GetParameterByName( NULL, "color_alpha" );
 	if( handleParam ) {
-		D3DXVECTOR4 colorAlpha( color.x, color.y, color.z, alpha);
+		D3DXVECTOR4 colorAlpha( color, alpha);
 		shader->SetVector( handleParam, &colorAlpha);
 	}
 

@@ -37,8 +37,8 @@ IMesh * ParticleFactory::createParticleMesh(int numParticles)
 	int numQuadTriangles = ( numQuadVertexPerAxis - 1 ) * ( numQuadVertexPerAxis - 1 ) * 2;
 
 	// Min and max vertex point
-	D3DXVECTOR3 minPoint(0,0,0);
-	D3DXVECTOR3 maxPoint(0,0,0);
+	D3DXVECTOR3 minPoint(FLT_MAX,FLT_MAX,FLT_MAX);
+	D3DXVECTOR3 maxPoint(-FLT_MAX,-FLT_MAX,-FLT_MAX);
 
 	// Mesh
 	IMesh *mesh = new CoreMeshTextured(numQuadVertices * numParticles, numQuadTriangles * numParticles);
@@ -67,8 +67,12 @@ IMesh * ParticleFactory::createParticleMesh(int numParticles)
 
 				// Update min and max point
 				D3DXVECTOR3 vertex(v[iy].x, v[iy].y, v[iy].z);
-				minPoint = D3DXVECTOR3::Min(minPoint, vertex);
-				maxPoint = D3DXVECTOR3::Max(maxPoint, vertex);
+				for(int i=0; i<3; ++i) {
+					if(vertex[i]<minPoint[i])
+						minPoint[i]=vertex[i];
+					if(vertex[i]>maxPoint[i])
+						maxPoint[i]=vertex[i];
+				}
 			}
 		}
 

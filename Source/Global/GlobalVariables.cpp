@@ -17,9 +17,7 @@ namespace Global {
 	//-----------------------------------------------------------------------------
 	DeviceCreator	deviceCreator	= NULL;	// Used to create the Device
 	Device			device			= NULL;	// Our rendering device
-#ifdef D3DX9_SUPPORTED
 	LPD3DXFONT		font			= NULL;	// For printing
-#endif
 
 	//-----------------------------------------------------------------------------
 	// Global variables
@@ -33,7 +31,7 @@ namespace Global {
 
 	RenderTexture renderTexture; // Initialized in function initGlobals in Game.cpp
 	Object renderTextureQuad;	 // Initialized in function initGlobals in Game.cpp
-	bool enabledRenderTexture = RenderToSurfaceSupported;
+	bool enabledRenderTexture = true;
 	bool takeScreenshot = false;
 
 	D3DXVECTOR3 lightPosition(60.0f,85.0f,50.0f);

@@ -27,11 +27,9 @@ bool RenderTexture::create( int pWidth, int pHeight, D3DFORMAT pColorFormat, D3D
 	height = pHeight;
 	colorFormat = pColorFormat;
 	stencilZBufferFormat = pStencilZBufferFormat;
-	useDepthBuffer = (stencilZBufferFormat != D3DFMT_UNKNOWN);
+	
+	HRESULT hr;
 
-	HRESULT hr = D3D_OK;
-
-#ifdef D3DX9_SUPPORTED
 	// Create Texture
 	hr = D3DXCreateTexture( Global::device
 		, width, height
@@ -53,13 +51,13 @@ bool RenderTexture::create( int pWidth, int pHeight, D3DFORMAT pColorFormat, D3D
 	assert (hr == D3D_OK);
 
 	// Create the render to surface
+	useDepthBuffer = ( stencilZBufferFormat != D3DFMT_UNKNOWN );
 	hr = D3DXCreateRenderToSurface( Global::device,
 		desc.Width, desc.Height,
 		desc.Format,
 		useDepthBuffer,
 		stencilZBufferFormat,
 		&renderToSurface );
-#endif
 
 	initiated = (hr == D3D_OK);
 	return initiated;
@@ -68,7 +66,6 @@ bool RenderTexture::create( int pWidth, int pHeight, D3DFORMAT pColorFormat, D3D
 void  RenderTexture::destroy( ) {
 	initiated = false;
 
-#ifdef D3DX9_SUPPORTED
 	// Destroy Render to Surface
 	if( renderToSurface != NULL )
 		renderToSurface->Release(), renderToSurface = NULL;
@@ -80,30 +77,24 @@ void  RenderTexture::destroy( ) {
 	// Destroy Texture
 	if( texture != NULL )
 		texture->Release(), texture = NULL;
-#endif
 }
 
 void RenderTexture::begin( ) {
-#ifdef D3DX9_SUPPORTED
 	assert( initiated );
 
 	HRESULT hr = renderToSurface->BeginScene( surface, NULL );
 	assert (hr == D3D_OK);
-#endif
 }
 
 void RenderTexture::end( ) {
-#ifdef D3DX9_SUPPORTED
 	assert( initiated );
 
 	HRESULT hr = renderToSurface->EndScene( 0 );
 
 	assert (hr == D3D_OK);
-#endif
 }
 
 void RenderTexture::save( const std::string &filename, D3DXIMAGE_FILEFORMAT format ) const {
-#ifdef D3DX9_SUPPORTED
 	assert( initiated && texture );
 	assert( format!=D3DXIFF_TGA && format!= D3DXIFF_PPM );
 
@@ -124,7 +115,6 @@ void RenderTexture::save( const std::string &filename, D3DXIMAGE_FILEFORMAT form
 	HRESULT hr = D3DXSaveTextureToFile( fullFilename.c_str(), format, texture, NULL );
 
 	assert (hr == D3D_OK);
-#endif
 }
 
 // ----------------------------------------- //

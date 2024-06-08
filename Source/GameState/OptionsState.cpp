@@ -428,7 +428,7 @@ void OptionsState::applyChanges( ) {
 
 void OptionsState::changeQuality( ) {
 	if( Game::configOptions.quality == "high" )
-		Global::enabledRenderTexture = RenderToSurfaceSupported;
+		Global::enabledRenderTexture = true;
 	else
 		Global::enabledRenderTexture = false;
 

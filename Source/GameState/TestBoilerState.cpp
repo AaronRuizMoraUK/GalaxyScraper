@@ -217,7 +217,7 @@ void TestBoilerState::onLoad( ) {
 	timeoutUpdateSpace.restart();
 
 	if( Game::configOptions.quality == "high" )
-		Global::enabledRenderTexture = RenderToSurfaceSupported;
+		Global::enabledRenderTexture = true;
 	else
 		Global::enabledRenderTexture = false;
 }

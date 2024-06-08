@@ -46,7 +46,5 @@ void World::updateScale(const D3DXMATRIX &matWorld, const D3DXVECTOR3 &scaledFac
 */
 void World::activate(){
 	// Set World Matrix to the Device
-	D3DMATRIX world;
-	memcpy(world.m, currentMatWorld.m, sizeof(world.m));
-	Global::device->SetTransform( D3DTS_WORLD, &world);
+	Global::device->SetTransform( D3DTS_WORLD, &currentMatWorld );
 }

@@ -108,14 +108,10 @@ void Camera::update(float deltaTime) {
 */
 void Camera::activate() const {
 	// Set View Matrix to the Device
-	D3DMATRIX view;
-	memcpy(view.m, matView.m, sizeof(view.m));
-	Global::device->SetTransform( D3DTS_VIEW, &view );
+	Global::device->SetTransform( D3DTS_VIEW, &matView );
 
 	// Set Projection Matrix to the Device
-	D3DMATRIX proj;
-	memcpy(proj.m, matView.m, sizeof(proj.m));
-	Global::device->SetTransform( D3DTS_PROJECTION, &proj);
+	Global::device->SetTransform( D3DTS_PROJECTION, &matProj );
 }
 
 void Camera::loadDummyCameraController() {

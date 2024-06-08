@@ -81,7 +81,7 @@ namespace Global {
 			return;
 
 		D3DXMATRIX matrixCollision;
-		DT_GetMatrixf( object->getCollisionObject(), static_cast<float*>(&matrixCollision.m[0][0]));
+		DT_GetMatrixf( object->getCollisionObject(), matrixCollision);
 		char msg2[ 1024 ];
 		memset( msg2, 0x00, sizeof( msg2 ) );
 		strcat_s( msg2, sizeof( msg2 ), "Solid Position\n" );
@@ -112,10 +112,8 @@ namespace Global {
 		va_end(ap);
 
 		RECT rect = {x,y,0,0};
-#ifdef D3DX9_SUPPORTED
 		Global::font->DrawText(NULL, txt, -1, &rect, DT_CALCRECT, 0);
 		Global::font->DrawText(NULL, txt, -1, &rect, DT_LEFT, color );
-#endif
 
 		return (rect.bottom - rect.top);
 	}
@@ -159,10 +157,10 @@ namespace Global {
 		normalizeVector3(front, front);
 
 		for(int i=0; i<3; ++i) {
-			dst(0,i) = *(&left.x + i);
-			dst(1,i) = *(&up.x + i);
-			dst(2,i) = *(&front.x + i);
-			dst(3,i) = src(3,i);
+			dst(0,i)=left[i];
+			dst(1,i)=up[i];
+			dst(2,i)=front[i];
+			dst(3,i)=src(3,i);
 		}
 		dst(0, 3) = 0.0f;
 		dst(1, 3) = 0.0f;

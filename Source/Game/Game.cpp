@@ -93,7 +93,7 @@ void Game::onStartElement (const std::string &elem, MKeyValue &atts) {
 				configOptions.quality = "high";
 		}
 		if( configOptions.quality == "high" )
-			Global::enabledRenderTexture = RenderToSurfaceSupported;
+			Global::enabledRenderTexture = true;
 		else
 			Global::enabledRenderTexture = false;
 
@@ -229,10 +229,8 @@ void Game::clean() {
 	if( CUSTOMVERTEX_CAL3D_NORMAL_TAN_TEXTURE_DECLARATION != NULL )
 		CUSTOMVERTEX_CAL3D_NORMAL_TAN_TEXTURE_DECLARATION->Release(), CUSTOMVERTEX_CAL3D_NORMAL_TAN_TEXTURE_DECLARATION=NULL;
 
-#ifdef D3DX9_SUPPORTED
 	if( Global::font != NULL )
 		Global::font->Release(), Global::font=NULL;
-#endif
 
 	Global::renderTexture.destroy();
 
@@ -342,7 +340,7 @@ LRESULT WINAPI MsgProc( HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam )
 				Global::showStatistic = !Global::showStatistic;
 
 			// ENABLE/DISABLE RENDER TEXTURE
-			if(RenderToSurfaceSupported && (chCharCode=='g' || chCharCode=='G'))
+			if(chCharCode=='g' || chCharCode=='G')
 				Global::enabledRenderTexture = !Global::enabledRenderTexture;
 
 			// TAKE SCREENSHOT
@@ -623,7 +621,6 @@ bool Game::initDevice()
 	// INIT RENDER STATE
 	Global::initRenderState( );
 
-#ifdef D3DX9_SUPPORTED
 	// FOR PRINTING
 	D3DXFONT_DESC fnt;
 	memset(&fnt, 0, sizeof(D3DXFONT_DESC));
@@ -632,7 +629,6 @@ bool Game::initDevice()
 	fnt.Italic = true;
 	strcpy_s (fnt.FaceName, sizeof(fnt.FaceName), "arial");
 	D3DXCreateFontIndirect (Global::device, &fnt, &Global::font);
-#endif
 
 	// Create Vertex declarations
 	hr = Global::device->CreateVertexDeclaration( CUSTOMVERTEX_TEXTURE_ELEMENT, &CUSTOMVERTEX_TEXTURE_DECLARATION);
