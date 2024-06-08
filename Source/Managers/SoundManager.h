@@ -63,6 +63,7 @@ public:
 	void downSampleVolume();
 
 private:
+	float toFloat(int volume);
 
 	void threatError();
 	

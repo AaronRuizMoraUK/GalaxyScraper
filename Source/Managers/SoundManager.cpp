@@ -79,18 +79,15 @@ void SoundManager::playStream(const char *streamName)
 			oldStream = currentStream;
 			currentStream = &(it->second);
 
-			BOOL ok;
-			ok = BASS_ChannelSlideAttributes(*oldStream, -1, -2, -101, FADE_TIME);
-			if( ok != TRUE )
-				threatError();
+			//BOOL ok;
+			//ok = BASS_ChannelSlideAttribute(*oldStream, BASS_ATTRIB_VOL, -2, FADE_TIME);
+			//if( ok != TRUE )
+			//	threatError();
 
 			// correct new stream volume to indicated one
-			DWORD freq, volume;
-			int pan; 
-			BASS_ChannelGetAttributes(*currentStream, &freq, &volume, &pan);
-			BASS_ChannelSetAttributes(*currentStream, freq, streamVolume, pan);
+			BASS_ChannelSetAttribute(*currentStream, BASS_ATTRIB_VOL, toFloat(streamVolume));
 
-			ok = BASS_ChannelSlideAttributes(*currentStream, -1, streamVolume, -101, FADE_TIME);
+			BOOL ok = BASS_ChannelSlideAttribute(*currentStream, BASS_ATTRIB_VOL, toFloat(streamVolume), FADE_TIME);
 			if( ok != TRUE )
 				threatError();
 		}
@@ -99,12 +96,9 @@ void SoundManager::playStream(const char *streamName)
 			currentStream = &(it->second);	
 
 			// correct new stream volume to indicated one
-			DWORD freq, volume;
-			int pan; 
-			BASS_ChannelGetAttributes(*currentStream, &freq, &volume, &pan);
-			BASS_ChannelSetAttributes(*currentStream, freq, streamVolume, pan);
+			BASS_ChannelSetAttribute(*currentStream, BASS_ATTRIB_VOL, toFloat(streamVolume));
 
-			BOOL ok = BASS_ChannelSlideAttributes(*currentStream, -1, streamVolume, -101, FADE_TIME);
+			BOOL ok = BASS_ChannelSlideAttribute(*currentStream, BASS_ATTRIB_VOL, toFloat(streamVolume), FADE_TIME);
 			if( ok != TRUE )
 				threatError();
 		}
@@ -134,7 +128,7 @@ void SoundManager::playSample(const char *sampleName)
 		HCHANNEL channel = BASS_SampleGetChannel( it->second, FALSE );
 		if( channel != NULL )
 		{
-			BASS_ChannelSetAttributes(channel, 0, sampleVolume, -101);
+			BASS_ChannelSetAttribute(channel, BASS_ATTRIB_VOL, toFloat(sampleVolume));
 			BASS_ChannelPlay(channel, FALSE);
 		}
 		else if ( BASS_ErrorGetCode() != BASS_ERROR_NOCHAN )
@@ -153,7 +147,7 @@ HCHANNEL SoundManager::playStopableSample(const char *sampleName)
 		HCHANNEL channel = BASS_SampleGetChannel( it->second, FALSE );
 		if( channel != NULL )
 		{
-			BASS_ChannelSetAttributes(channel, 0, sampleVolume, -101);
+			BASS_ChannelSetAttribute(channel, BASS_ATTRIB_VOL, toFloat(sampleVolume));
 			BASS_ChannelPlay(channel, FALSE);
 			return channel;
 		}
@@ -180,18 +174,12 @@ void SoundManager::upStreamVolume()
 
 		if( currentStream != NULL ) 
 		{
-			DWORD freq, volume;
-			int pan; 
-			BASS_ChannelGetAttributes(*currentStream, &freq, &volume, &pan);
-			BASS_ChannelSetAttributes(*currentStream, freq, streamVolume, pan);
+			BASS_ChannelSetAttribute(*currentStream, BASS_ATTRIB_VOL, toFloat(streamVolume));
 		}
 
 		if( oldStream != NULL ) 
 		{
-			DWORD freq, volume;
-			int pan; 
-			BASS_ChannelGetAttributes(*oldStream, &freq, &volume, &pan);
-			BASS_ChannelSetAttributes(*oldStream, freq, streamVolume, pan);
+			BASS_ChannelSetAttribute(*oldStream, BASS_ATTRIB_VOL, toFloat(streamVolume));
 		}
 	}
 }
@@ -205,18 +193,12 @@ void SoundManager::downStreamVolume()
 
 		if( currentStream != NULL ) 
 		{
-			DWORD freq, volume;
-			int pan; 
-			BASS_ChannelGetAttributes(*currentStream, &freq, &volume, &pan);
-			BASS_ChannelSetAttributes(*currentStream, freq, streamVolume, pan);
+			BASS_ChannelSetAttribute(*currentStream, BASS_ATTRIB_VOL, toFloat(streamVolume));
 		}
 
 		if( oldStream != NULL ) 
 		{
-			DWORD freq, volume;
-			int pan; 
-			BASS_ChannelGetAttributes(*oldStream, &freq, &volume, &pan);
-			BASS_ChannelSetAttributes(*oldStream, freq, streamVolume, pan);
+			BASS_ChannelSetAttribute(*oldStream, BASS_ATTRIB_VOL, toFloat(streamVolume));
 		}
 	}
 }
@@ -237,6 +219,11 @@ void SoundManager::downSampleVolume()
 		sampleVolume -= 5;
 		sampleVolume = Global::clamp( sampleVolume, 0, 100 );
 	}
+}
+
+float SoundManager::toFloat(int volume)
+{
+	return static_cast<float>(volume) / 100.0f;
 }
 
 void SoundManager::threatError()
@@ -274,11 +261,14 @@ void SoundManager::threatError()
 	case BASS_ERROR_START:	// BASS_Start has not been successfully called
 		OutputDebugString("BASS ERROR: BASS_Start has not been successfully called\n");
 		break;
+	case BASS_ERROR_SSL:	// SSL/HTTPS support isn't available
+		OutputDebugString("BASS ERROR: SSL/HTTPS support isn't available\n");
+		break;
 	case BASS_ERROR_ALREADY:	// already initialized/paused/whatever
 		OutputDebugString("BASS ERROR: already initialized/paused/whatever\n");
 		break;
-	case BASS_ERROR_NOPAUSE:	// not paused
-		OutputDebugString("BASS ERROR: not paused\n");
+	case BASS_ERROR_NOTAUDIO:	// file does not contain audio
+		OutputDebugString("BASS ERROR: file does not contain audio\n");
 		break;
 	case BASS_ERROR_NOCHAN:	// can't get a free channel
 		OutputDebugString("BASS ERROR: can't get a free channel\n");
@@ -322,9 +312,6 @@ void SoundManager::threatError()
 	case BASS_ERROR_NOFX:	// effects are not available
 		OutputDebugString("BASS ERROR: effects are not available\n");
 		break;
-	case BASS_ERROR_PLAYING:	// the channel is playing
-		OutputDebugString("BASS ERROR: the channel is playing\n");
-		break;
 	case BASS_ERROR_NOTAVAIL:	// requested data is not available
 		OutputDebugString("BASS ERROR: requested data is not available\n");
 		break;
@@ -349,8 +336,14 @@ void SoundManager::threatError()
 	case BASS_ERROR_CODEC:	// codec is not available/supported
 		OutputDebugString("BASS ERROR: codec is not available/supported\n");
 		break;
-	case BASS_ERROR_UNKNOWN:	// some other mystery error
-		OutputDebugString("BASS ERROR: some other mystery error\n");
+	case BASS_ERROR_ENDED:	// the channel/file has ended
+		OutputDebugString("BASS ERROR: the channel/file has ended\n");
+		break;
+	case BASS_ERROR_BUSY:	// the device is busy
+		OutputDebugString("BASS ERROR: the device is busyd\n");
+		break;
+	case BASS_ERROR_UNSTREAMABLE:	// unstreamable file
+		OutputDebugString("BASS ERROR: unstreamable file\n");
 		break;
 	default:	// some other mystery error
 		OutputDebugString("BASS ERROR: some other mystery error\n");

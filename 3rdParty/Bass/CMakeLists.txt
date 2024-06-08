@@ -12,7 +12,7 @@ source_group(TREE "${bass_SOURCE_DIR}/c" FILES
 add_library(Bass INTERFACE ${BASS_SOURCE_FILES})
 
 target_include_directories(Bass INTERFACE "${bass_SOURCE_DIR}/c")
-target_link_directories(Bass INTERFACE "${bass_SOURCE_DIR}/Libs")
+target_link_directories(Bass INTERFACE "${bass_SOURCE_DIR}/x64")
 
 target_link_libraries(Bass INTERFACE bass)
 
