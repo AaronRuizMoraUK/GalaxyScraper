@@ -79,15 +79,15 @@ void SoundManager::playStream(const char *streamName)
 			oldStream = currentStream;
 			currentStream = &(it->second);
 
-			//BOOL ok;
-			//ok = BASS_ChannelSlideAttribute(*oldStream, BASS_ATTRIB_VOL, -2, FADE_TIME);
-			//if( ok != TRUE )
-			//	threatError();
+			BOOL ok;
+			ok = BASS_ChannelSlideAttribute(*oldStream, BASS_ATTRIB_VOL, 0.0f, FADE_TIME);
+			if( ok != TRUE )
+				threatError();
 
 			// correct new stream volume to indicated one
 			BASS_ChannelSetAttribute(*currentStream, BASS_ATTRIB_VOL, toFloat(streamVolume));
 
-			BOOL ok = BASS_ChannelSlideAttribute(*currentStream, BASS_ATTRIB_VOL, toFloat(streamVolume), FADE_TIME);
+			ok = BASS_ChannelSlideAttribute(*currentStream, BASS_ATTRIB_VOL, toFloat(streamVolume), FADE_TIME);
 			if( ok != TRUE )
 				threatError();
 		}
