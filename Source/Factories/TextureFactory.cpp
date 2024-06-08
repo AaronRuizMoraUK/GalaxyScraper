@@ -2,10 +2,6 @@
 #include "Global/GlobalVariables.h"
 #include "Managers/DataLocatorManager.h"
 
-#ifndef D3DX9_SUPPORTED
-#include "DDSTextureLoader9.h"
-#endif
-
 TextureFactory * TextureFactory::textureFactory = NULL;
 
 TextureFactory * TextureFactory::getTextureFactory() {

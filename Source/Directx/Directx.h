@@ -36,6 +36,7 @@ typedef LPD3DXEFFECT					Effect;
 
 #include "D3DX/D3DXMath.h"
 #include "D3DX/D3DXEffect.h"
+#include "D3DX/DDSTextureLoader9.h"
 
 #define D3DX_DEFAULT   ((UINT)-1)
 

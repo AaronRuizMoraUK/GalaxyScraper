@@ -6,5 +6,3 @@ add_subdirectory(Bass)
 add_subdirectory(Particles)
 add_subdirectory(lua)
 add_subdirectory(expat)
-
-include("FetchLibraries.cmake")
