@@ -3,6 +3,8 @@
 
 #include "Mesh/IMesh.h"
 
+#include <string>
+
 /**
 * Class to make fades out, int, mediums out, mediums int, etc.
 * It is made to work with an orthogonal camera.

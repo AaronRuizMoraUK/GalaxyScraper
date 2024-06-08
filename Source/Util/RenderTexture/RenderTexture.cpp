@@ -31,7 +31,7 @@ bool RenderTexture::create( int pWidth, int pHeight, D3DFORMAT pColorFormat, D3D
 
 	HRESULT hr = D3D_OK;
 
-#if D3DX9_SUPPORTED
+#ifdef D3DX9_SUPPORTED
 	// Create Texture
 	hr = D3DXCreateTexture( Global::device
 		, width, height
@@ -68,7 +68,7 @@ bool RenderTexture::create( int pWidth, int pHeight, D3DFORMAT pColorFormat, D3D
 void  RenderTexture::destroy( ) {
 	initiated = false;
 
-#if D3DX9_SUPPORTED
+#ifdef D3DX9_SUPPORTED
 	// Destroy Render to Surface
 	if( renderToSurface != NULL )
 		renderToSurface->Release(), renderToSurface = NULL;
@@ -84,7 +84,7 @@ void  RenderTexture::destroy( ) {
 }
 
 void RenderTexture::begin( ) {
-#if D3DX9_SUPPORTED
+#ifdef D3DX9_SUPPORTED
 	assert( initiated );
 
 	HRESULT hr = renderToSurface->BeginScene( surface, NULL );
@@ -93,7 +93,7 @@ void RenderTexture::begin( ) {
 }
 
 void RenderTexture::end( ) {
-#if D3DX9_SUPPORTED
+#ifdef D3DX9_SUPPORTED
 	assert( initiated );
 
 	HRESULT hr = renderToSurface->EndScene( 0 );
@@ -103,7 +103,7 @@ void RenderTexture::end( ) {
 }
 
 void RenderTexture::save( const std::string &filename, D3DXIMAGE_FILEFORMAT format ) const {
-#if D3DX9_SUPPORTED
+#ifdef D3DX9_SUPPORTED
 	assert( initiated && texture );
 	assert( format!=D3DXIFF_TGA && format!= D3DXIFF_PPM );
 

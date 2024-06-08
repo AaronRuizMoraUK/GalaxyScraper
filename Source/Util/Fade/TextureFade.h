@@ -3,6 +3,8 @@
 
 #include "Mesh/IMesh.h"
 
+#include <string>
+
 /**
 * Class to make fades with texture.
 * It is made to work with an orthogonal camera.

@@ -50,8 +50,7 @@ set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT G
 set(ROOT_FILES "${CMAKE_SOURCE_DIR}/README.md" "${CMAKE_SOURCE_DIR}/.gitignore")
 
 file(GLOB_RECURSE ASSET_FILES
-    "${CMAKE_SOURCE_DIR}/data/*.*"
-    "${CMAKE_SOURCE_DIR}/3rdParty/FetchLibraries.cmake")
+    "${CMAKE_SOURCE_DIR}/data/*.*")
     
 file(GLOB_RECURSE 3RDPARTY_FETCH_FILE
     "${CMAKE_SOURCE_DIR}/3rdParty/FetchLibraries.cmake")
