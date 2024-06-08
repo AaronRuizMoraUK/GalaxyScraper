@@ -60,7 +60,7 @@ Texture TextureFactory::createTexture(const std::string &filename) {
 		const std::wstring pathFilenameW(pathFilename.begin(), pathFilename.end());
 
 		if ( FAILED( DirectX::CreateDDSTextureFromFileEx(Global::device, pathFilenameW.c_str(),
-			 0, D3DPOOL_DEFAULT, true, &texture)))
+			 0, D3DPOOL_DEFAULT, false, &texture)))
 		{
 			//char msg[100];
 			//strcpy_s(msg, sizeof(msg), "Could not find texture ");
