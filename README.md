@@ -1,5 +1,7 @@
 # Galaxy Scraper
 
+<img src="./logo.png">
+
 Game developed as the final project of the 2006/07 Master in Videogame Development at Pompeu Fabra University.
 
 The game was entirely built from scratch using C++ and DirectX 9.0c. No commercial engines were used.
