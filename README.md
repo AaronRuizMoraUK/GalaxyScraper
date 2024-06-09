@@ -1,6 +1,6 @@
 # Galaxy Scraper
 
-Game developed as the final project of the 2007 Master in Videogame Development at Pompeu Fabra University.
+Game developed as the final project of the 2006/07 Master in Videogame Development at Pompeu Fabra University.
 
 The game was entirely built from scratch using C++ and DirectX 9.0c. No commercial engines were used.
 
@@ -79,7 +79,7 @@ Music by:
 
 - Nomar (sinplanb)
 
-Game created at Pompeu Fabra University during the 2007 Master in Videogame Development.
+Game created at Pompeu Fabra University during the 2006/07 Master in Videogame Development.
 
 Special thanks to all the teachers who provided guidance during the tutoring sessions!
 
