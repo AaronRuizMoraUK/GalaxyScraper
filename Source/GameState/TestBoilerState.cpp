@@ -154,7 +154,7 @@ void TestBoilerState::renderGameUI( ) {
 /*
 	uiNumberRender.print(0.6f, 0.9f, 0.04f, 0.04f, "9012345678 : \n%0.0f", Game::fps);
 	timeOutNumberRender.printClosing(0.6f, 0.6f, 0.04f, 0.04f, "9012345678\n%0.0f", Game::fps);
-	alphabetRender.print(0.02f, 0.1f, 0.04f, 0.04f, "abcdefghijklmnopqrstuvwxyz\nABCDEFGHIJKLMNOPQRSTUVWXYZ\n0123456789 %s\n+-!?,.=:", "Hola Zorras (adios) j.");
+	alphabetRender.print(0.02f, 0.1f, 0.04f, 0.04f, "abcdefghijklmnopqrstuvwxyz\nABCDEFGHIJKLMNOPQRSTUVWXYZ\n0123456789 %s\n+-!?,.=:", "Hola (adios) j.");
 	xboxButtonsRender.print(0.5f, 0.3f, 0.1f, 0.1f, "abxyrlmns");
 	padButtonsRender.print(0.5f, 0.05f, 0.1f, 0.1f, "0");
 	padButtonsRender.print(0.5f, 0.1f, 0.1f, 0.1f, "1");
