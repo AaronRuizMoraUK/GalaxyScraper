@@ -2,6 +2,8 @@
 
 Game developed as the final project of the 2007 Master in Videogame Development at Pompeu Fabra University.
 
+The game was entirely built from scratch using C++ and DirectX 9.0c. No commercial engines were used.
+
 **Awards**
 
 - Art Futura 2007 Best Game Winner
@@ -65,8 +67,6 @@ I made the following enhancements while adapting the project for Github.
 
 ## Credits
 
-Game created at Pompeu Fabra University during the 2007 Master in Videogame Development. Special thanks to all the teachers who provided guidance during the tutoring sessions!
-
 Developed by:
 
 - Aaron Ruiz
@@ -78,6 +78,10 @@ Developed by:
 Music by:
 
 - Nomar (sinplanb)
+
+Game created at Pompeu Fabra University during the 2007 Master in Videogame Development.
+
+Special thanks to all the teachers who provided guidance during the tutoring sessions!
 
 ## Third-party Libraries
 
