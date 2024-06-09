@@ -65,6 +65,15 @@ I made the following enhancements while adapting the project for Github.
 - Added support for modern screen resolutions and refresh rates.
 - Improved separation between game code and third-party libraries.
 
+## Third-party Libraries
+
+- **[DXSDK-D3DX](https://www.nuget.org/packages/Microsoft.DXSDK.D3DX)**: Headers, import libraries and runtime DLLs for the deprecated D3DX9 utilities libraries. 
+- **[Bass](https://www.un4seen.com/)**: Audio library.
+- **[Cal3D](https://github.com/mp3butcher/Cal3D)**: 3D character animation library.
+- **[Expat](https://github.com/libexpat/libexpat)**: C library for parsing XML.
+- **[Lua](https://github.com/lua/lua)**: Powerful, efficient, lightweight, embeddable scripting language.
+- **[ParticleAPI](https://github.com/davemc0/Particle)**: Particle system library.
+
 ## Credits
 
 Developed by:
@@ -82,12 +91,3 @@ Music by:
 Game created at Pompeu Fabra University during the 2006/07 Master in Videogame Development.
 
 Special thanks to all the teachers who provided guidance during the tutoring sessions!
-
-## Third-party Libraries
-
-- **[DXSDK-D3DX](https://www.nuget.org/packages/Microsoft.DXSDK.D3DX)**: Headers, import libraries and runtime DLLs for the deprecated D3DX9 utilities libraries. 
-- **[Bass](https://www.un4seen.com/)**: Audio library.
-- **[Cal3D](https://github.com/mp3butcher/Cal3D)**: 3D character animation library.
-- **[Expat](https://github.com/libexpat/libexpat)**: C library for parsing XML.
-- **[Lua](https://github.com/lua/lua)**: Powerful, efficient, lightweight, embeddable scripting language.
-- **[ParticleAPI](https://github.com/davemc0/Particle)**: Particle system library.
