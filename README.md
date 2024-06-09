@@ -63,7 +63,7 @@ I made the following enhancements while adapting the project for Github.
 
 - Built the project using CMake.
 - Added support for modern screen resolutions and refresh rates.
-- Integrated DXSDK-D3DX to keep using the deprecated DirectX 9 utilities, not available anymore as part of DirectX in Windows SDK.
+- Integrated DXSDK-D3DX to continue using the deprecated DirectX 9 utilities, which are no longer included in the DirectX components of the Windows SDK.
 - Improved separation between game code and third-party libraries.
 
 ## Third-party Libraries
