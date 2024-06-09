@@ -4,8 +4,8 @@ Game developed as the final project of the 2007 Master in Videogame Development 
 
 **Awards**
 
-- GDC Independent Games Festival 2008 Winner
 - Art Futura 2007 Best Game Winner
+- GDC Independent Games Festival 2008 Winner
 
 ## Game Synopsis
 
