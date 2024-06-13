@@ -17,6 +17,8 @@ You are a real space adventurer. Your journey has taken you to a dying solar sys
 
 Immerse yourself in a fully 3D world as you try to find your way out of the planet.
 
+<img src="./GalaxyScraper.gif">
+
 ## Build and Run
 
 Requirements
@@ -47,15 +49,15 @@ The game runs by default in window mode at `1280x720` resolution. To run the gam
 A gamepad with analog stick, such as the Xbox Controller, is highly recommended:
 
 - Use left analog stick to move
-- `A` button to kick.
-- `B` button to jump.
+- `A` button to jump.
+- `B` button to kick.
 - `Start` button to pause the game.
 
 Controls using keyboard:
 
 - Use `WSAD` keys to run.
-- Left mouse button to kick.
 - Right mouse button to jump.
+- Left mouse button to kick.
 - Keep `Shift` key pressed to walk.
 - Use `Enter` to pause the game.
 
